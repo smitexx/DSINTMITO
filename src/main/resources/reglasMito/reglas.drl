@@ -3,7 +3,7 @@ package reglasMito
 
 //list any import classes here.
 
-
+import clasesMito.*;
 
 //declare any global variables here
 
