@@ -1,0 +1,19 @@
+//created on: 8 nov. 2020
+package dsiRules
+
+//list any import classes here.
+
+import dsi.*;
+
+
+//declare any global variables here
+
+rule "Imprimir personas"
+
+    when
+        //conditions y definimos variable $p
+       
+    then
+        //actions
+		
+end
