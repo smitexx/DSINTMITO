@@ -75,16 +75,16 @@ public class KieMain {
 		Personaje nereidas = new Ninfa(null, null, "Nereidas", null);
 		Personaje ninfasNorte = new Ninfa(null, inventarioNinfaNorte, "NinfasNorte", null);
 		
-		Personaje perseo = new Semidios(zeus, null, "Perseo", null);
+		Personaje perseo = new Semidios(zeus, null, "Perseo", null,  null);
 		
-		Personaje casiopea = new Humano(null, null, "Casiopea", hijosCasiopea);
-		Personaje andromeda = new Humano(casiopea, null, "Andromeda", null);
+		Personaje casiopea = new Humano(null, null, "Casiopea", hijosCasiopea, null);
+		Personaje andromeda = new Humano(casiopea, null, "Andromeda", null, null);
 		
-		Personaje ceto = new CriaturaMarina(null, null, "Ceto", null);
+		Personaje ceto = new CriaturaMarina(null, null, "Ceto", null, null);
 		
-		Personaje esteno = new Gorgona(null, null, "Esteno", null );
-		Personaje euriale = new Gorgona(null, null, "Euriale", null );
-		Personaje medusa = new Gorgona(null, inventarioMedusa, "Medusa", null );
+		Personaje esteno = new Gorgona(null, null, "Esteno", null, null );
+		Personaje euriale = new Gorgona(null, null, "Euriale", null, null );
+		Personaje medusa = new Gorgona(null, inventarioMedusa, "Medusa", null, null );
 		
 		//HIJOS DE PERSONAJES
 		Collections.addAll(hijosZeus, perseo, hermes, hefesto, atenea);
@@ -95,7 +95,7 @@ public class KieMain {
 		List <String> Pregunta  = new LinkedList<String>();
 	    List <String> Condiciones  = new LinkedList<String>();
 	    List <String> Descartos  = new LinkedList<String>();
-	    Collections.addAll(Descartos, ",","Condiciones:","¿Puede","tiene","a","el","de");
+	    Collections.addAll(Descartos, ",","Condiciones:","Puede","tiene","a","el","de");
 
 		try (Scanner scanner = new Scanner(fichero);) {//new File(filename)
 		    while (scanner.hasNext()) {
