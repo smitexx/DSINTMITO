@@ -1,0 +1,33 @@
+<object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Imprimir personas [0]</activationId>
+      <rule>Imprimir personas</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Imprimir personas [0]</activationId>
+      <rule>Imprimir personas</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Imprimir personas [0]</activationId>
+      <rule>Imprimir personas</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+  </events>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events/>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>

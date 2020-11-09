@@ -7,7 +7,7 @@ import clasesMito.Personaje;
 
 public class Dios extends Inmortal {
 	private String tipoDios;
-	public Dios(Personaje hijoDe, List<Objeto> inventario, String nombre, Personaje padreDe, String tipoDios) {
+	public Dios(Personaje hijoDe, List<Objeto> inventario, String nombre, List<Personaje> padreDe, String tipoDios) {
 		super(hijoDe, inventario, nombre, padreDe);
 		this.tipoDios = tipoDios;
 		// TODO Auto-generated constructor stub

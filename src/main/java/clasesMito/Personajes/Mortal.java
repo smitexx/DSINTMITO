@@ -7,7 +7,7 @@ import clasesMito.Personaje;
 
 public class Mortal extends Personaje {
 
-	public Mortal(Personaje hijoDe, List<Objeto> inventario, String nombre, Personaje padreDe) {
+	public Mortal(Personaje hijoDe, List<Objeto> inventario, String nombre, List<Personaje> padreDe) {
 		super(hijoDe, inventario, nombre, padreDe);
 		// TODO Auto-generated constructor stub
 	}

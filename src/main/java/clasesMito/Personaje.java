@@ -6,11 +6,11 @@ public abstract class Personaje {
 	private Personaje hijoDe;
 	private  List<Objeto> inventario;
 	private String nombre;
-	private Personaje padreDe;
+	private List<Personaje> padreDe;
 	
 	
 	
-	public Personaje(Personaje hijoDe, List<Objeto> inventario, String nombre, Personaje padreDe) {
+	public Personaje(Personaje hijoDe, List<Objeto> inventario, String nombre, List<Personaje> padreDe) {
 		super();
 		this.hijoDe = hijoDe;
 		this.inventario = inventario;
@@ -36,10 +36,10 @@ public abstract class Personaje {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public Personaje getPadreDe() {
+	public List<Personaje> getPadreDe() {
 		return padreDe;
 	}
-	public void setPadreDe(Personaje padreDe) {
+	public void setPadreDe(List<Personaje> padreDe) {
 		this.padreDe = padreDe;
 	}
 	
