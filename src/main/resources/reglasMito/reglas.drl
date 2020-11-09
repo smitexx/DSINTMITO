@@ -13,7 +13,7 @@ import clasesMito.*;
 rule "Your First Rule"
 
     when
-        //conditions
+       
     then
         //actions
 
