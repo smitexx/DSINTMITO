@@ -23,12 +23,12 @@ public class KieMain {
 		KieServices ks = KieServices.Factory.get();
 		KieContainer kContainer = ks.getKieClasspathContainer();
 		
-		//Creamos la sesi�n con el mismo nombre que le hemos puesto en el kmodule.xml
+		//Creamos la sesion con el mismo nombre que le hemos puesto en el kmodule.xml
 		KieSession kSession = kContainer.newKieSession("ksession-rules-dsi");
 		
 		KieRuntimeLogger logger = ks.getLoggers().newThreadedFileLogger(kSession, "./LOGMITO", 1000);
 		
-		//HECHOS DE PARTIDA 
+		//HECHOS ESTÁTICOS DE PARTIDA 
 		//Objetos
 		Objeto cabezaMedusa = new Objeto ("CabezaMedusa");
 		Objeto cascoHades = new Objeto ("CascoHades");
@@ -90,6 +90,16 @@ public class KieMain {
 		Collections.addAll(hijosZeus, perseo, hermes, hefesto, atenea);
 		hijosCasiopea.add(andromeda);
 		
+		//COLECCIÓN DE OBJETOS
+		LinkedList<Objeto> objetosMito = new LinkedList<Objeto>();
+		Collections.addAll(objetosMito, cabezaMedusa, cascoHades, hozAcero, mapaGrayas,mapaNinfas, ojoGraya,
+				sandaliasAladas, zurronMagico, escudoBronce);
+		
+		LinkedList<Personaje> personajesMito = new LinkedList<Personaje>();
+		Collections.addAll(personajesMito, zeus, poseidon, hades, hermes, atenea, hefesto,
+				grayas, doris, nereidas, ninfasNorte, perseo, casiopea, andromeda, ceto, esteno, euriale,
+				medusa);
+		
 		//PARSER PARA HECHOS DINAMICOS
 		File fichero=new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
 		List <String> Pregunta  = new LinkedList<String>();
@@ -112,10 +122,17 @@ public class KieMain {
 		    scanner.close();
 
 		}
-		
 		//con pregunta hacer NEW accion 
 		System.out.println(Pregunta.toString());
 		System.out.println(Condiciones.toString());
+		
+		//Añadimos TODOS LOS HECHOS A LA SESIÓN (faltan los dinamicos)
+				for (Objeto obj : objetosMito) {
+					kSession.insert(obj);
+				}
+				for (Personaje p : personajesMito) {
+					kSession.insert(p);
+				}
 		//Lanzamos todas las reglas
 		kSession.fireAllRules();
 		logger.close();
