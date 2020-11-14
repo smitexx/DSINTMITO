@@ -99,32 +99,25 @@ public class KieMain {
 		Collections.addAll(personajesMito, zeus, poseidon, hades, hermes, atenea, hefesto,
 				grayas, doris, nereidas, ninfasNorte, perseo, casiopea, andromeda, ceto, esteno, euriale,
 				medusa);
-		
-		//PARSER PARA HECHOS DINAMICOS
-		File fichero=new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
-		List <String> Pregunta  = new LinkedList<String>();
-	    List <String> Condiciones  = new LinkedList<String>();
-	    List <String> Descartos  = new LinkedList<String>();
-	    Collections.addAll(Descartos, ",","Condiciones:","Puede","tiene","a","el","de");
 
-		try (Scanner scanner = new Scanner(fichero);) {//new File(filename)
-		    while (scanner.hasNext()) {
-		    	String palabraLeida = scanner.next();
-		    	if (!Descartos.contains(palabraLeida))Pregunta.add(palabraLeida);
-		    	
-		    if (palabraLeida.endsWith("?")) break;
-		    }
-			scanner.hasNext(); //dejamos pasar la palabra condiciones
-		    while (scanner.hasNext()) {
-		    	String CondicionLeida = scanner.next();
-		    	if (!Descartos.contains(CondicionLeida))Condiciones.add(CondicionLeida);		    
-		    }
-		    scanner.close();
-
+		// PARSER PARA HECHOS DINAMICOS
+		File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
+		LinkedList<String> LineasFich = new LinkedList<String>();
+		List<String> Descartos = new LinkedList<String>();
+		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
+		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
+			while (scanner.hasNext()) {
+				String linealeida = scanner.nextLine();
+				if (!linealeida.equals("Condiciones:"))
+					LineasFich.add(linealeida);
+			}
+			scanner.close();
 		}
-		//con pregunta hacer NEW accion 
-		System.out.println(Pregunta.toString());
-		System.out.println(Condiciones.toString());
+		Parser P = new Parser(LineasFich, personajesMito);
+		LinkedList<Object> hechosDinamicos = P.parsear();
+		System.out.println(hechosDinamicos.toString());
+		
+		//Lanzamos todas las reglas
 		
 		//Añadimos TODOS LOS HECHOS A LA SESIÓN (faltan los dinamicos)
 				for (Objeto obj : objetosMito) {
