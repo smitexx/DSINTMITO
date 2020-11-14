@@ -30,15 +30,15 @@ public class KieMain {
 		
 		//HECHOS ESTÁTICOS DE PARTIDA 
 		//Objetos
-		Objeto cabezaMedusa = new Objeto ("CabezaMedusa");
-		Objeto cascoHades = new Objeto ("CascoHades");
-		Objeto hozAcero = new Objeto ("HozAcero");
-		Objeto mapaGrayas = new Objeto ("MapaGrayas");
-		Objeto mapaNinfas = new Objeto ("MapaNinfas");
-		Objeto ojoGraya = new Objeto ("OjoGraya");
-		Objeto sandaliasAladas = new Objeto ("SandaliasAladas");
-		Objeto zurronMagico = new Objeto ("ZurronMagico");
-		Objeto escudoBronce = new Objeto ("EscudoBronce");
+		Objeto cabezaMedusa = new Objeto ("Cabeza Medusa");
+		Objeto cascoHades = new Objeto ("Casco Hades");
+		Objeto hozAcero = new Objeto ("Hoz Acero");
+		Objeto mapaGrayas = new Objeto ("Mapa Grayas");
+		Objeto mapaNinfas = new Objeto ("Mapa Ninfas");
+		Objeto ojoGraya = new Objeto ("Ojo Graya");
+		Objeto sandaliasAladas = new Objeto ("Sandalias Aladas");
+		Objeto zurronMagico = new Objeto ("Zurron Magico");
+		Objeto escudoBronce = new Objeto ("Escudo Espejo");
 		//Inventarios con sus objetos
 		List<Objeto> inventarioMedusa = new LinkedList<Objeto>();
 		inventarioMedusa.add(cabezaMedusa);
@@ -50,7 +50,7 @@ public class KieMain {
 		inventarioHermes.add(hozAcero);
 		
 		List<Objeto> inventarioAtenea = new LinkedList<Objeto>();
-		Collections.addAll(inventarioAtenea, escudoBronce, mapaGrayas);
+		inventarioAtenea.add(mapaGrayas);
 		
 		List<Objeto> inventarioHades = new LinkedList<Objeto>();
 		inventarioHades.add(cascoHades);
@@ -58,6 +58,9 @@ public class KieMain {
 		List<Objeto> inventarioNinfaNorte = new LinkedList<Objeto>();
 		Collections.addAll(inventarioNinfaNorte, zurronMagico, sandaliasAladas);
 		
+		List<Objeto> inventarioHefesto = new LinkedList<Objeto>();
+		inventarioHefesto.add(escudoBronce);
+
 		//Personajes
 		List<Personaje> hijosZeus = new LinkedList<Personaje>();
 		List<Personaje> hijosCasiopea = new LinkedList<Personaje>();
@@ -65,9 +68,9 @@ public class KieMain {
 		Personaje zeus = new Dios(null, null, "Zeus", hijosZeus, "Rayo");
 		Personaje poseidon = new Dios(null, null, "Poseidón", null, "Agua");
 		Personaje hades = new Dios(null, inventarioHades, "Hades", null, "Inframundo");
-		Personaje hermes = new Dios(null, inventarioHermes, "Hades", null, "Comercio");
+		Personaje hermes = new Dios(null, inventarioHermes, "Hermes", null, "Comercio");
 		Personaje atenea = new Dios(null, inventarioAtenea, "Atenea", null, "Guerra");
-		Personaje hefesto = new Dios(null, null, "Hefesto", null, "Fuego");
+		Personaje hefesto = new Dios(null, inventarioHefesto, "Hefesto", null, "Fuego");
 		
 		Personaje grayas = new Graya(null, inventarioGrayas, "Grayas", null);
 		
@@ -101,7 +104,8 @@ public class KieMain {
 				medusa);
 
 		// PARSER PARA HECHOS DINAMICOS
-		File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
+		//File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
+		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 		List<String> Descartos = new LinkedList<String>();
 		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
@@ -115,7 +119,6 @@ public class KieMain {
 		}
 		Parser P = new Parser(LineasFich, personajesMito);
 		LinkedList<Object> hechosDinamicos = P.parsear();
-		System.out.println(hechosDinamicos.toString());
 		
 		//Lanzamos todas las reglas
 		
@@ -125,6 +128,9 @@ public class KieMain {
 				}
 				for (Personaje p : personajesMito) {
 					kSession.insert(p);
+				}
+				for (Object o : hechosDinamicos) {
+					kSession.insert(o);
 				}
 		//Lanzamos todas las reglas
 		kSession.fireAllRules();

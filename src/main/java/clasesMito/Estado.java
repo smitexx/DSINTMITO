@@ -15,5 +15,10 @@ public abstract class Estado {
 	public void setSujeto(Personaje sujeto) {
 		this.sujeto = sujeto;
 	}
+
+	@Override
+	public String toString() {
+		return "[" + sujeto + "]";
+	}
 	
 }

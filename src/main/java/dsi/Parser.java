@@ -50,7 +50,6 @@ public class Parser {
 					String NombreP1 = palabras.get(4).replace("?", "");
 					p1 = getPersonaje(palabras.get(1));
 					p2 = getPersonaje(NombreP1);
-					System.out.println(palabras.toString());
 					O = new Liberar(p1, p2);
 					HechosDinamicos.add(O);
 				}
