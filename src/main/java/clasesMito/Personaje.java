@@ -42,6 +42,11 @@ public abstract class Personaje {
 	public void setPadreDe(List<Personaje> padreDe) {
 		this.padreDe = padreDe;
 	}
+
+	@Override
+	public String toString() {
+		return "" + nombre + "";
+	}
 	
 	
 }

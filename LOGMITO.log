@@ -5,658 +5,658 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>1</factId>
-      <objectToString>clasesMito.Objeto@451882b2</objectToString>
+      <objectToString>clasesMito.Objeto@841e575</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>2</factId>
-      <objectToString>clasesMito.Objeto@6ae3fb94</objectToString>
+      <objectToString>clasesMito.Objeto@674c583e</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>3</factId>
-      <objectToString>clasesMito.Objeto@4417af13</objectToString>
+      <objectToString>clasesMito.Objeto@25f7391e</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>4</factId>
-      <objectToString>clasesMito.Objeto@d48673</objectToString>
+      <objectToString>clasesMito.Objeto@3f23a3a0</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>5</factId>
-      <objectToString>clasesMito.Objeto@548d5ed3</objectToString>
+      <objectToString>clasesMito.Objeto@5ab14cb9</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>6</factId>
-      <objectToString>clasesMito.Objeto@21c7208d</objectToString>
+      <objectToString>clasesMito.Objeto@5fb97279</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>7</factId>
-      <objectToString>clasesMito.Objeto@58516c91</objectToString>
+      <objectToString>clasesMito.Objeto@439a8f59</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>8</factId>
-      <objectToString>clasesMito.Objeto@7c129ef6</objectToString>
+      <objectToString>clasesMito.Objeto@61861a29</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>9</factId>
-      <objectToString>clasesMito.Objeto@42d73c61</objectToString>
+      <objectToString>clasesMito.Objeto@31024624</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>10</factId>
-      <objectToString>clasesMito.Personajes.Dios@1a28b346</objectToString>
+      <objectToString>Zeus</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>11</factId>
-      <objectToString>clasesMito.Personajes.Dios@25e49cb2</objectToString>
+      <objectToString>Poseidón</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>12</factId>
-      <objectToString>clasesMito.Personajes.Dios@7f7af971</objectToString>
+      <objectToString>Hades</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>13</factId>
-      <objectToString>clasesMito.Personajes.Dios@23382f76</objectToString>
+      <objectToString>Hades</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>14</factId>
-      <objectToString>clasesMito.Personajes.Dios@7c551ad4</objectToString>
+      <objectToString>Atenea</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>15</factId>
-      <objectToString>clasesMito.Personajes.Dios@7d5508e0</objectToString>
+      <objectToString>Hefesto</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>16</factId>
-      <objectToString>clasesMito.Personajes.Graya@554cd74a</objectToString>
+      <objectToString>Grayas</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>17</factId>
-      <objectToString>clasesMito.Personajes.Ninfa@37ed010a</objectToString>
+      <objectToString>Doris</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>18</factId>
-      <objectToString>clasesMito.Personajes.Ninfa@633a2e99</objectToString>
+      <objectToString>Nereidas</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>19</factId>
-      <objectToString>clasesMito.Personajes.Ninfa@367d2816</objectToString>
+      <objectToString>NinfasNorte</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>20</factId>
-      <objectToString>clasesMito.Personajes.Semidios@5b84f14</objectToString>
+      <objectToString>Perseo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>21</factId>
-      <objectToString>clasesMito.Personajes.Humano@5a82ebf8</objectToString>
+      <objectToString>Casiopea</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>22</factId>
-      <objectToString>clasesMito.Personajes.Humano@68fe48d7</objectToString>
+      <objectToString>Andrómeda</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>23</factId>
-      <objectToString>clasesMito.Personajes.CriaturaMarina@379ce046</objectToString>
+      <objectToString>Ceto</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>24</factId>
-      <objectToString>clasesMito.Personajes.Gorgona@701bc94e</objectToString>
+      <objectToString>Esteno</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>25</factId>
-      <objectToString>clasesMito.Personajes.Gorgona@3d8b319e</objectToString>
+      <objectToString>Euriale</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>26</factId>
-      <objectToString>clasesMito.Personajes.Gorgona@27a97e08</objectToString>
+      <objectToString>Medusa</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [10]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@1a28b346</declarations>
+      <declarations>$p=Zeus</declarations>
       <factHandleIds>10</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [11]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@25e49cb2</declarations>
+      <declarations>$p=Poseidón</declarations>
       <factHandleIds>11</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [12]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7f7af971</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>12</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [13]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@23382f76</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>13</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [14]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7c551ad4</declarations>
+      <declarations>$p=Atenea</declarations>
       <factHandleIds>14</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [15]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7d5508e0</declarations>
+      <declarations>$p=Hefesto</declarations>
       <factHandleIds>15</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [16]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Graya@554cd74a</declarations>
+      <declarations>$p=Grayas</declarations>
       <factHandleIds>16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [17]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@37ed010a</declarations>
+      <declarations>$p=Doris</declarations>
       <factHandleIds>17</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [18]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@633a2e99</declarations>
+      <declarations>$p=Nereidas</declarations>
       <factHandleIds>18</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [19]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@367d2816</declarations>
+      <declarations>$p=NinfasNorte</declarations>
       <factHandleIds>19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [20]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Semidios@5b84f14</declarations>
+      <declarations>$p=Perseo</declarations>
       <factHandleIds>20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [21]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@5a82ebf8</declarations>
+      <declarations>$p=Casiopea</declarations>
       <factHandleIds>21</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [22]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@68fe48d7</declarations>
+      <declarations>$p=Andrómeda</declarations>
       <factHandleIds>22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [23]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.CriaturaMarina@379ce046</declarations>
+      <declarations>$p=Ceto</declarations>
       <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [24]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@701bc94e</declarations>
+      <declarations>$p=Esteno</declarations>
       <factHandleIds>24</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [25]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@3d8b319e</declarations>
+      <declarations>$p=Euriale</declarations>
       <factHandleIds>25</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>personajes libres y vivos [26]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@27a97e08</declarations>
+      <declarations>$p=Medusa</declarations>
       <factHandleIds>26</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [10]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@1a28b346</declarations>
+      <declarations>$p=Zeus</declarations>
       <factHandleIds>10</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>27</factId>
-      <objectToString>clasesMito.estados.Libre@6ef1a1b9</objectToString>
+      <objectToString>clasesMito.estados.Libre@30ed9c6c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>28</factId>
-      <objectToString>clasesMito.estados.Vivo@65753040</objectToString>
+      <objectToString>clasesMito.estados.Vivo@46c670a6</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [10]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@1a28b346</declarations>
+      <declarations>$p=Zeus</declarations>
       <factHandleIds>10</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [11]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@25e49cb2</declarations>
+      <declarations>$p=Poseidón</declarations>
       <factHandleIds>11</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>29</factId>
-      <objectToString>clasesMito.estados.Libre@3ab6678b</objectToString>
+      <objectToString>clasesMito.estados.Libre@355e34c7</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>30</factId>
-      <objectToString>clasesMito.estados.Vivo@7a904f32</objectToString>
+      <objectToString>clasesMito.estados.Vivo@54709809</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [11]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@25e49cb2</declarations>
+      <declarations>$p=Poseidón</declarations>
       <factHandleIds>11</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [12]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7f7af971</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>12</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>31</factId>
-      <objectToString>clasesMito.estados.Libre@2b59501e</objectToString>
+      <objectToString>clasesMito.estados.Libre@2a2da905</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>32</factId>
-      <objectToString>clasesMito.estados.Vivo@476e8796</objectToString>
+      <objectToString>clasesMito.estados.Vivo@24f360b2</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [12]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7f7af971</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>12</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [13]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@23382f76</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>13</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>33</factId>
-      <objectToString>clasesMito.estados.Libre@4eed2acf</objectToString>
+      <objectToString>clasesMito.estados.Libre@60cf80e7</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>34</factId>
-      <objectToString>clasesMito.estados.Vivo@36fc05ff</objectToString>
+      <objectToString>clasesMito.estados.Vivo@302fec27</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [13]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@23382f76</declarations>
+      <declarations>$p=Hades</declarations>
       <factHandleIds>13</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [14]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7c551ad4</declarations>
+      <declarations>$p=Atenea</declarations>
       <factHandleIds>14</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>35</factId>
-      <objectToString>clasesMito.estados.Libre@57c47a9e</objectToString>
+      <objectToString>clasesMito.estados.Libre@770d0ea6</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>36</factId>
-      <objectToString>clasesMito.estados.Vivo@642505c7</objectToString>
+      <objectToString>clasesMito.estados.Vivo@48c40605</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [14]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7c551ad4</declarations>
+      <declarations>$p=Atenea</declarations>
       <factHandleIds>14</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [15]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7d5508e0</declarations>
+      <declarations>$p=Hefesto</declarations>
       <factHandleIds>15</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>37</factId>
-      <objectToString>clasesMito.estados.Libre@4339e0de</objectToString>
+      <objectToString>clasesMito.estados.Libre@54107f42</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>38</factId>
-      <objectToString>clasesMito.estados.Vivo@153cd6bb</objectToString>
+      <objectToString>clasesMito.estados.Vivo@1b11ef33</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [15]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Dios@7d5508e0</declarations>
+      <declarations>$p=Hefesto</declarations>
       <factHandleIds>15</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [16]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Graya@554cd74a</declarations>
+      <declarations>$p=Grayas</declarations>
       <factHandleIds>16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>39</factId>
-      <objectToString>clasesMito.estados.Libre@61d84e08</objectToString>
+      <objectToString>clasesMito.estados.Libre@476aac9</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>40</factId>
-      <objectToString>clasesMito.estados.Vivo@2d9f64c9</objectToString>
+      <objectToString>clasesMito.estados.Vivo@6cea706c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [16]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Graya@554cd74a</declarations>
+      <declarations>$p=Grayas</declarations>
       <factHandleIds>16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [17]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@37ed010a</declarations>
+      <declarations>$p=Doris</declarations>
       <factHandleIds>17</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>41</factId>
-      <objectToString>clasesMito.estados.Libre@21ac5eb4</objectToString>
+      <objectToString>clasesMito.estados.Libre@3bd7f8dc</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>42</factId>
-      <objectToString>clasesMito.estados.Vivo@52d6cd34</objectToString>
+      <objectToString>clasesMito.estados.Vivo@2f2bf0e2</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [17]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@37ed010a</declarations>
+      <declarations>$p=Doris</declarations>
       <factHandleIds>17</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [18]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@633a2e99</declarations>
+      <declarations>$p=Nereidas</declarations>
       <factHandleIds>18</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>43</factId>
-      <objectToString>clasesMito.estados.Libre@715d6168</objectToString>
+      <objectToString>clasesMito.estados.Libre@1eba372c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>44</factId>
-      <objectToString>clasesMito.estados.Vivo@27b2faa6</objectToString>
+      <objectToString>clasesMito.estados.Vivo@21ec5d87</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [18]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@633a2e99</declarations>
+      <declarations>$p=Nereidas</declarations>
       <factHandleIds>18</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [19]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@367d2816</declarations>
+      <declarations>$p=NinfasNorte</declarations>
       <factHandleIds>19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>45</factId>
-      <objectToString>clasesMito.estados.Libre@6428591a</objectToString>
+      <objectToString>clasesMito.estados.Libre@25f9407e</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>46</factId>
-      <objectToString>clasesMito.estados.Vivo@7397c6</objectToString>
+      <objectToString>clasesMito.estados.Vivo@552518c3</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [19]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Ninfa@367d2816</declarations>
+      <declarations>$p=NinfasNorte</declarations>
       <factHandleIds>19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [20]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Semidios@5b84f14</declarations>
+      <declarations>$p=Perseo</declarations>
       <factHandleIds>20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>47</factId>
-      <objectToString>clasesMito.estados.Libre@1abfe081</objectToString>
+      <objectToString>clasesMito.estados.Libre@1a69561c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>48</factId>
-      <objectToString>clasesMito.estados.Vivo@2a685eba</objectToString>
+      <objectToString>clasesMito.estados.Vivo@59aa20b3</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [20]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Semidios@5b84f14</declarations>
+      <declarations>$p=Perseo</declarations>
       <factHandleIds>20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [21]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@5a82ebf8</declarations>
+      <declarations>$p=Casiopea</declarations>
       <factHandleIds>21</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>49</factId>
-      <objectToString>clasesMito.estados.Libre@c2e3264</objectToString>
+      <objectToString>clasesMito.estados.Libre@363f6148</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>50</factId>
-      <objectToString>clasesMito.estados.Vivo@107f4980</objectToString>
+      <objectToString>clasesMito.estados.Vivo@4b21844c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [21]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@5a82ebf8</declarations>
+      <declarations>$p=Casiopea</declarations>
       <factHandleIds>21</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [22]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@68fe48d7</declarations>
+      <declarations>$p=Andrómeda</declarations>
       <factHandleIds>22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>51</factId>
-      <objectToString>clasesMito.estados.Libre@75a118e6</objectToString>
+      <objectToString>clasesMito.estados.Libre@1b28f282</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>52</factId>
-      <objectToString>clasesMito.estados.Vivo@1d540566</objectToString>
+      <objectToString>clasesMito.estados.Vivo@138fe6ec</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [22]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Humano@68fe48d7</declarations>
+      <declarations>$p=Andrómeda</declarations>
       <factHandleIds>22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [23]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.CriaturaMarina@379ce046</declarations>
+      <declarations>$p=Ceto</declarations>
       <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>53</factId>
-      <objectToString>clasesMito.estados.Preso@acdcf71</objectToString>
+      <objectToString>clasesMito.estados.Preso@19b30c92</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>54</factId>
-      <objectToString>clasesMito.estados.Vivo@77d680e6</objectToString>
+      <objectToString>clasesMito.estados.Vivo@455351c4</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [23]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.CriaturaMarina@379ce046</declarations>
+      <declarations>$p=Ceto</declarations>
       <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [24]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@701bc94e</declarations>
+      <declarations>$p=Esteno</declarations>
       <factHandleIds>24</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>55</factId>
-      <objectToString>clasesMito.estados.Libre@4a14c44f</objectToString>
+      <objectToString>clasesMito.estados.Libre@29876704</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>56</factId>
-      <objectToString>clasesMito.estados.Vivo@f08fdce</objectToString>
+      <objectToString>clasesMito.estados.Vivo@4816c290</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [24]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@701bc94e</declarations>
+      <declarations>$p=Esteno</declarations>
       <factHandleIds>24</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [25]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@3d8b319e</declarations>
+      <declarations>$p=Euriale</declarations>
       <factHandleIds>25</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>57</factId>
-      <objectToString>clasesMito.estados.Libre@6bda1d19</objectToString>
+      <objectToString>clasesMito.estados.Libre@4940809c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>58</factId>
-      <objectToString>clasesMito.estados.Vivo@28c86134</objectToString>
+      <objectToString>clasesMito.estados.Vivo@16423501</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [25]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@3d8b319e</declarations>
+      <declarations>$p=Euriale</declarations>
       <factHandleIds>25</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>personajes libres y vivos [26]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@27a97e08</declarations>
+      <declarations>$p=Medusa</declarations>
       <factHandleIds>26</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>59</factId>
-      <objectToString>clasesMito.estados.Libre@4492eede</objectToString>
+      <objectToString>clasesMito.estados.Libre@4efcf8a</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>60</factId>
-      <objectToString>clasesMito.estados.Vivo@cbc8d0f</objectToString>
+      <objectToString>clasesMito.estados.Vivo@7a138fc5</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [26]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=clasesMito.Personajes.Gorgona@27a97e08</declarations>
+      <declarations>$p=Medusa</declarations>
       <factHandleIds>26</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>

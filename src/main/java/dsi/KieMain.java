@@ -14,7 +14,7 @@ import org.kie.api.runtime.KieSession;
 
 import clasesMito.*;
 import clasesMito.Personajes.*;
-import clasesMito.acciones.*;
+//import clasesMito.acciones.*;
 
 public class KieMain {
 
@@ -63,7 +63,7 @@ public class KieMain {
 		List<Personaje> hijosCasiopea = new LinkedList<Personaje>();
 		
 		Personaje zeus = new Dios(null, null, "Zeus", hijosZeus, "Rayo");
-		Personaje poseidon = new Dios(null, null, "Poseidon", null, "Agua");
+		Personaje poseidon = new Dios(null, null, "Poseidón", null, "Agua");
 		Personaje hades = new Dios(null, inventarioHades, "Hades", null, "Inframundo");
 		Personaje hermes = new Dios(null, inventarioHermes, "Hades", null, "Comercio");
 		Personaje atenea = new Dios(null, inventarioAtenea, "Atenea", null, "Guerra");
@@ -78,7 +78,7 @@ public class KieMain {
 		Personaje perseo = new Semidios(zeus, null, "Perseo", null,  null);
 		
 		Personaje casiopea = new Humano(null, null, "Casiopea", hijosCasiopea, null);
-		Personaje andromeda = new Humano(casiopea, null, "Andromeda", null, null);
+		Personaje andromeda = new Humano(casiopea, null, "Andrómeda", null, null);
 		
 		Personaje ceto = new CriaturaMarina(null, null, "Ceto", null, null);
 		

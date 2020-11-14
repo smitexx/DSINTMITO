@@ -18,5 +18,6 @@ public class Dios extends Inmortal {
 	public void setTipoDios(String tipoDios) {
 		this.tipoDios = tipoDios;
 	}
+	
 
 }

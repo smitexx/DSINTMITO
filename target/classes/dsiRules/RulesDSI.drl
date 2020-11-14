@@ -1,0 +1,49 @@
+//created on: 8 nov. 2020
+package dsiRules
+
+//list any import classes here.
+
+import clasesMito.*;
+import clasesMito.acciones.*;
+import clasesMito.estados.*;
+import clasesMito.Personajes.*;
+
+
+//declare any global variables here
+//REGLAS DESDE EL PRINCIPIO
+//1º REGLA: TODOS LOS PERSONAJES LIBRES : 
+rule "personajes libres y vivos"
+
+    when
+        //conditions y definimos variable $p
+      	$p : Personaje();
+    then
+        //actions
+        if ($p.getNombre() != "Ceto"){
+        	Estado libre = new Libre($p);
+        	insert(libre);
+        }else {
+        	Estado presoCeto  = new Preso($p);
+        	insert(presoCeto);
+        }
+		Estado vivo = new Vivo($p);
+		insert(vivo);
+		
+end
+
+//2º REGLA: casiopea enoja a poseidon 
+rule "casiopea enoja a poseidon"
+
+    when
+      	$a: Accion(sujeto.getNombre() == "Casiopea", afectadoP != null, afectadoP.getNombre() == "Poseidon");
+      	$p: Personaje(nombre == "Ceto");
+    then
+        //actions
+		if ($a instanceof Enojar){
+			Accion poseidonLiberaCeto = new Liberar($a.getAfectadoP(), $p);
+			Estado libreCeto = new Libre ($p) ;
+			insert (poseidonLiberaCeto);
+			insert (libreCeto);
+		}
+		
+end

@@ -9,5 +9,10 @@ public class Liberar extends Accion {
 		super(sujeto, afectadoP);
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
+	public String toString() {
+		return "Liberar [" + getSujeto() + ", " + getAfectadoP() + "]";
+	}
 	
 }
