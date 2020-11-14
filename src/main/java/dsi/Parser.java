@@ -13,6 +13,7 @@ public class Parser {
 
 	private LinkedList<String> Entrada;
 	private LinkedList<Personaje> Personajes;
+	private Object pregunta;
 
 	public Parser(LinkedList<String> entrada, LinkedList<Personaje> personajes) {
 		this.Entrada = entrada;
@@ -51,7 +52,7 @@ public class Parser {
 					p1 = getPersonaje(palabras.get(1));
 					p2 = getPersonaje(NombreP1);
 					O = new Liberar(p1, p2);
-					HechosDinamicos.add(O);
+					pregunta = O;
 				}
 			}
 
@@ -72,5 +73,10 @@ public class Parser {
 	public static List<String> getPalabras(String S) {
 		return new ArrayList(Arrays.asList(S.split(" ")));
 	}
+
+	public Object getPregunta() {
+		return pregunta;
+	}
+
 
 }

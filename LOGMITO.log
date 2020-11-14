@@ -135,31 +135,26 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>27</factId>
-      <objectToString>Liberar [Perseo, Andrómeda]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>28</factId>
       <objectToString>DarFavor [Atenea, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>29</factId>
+      <factId>28</factId>
       <objectToString>DarFavor [Hermes, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>30</factId>
+      <factId>29</factId>
       <objectToString>DarFavor [Hades, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>31</factId>
+      <factId>30</factId>
       <objectToString>DarFavor [Hefesto, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>32</factId>
+      <factId>31</factId>
       <objectToString>Enojar [Casiopea, Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -234,31 +229,31 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>favores de dioses a Perseo [28]</activationId>
+      <activationId>favores de dioses a Perseo [27]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
+      <factHandleIds>27</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>favores de dioses a Perseo [28]</activationId>
+      <rule>favores de dioses a Perseo</rule>
+      <declarations>$f=DarFavor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
       <factHandleIds>28</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>favores de dioses a Perseo [29]</activationId>
       <rule>favores de dioses a Perseo</rule>
-      <declarations>$f=DarFavor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
+      <declarations>$f=DarFavor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
       <factHandleIds>29</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>favores de dioses a Perseo [30]</activationId>
       <rule>favores de dioses a Perseo</rule>
-      <declarations>$f=DarFavor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
-      <factHandleIds>30</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>favores de dioses a Perseo [31]</activationId>
-      <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
-      <factHandleIds>31</factHandleIds>
+      <factHandleIds>30</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -386,16 +381,16 @@
       <declarations>$p=Zeus</declarations>
       <factHandleIds>10</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>32</factId>
+      <objectToString>[Zeus]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>33</factId>
       <objectToString>[Zeus]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>34</factId>
-      <objectToString>[Zeus]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>personajes libres y vivos [10]</activationId>
@@ -412,12 +407,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>35</factId>
+      <factId>34</factId>
       <objectToString>[Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>36</factId>
+      <factId>35</factId>
       <objectToString>[Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -436,12 +431,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>37</factId>
+      <factId>36</factId>
       <objectToString>[Hades]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>38</factId>
+      <factId>37</factId>
       <objectToString>[Hades]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -460,12 +455,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>39</factId>
+      <factId>38</factId>
       <objectToString>[Hermes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>40</factId>
+      <factId>39</factId>
       <objectToString>[Hermes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -484,12 +479,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>41</factId>
+      <factId>40</factId>
       <objectToString>[Atenea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>42</factId>
+      <factId>41</factId>
       <objectToString>[Atenea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -508,12 +503,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>43</factId>
+      <factId>42</factId>
       <objectToString>[Hefesto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>44</factId>
+      <factId>43</factId>
       <objectToString>[Hefesto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -532,12 +527,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>45</factId>
+      <factId>44</factId>
       <objectToString>[Grayas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>46</factId>
+      <factId>45</factId>
       <objectToString>[Grayas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -556,12 +551,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>47</factId>
+      <factId>46</factId>
       <objectToString>[Doris]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>48</factId>
+      <factId>47</factId>
       <objectToString>[Doris]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -580,12 +575,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>49</factId>
+      <factId>48</factId>
       <objectToString>[Nereidas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>50</factId>
+      <factId>49</factId>
       <objectToString>[Nereidas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -604,12 +599,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>51</factId>
+      <factId>50</factId>
       <objectToString>[NinfasNorte]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>52</factId>
+      <factId>51</factId>
       <objectToString>[NinfasNorte]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -628,12 +623,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>53</factId>
+      <factId>52</factId>
       <objectToString>[Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>54</factId>
+      <factId>53</factId>
       <objectToString>[Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -652,12 +647,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>55</factId>
+      <factId>54</factId>
       <objectToString>[Casiopea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>56</factId>
+      <factId>55</factId>
       <objectToString>[Casiopea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -676,12 +671,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>57</factId>
+      <factId>56</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>58</factId>
+      <factId>57</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -700,12 +695,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>59</factId>
+      <factId>58</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>60</factId>
+      <factId>59</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -724,12 +719,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>61</factId>
+      <factId>60</factId>
       <objectToString>[Esteno]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>62</factId>
+      <factId>61</factId>
       <objectToString>[Esteno]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -748,12 +743,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>63</factId>
+      <factId>62</factId>
       <objectToString>[Euriale]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>64</factId>
+      <factId>63</factId>
       <objectToString>[Euriale]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -772,12 +767,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>65</factId>
+      <factId>64</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>66</factId>
+      <factId>65</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -979,73 +974,78 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>casiopea enoja a poseidon [32, 23]</activationId>
+      <activationId>casiopea enoja a poseidon [31, 23]</activationId>
       <rule>casiopea enoja a poseidon</rule>
       <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
-      <factHandleIds>32,23</factHandleIds>
+      <factHandleIds>31,23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>casiopea enoja a poseidon [32, 23]</activationId>
+      <activationId>casiopea enoja a poseidon [31, 23]</activationId>
       <rule>casiopea enoja a poseidon</rule>
       <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
-      <factHandleIds>32,23</factHandleIds>
+      <factHandleIds>31,23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>67</factId>
+      <factId>66</factId>
       <objectToString>Liberar [Poseidón, Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>68</factId>
+      <factId>67</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>casiopea enoja a poseidon [32, 23]</activationId>
+      <activationId>casiopea enoja a poseidon [31, 23]</activationId>
       <rule>casiopea enoja a poseidon</rule>
       <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
-      <factHandleIds>32,23</factHandleIds>
+      <factHandleIds>31,23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>andromeda es apresada por ceto [68, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
       <rule>andromeda es apresada por ceto</rule>
       <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>68,22</factHandleIds>
+      <factHandleIds>67,22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>andromeda es apresada por ceto [68, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
       <rule>andromeda es apresada por ceto</rule>
       <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>68,22</factHandleIds>
+      <factHandleIds>67,22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>69</factId>
-      <objectToString>clasesMito.acciones.Apresar@19ee1ae6</objectToString>
+      <factId>68</factId>
+      <objectToString>clasesMito.acciones.Apresar@622fdb81</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>70</factId>
+      <factId>69</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>andromeda es apresada por ceto [68, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
       <rule>andromeda es apresada por ceto</rule>
       <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>68,22</factHandleIds>
+      <factHandleIds>67,22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>favores de dioses a Perseo [28]</activationId>
+      <activationId>favores de dioses a Perseo [27]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
-      <factHandleIds>28</factHandleIds>
+      <factHandleIds>27</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>70</factId>
+      <objectToString>clasesMito.acciones.Obtener@15b82644</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1058,18 +1058,23 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>favores de dioses a Perseo [28]</activationId>
+      <activationId>favores de dioses a Perseo [27]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
-      <factHandleIds>28</factHandleIds>
+      <factHandleIds>27</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>favores de dioses a Perseo [29]</activationId>
+      <activationId>favores de dioses a Perseo [28]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
-      <factHandleIds>29</factHandleIds>
+      <factHandleIds>28</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>71</factId>
+      <objectToString>clasesMito.acciones.Obtener@20576557</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1082,18 +1087,23 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>favores de dioses a Perseo [29]</activationId>
+      <activationId>favores de dioses a Perseo [28]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
-      <factHandleIds>29</factHandleIds>
+      <factHandleIds>28</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>favores de dioses a Perseo [30]</activationId>
+      <activationId>favores de dioses a Perseo [29]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
-      <factHandleIds>30</factHandleIds>
+      <factHandleIds>29</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>72</factId>
+      <objectToString>clasesMito.acciones.Obtener@574cd322</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1106,18 +1116,23 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>favores de dioses a Perseo [30]</activationId>
+      <activationId>favores de dioses a Perseo [29]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
-      <factHandleIds>30</factHandleIds>
+      <factHandleIds>29</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>favores de dioses a Perseo [31]</activationId>
+      <activationId>favores de dioses a Perseo [30]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
-      <factHandleIds>31</factHandleIds>
+      <factHandleIds>30</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>73</factId>
+      <objectToString>clasesMito.acciones.Obtener@45c2e0a6</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1130,10 +1145,10 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>favores de dioses a Perseo [31]</activationId>
+      <activationId>favores de dioses a Perseo [30]</activationId>
       <rule>favores de dioses a Perseo</rule>
       <declarations>$f=DarFavor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
-      <factHandleIds>31</factHandleIds>
+      <factHandleIds>30</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -1149,6 +1164,11 @@
       <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
       <factHandleIds>20,4,6,2,5,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>74</factId>
+      <objectToString>clasesMito.acciones.Obtener@690bc15e</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1180,6 +1200,16 @@
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
       <factHandleIds>16,5,6,20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>75</factId>
+      <objectToString>clasesMito.acciones.Obtener@a0f53fc</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>76</factId>
+      <objectToString>clasesMito.acciones.Obtener@3db972d2</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1230,27 +1260,32 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 66, 20]</activationId>
+      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
       <rule>matar a medusa</rule>
       <declarations>$esc=Escudo Espejo; $medusaViva=[Medusa]; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,66</factHandleIds>
+      <factHandleIds>20,3,2,9,7,65</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 66, 20]</activationId>
+      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
       <rule>matar a medusa</rule>
       <declarations>$esc=Escudo Espejo; $medusaViva=[Medusa]; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,66</factHandleIds>
+      <factHandleIds>20,3,2,9,7,65</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>71</factId>
+      <factId>77</factId>
+      <objectToString>clasesMito.acciones.Obtener@3727f0ee</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>78</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>72</factId>
-      <objectToString>clasesMito.acciones.Matar@15b82644</objectToString>
+      <factId>79</factId>
+      <objectToString>clasesMito.acciones.Matar@fb713e7</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1264,66 +1299,66 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>66</factId>
+      <factId>65</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 66, 20]</activationId>
+      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
       <rule>matar a medusa</rule>
       <declarations>$esc=Escudo Espejo; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,66</factHandleIds>
+      <factHandleIds>20,3,2,9,7,65</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a ceto [20, 60, 70, 80]</activationId>
+      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>70,20,60,80</factHandleIds>
+      <factHandleIds>69,20,59,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a ceto [20, 60, 70, 80]</activationId>
+      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>70,20,60,80</factHandleIds>
+      <factHandleIds>69,20,59,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>81</factId>
-      <objectToString>clasesMito.acciones.Matar@3727f0ee</objectToString>
+      <factId>88</factId>
+      <objectToString>clasesMito.acciones.Matar@278667fd</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>82</factId>
+      <factId>89</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>83</factId>
+      <factId>90</factId>
       <objectToString>Liberar [Perseo, Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>84</factId>
+      <factId>91</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>70</factId>
+      <factId>69</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>60</factId>
+      <factId>59</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a ceto [20, 60, 70, 80]</activationId>
+      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>70,20,60,80</factHandleIds>
+      <factHandleIds>69,20,59,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>
@@ -1332,1844 +1367,4 @@
   <version>6.1</version>
   <events/>
 </org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
 </object-stream>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>
-<org.drools.core.audit.WorkingMemoryLog>
-  <version>6.1</version>
-  <events/>
-</org.drools.core.audit.WorkingMemoryLog>

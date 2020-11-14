@@ -80,6 +80,10 @@ rule "favores de dioses a Perseo"
 	then 
 		System.out.println($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
 		$a.getInventario().addAll($s.getInventario());
+		for (Objeto o : $s.getInventario()){
+			Accion afectadoObtiene = new Obtener($a, o);
+			insert(afectadoObtiene);
+		}
 		$s.setInventario(new LinkedList<Objeto>());
 		update($a);
 		update($s);
@@ -96,6 +100,8 @@ rule "perseo roba el ojo de las grayas"
 		$p : Personaje(nombre == "Perseo", inventario contains $mg, inventario contains $ch );
 	then
 		$p.getInventario().add($ojo);
+		Accion perseoObtieneOjo = new Obtener($p, $ojo);
+		insert(perseoObtieneOjo);
 		$g.getInventario().remove($ojo);
 		
 		System.out.println($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
@@ -116,7 +122,10 @@ rule "perseo intercambio ojo por mapa ninfas"
 		$g.getInventario().add($ojo);
 		$p.getInventario().remove($ojo);
 		$g.getInventario().remove($mn);
-		
+		Accion perseoObtieneMapaN = new Obtener($p, $mn);
+		Accion grayasObtieneOjo = new Obtener($g, $ojo);
+		insert(perseoObtieneMapaN);
+		insert(grayasObtieneOjo);
 		System.out.println($p.getNombre() + " localiza a las ninfas debido a intercambio de " +  $ojo.getNombre() +  " por el " + $mn.getNombre() );
 		update($p);
 		update($g);
@@ -132,6 +141,10 @@ rule "perseo obtiene inventario ninfas"
 		System.out.println($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		$p.getInventario().addAll($n.getInventario());
 		$n.setInventario(new LinkedList<Objeto>());
+		for (Objeto o : $n.getInventario()){
+			Accion afectadoObtiene = new Obtener($p, o);
+			insert(afectadoObtiene);
+		}
 		update($p);
 		update($n);
 end
@@ -154,6 +167,10 @@ rule "matar a medusa"
 		Accion perseoMataMedusa = new Matar($p, $medusaViva.getSujeto());
 		Estado medusaMuerta = new Muerto($medusaViva.getSujeto());
 		$p.getInventario().addAll($medusaViva.getSujeto().getInventario());
+		for (Objeto o : $medusaViva.getSujeto().getInventario()){
+			Accion afectadoObtiene = new Obtener($p, o);
+			insert(afectadoObtiene);
+		} 
 		$medusaViva.getSujeto().setInventario(new LinkedList<Objeto>());
 		
 		insert(medusaMuerta);

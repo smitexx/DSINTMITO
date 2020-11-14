@@ -11,10 +11,13 @@ import org.kie.api.KieServices;
 import org.kie.api.logger.KieRuntimeLogger;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.rule.QueryResults;
+import org.kie.api.runtime.rule.QueryResultsRow;
 
 import clasesMito.*;
 import clasesMito.Personajes.*;
 //import clasesMito.acciones.*;
+import clasesMito.acciones.Liberar;
 
 public class KieMain {
 
@@ -119,7 +122,6 @@ public class KieMain {
 		}
 		Parser P = new Parser(LineasFich, personajesMito);
 		LinkedList<Object> hechosDinamicos = P.parsear();
-		
 		//Lanzamos todas las reglas
 		
 		//Añadimos TODOS LOS HECHOS A LA SESIÓN (faltan los dinamicos)
@@ -134,6 +136,13 @@ public class KieMain {
 				}
 		//Lanzamos todas las reglas
 		kSession.fireAllRules();
+		/*System.out.println(P.getPregunta().toString());
+		QueryResults liberarAndromeda =kSession.getQueryResults("liberarAndromeda", P.getPregunta());
+		System.out.println(liberarAndromeda.size());
+		for ( QueryResultsRow r : liberarAndromeda ) {
+			Liberar liberar = ( Liberar ) r.get("$p");
+			System.out.println( liberar.toString() );
+		}*/
 		logger.close();
 	}
 
