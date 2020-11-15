@@ -13,3 +13,4 @@ public abstract class Criatura extends Mortal {
 	}
 	
 }
+ 

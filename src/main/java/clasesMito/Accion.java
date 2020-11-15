@@ -1,5 +1,5 @@
 package clasesMito;
-
+ 
 public abstract class Accion {
 	private Personaje sujeto;
 	private Personaje afectadoP;

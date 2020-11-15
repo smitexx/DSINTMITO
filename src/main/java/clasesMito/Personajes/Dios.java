@@ -21,3 +21,4 @@ public class Dios extends Inmortal {
 	
 
 }
+ 

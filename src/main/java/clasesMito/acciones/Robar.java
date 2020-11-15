@@ -16,4 +16,4 @@ public class Robar extends Accion {
 		this.objRobado = objRobado;
 	}
 	
-}
+} 

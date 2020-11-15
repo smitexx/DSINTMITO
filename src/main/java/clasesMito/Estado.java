@@ -1,5 +1,5 @@
 package clasesMito;
-
+ 
 public abstract class Estado {
 	private Personaje sujeto;
 

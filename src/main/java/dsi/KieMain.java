@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 import org.kie.api.KieServices;
+import org.kie.api.event.rule.AfterMatchFiredEvent;
+import org.kie.api.event.rule.DefaultAgendaEventListener;
 import org.kie.api.logger.KieRuntimeLogger;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
@@ -29,19 +31,25 @@ public class KieMain {
 		//Creamos la sesion con el mismo nombre que le hemos puesto en el kmodule.xml
 		KieSession kSession = kContainer.newKieSession("ksession-rules-dsi");
 		
+		
+		
+		
+		
+		
+		
 		KieRuntimeLogger logger = ks.getLoggers().newThreadedFileLogger(kSession, "./LOGMITO", 1000);
 		
 		//HECHOS ESTÁTICOS DE PARTIDA 
 		//Objetos
 		Objeto cabezaMedusa = new Objeto ("Cabeza Medusa");
-		Objeto cascoHades = new Objeto ("Casco Hades");
+		Objeto cascoHades = new Objeto ("Casco");
 		Objeto hozAcero = new Objeto ("Hoz Acero");
 		Objeto mapaGrayas = new Objeto ("Mapa Grayas");
 		Objeto mapaNinfas = new Objeto ("Mapa Ninfas");
 		Objeto ojoGraya = new Objeto ("Ojo Graya");
-		Objeto sandaliasAladas = new Objeto ("Sandalias Aladas");
+		Objeto sandaliasAladas = new Objeto ("Sandalias");
 		Objeto zurronMagico = new Objeto ("Zurron Magico");
-		Objeto escudoBronce = new Objeto ("Escudo Espejo");
+		Objeto escudoBronce = new Objeto ("Escudo");
 		//Inventarios con sus objetos
 		List<Objeto> inventarioMedusa = new LinkedList<Objeto>();
 		inventarioMedusa.add(cabezaMedusa);
@@ -53,16 +61,15 @@ public class KieMain {
 		inventarioHermes.add(hozAcero);
 		
 		List<Objeto> inventarioAtenea = new LinkedList<Objeto>();
-		inventarioAtenea.add(mapaGrayas);
-		
+		Collections.addAll(inventarioAtenea, mapaGrayas, escudoBronce);
+
 		List<Objeto> inventarioHades = new LinkedList<Objeto>();
 		inventarioHades.add(cascoHades);
 		
 		List<Objeto> inventarioNinfaNorte = new LinkedList<Objeto>();
 		Collections.addAll(inventarioNinfaNorte, zurronMagico, sandaliasAladas);
 		
-		List<Objeto> inventarioHefesto = new LinkedList<Objeto>();
-		inventarioHefesto.add(escudoBronce);
+
 
 		//Personajes
 		List<Personaje> hijosZeus = new LinkedList<Personaje>();
@@ -73,15 +80,15 @@ public class KieMain {
 		Personaje hades = new Dios(null, inventarioHades, "Hades", null, "Inframundo");
 		Personaje hermes = new Dios(null, inventarioHermes, "Hermes", null, "Comercio");
 		Personaje atenea = new Dios(null, inventarioAtenea, "Atenea", null, "Guerra");
-		Personaje hefesto = new Dios(null, inventarioHefesto, "Hefesto", null, "Fuego");
+		Personaje hefesto = new Dios(null, null, "Hefesto", null, "Fuego");
 		
 		Personaje grayas = new Graya(null, inventarioGrayas, "Grayas", null);
 		
 		Personaje doris = new Ninfa(null, null, "Doris", null);
 		Personaje nereidas = new Ninfa(null, null, "Nereidas", null);
-		Personaje ninfasNorte = new Ninfa(null, inventarioNinfaNorte, "NinfasNorte", null);
+		Personaje ninfasNorte = new Ninfa(null, inventarioNinfaNorte, "Ninfas", null);
 		
-		Personaje perseo = new Semidios(zeus, null, "Perseo", null,  null);
+		Personaje perseo = new Semidios(zeus, new LinkedList<Objeto>(), "Perseo", null,  null);
 		
 		Personaje casiopea = new Humano(null, null, "Casiopea", hijosCasiopea, null);
 		Personaje andromeda = new Humano(casiopea, null, "Andrómeda", null, null);
@@ -107,8 +114,8 @@ public class KieMain {
 				medusa);
 
 		// PARSER PARA HECHOS DINAMICOS
-		//File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
-		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
+		File fichero = new File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/entrada2.txt");
+		//File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 		List<String> Descartos = new LinkedList<String>();
 		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
@@ -121,6 +128,7 @@ public class KieMain {
 			scanner.close();
 		}
 		Parser P = new Parser(LineasFich, personajesMito);
+		personajesMito=P.getPersonajes();
 		LinkedList<Object> hechosDinamicos = P.parsear();
 		//Lanzamos todas las reglas
 		
@@ -136,6 +144,9 @@ public class KieMain {
 				}
 		//Lanzamos todas las reglas
 		kSession.fireAllRules();
+		
+
+	
 		/*System.out.println(P.getPregunta().toString());
 		QueryResults liberarAndromeda =kSession.getQueryResults("liberarAndromeda", P.getPregunta());
 		System.out.println(liberarAndromeda.size());
