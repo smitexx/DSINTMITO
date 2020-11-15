@@ -166,11 +166,11 @@ rule "matar a medusa"
 		
 		Accion perseoMataMedusa = new Matar($p, $medusaViva.getSujeto());
 		Estado medusaMuerta = new Muerto($medusaViva.getSujeto());
-		$p.getInventario().addAll($medusaViva.getSujeto().getInventario());
 		for (Objeto o : $medusaViva.getSujeto().getInventario()){
 			Accion afectadoObtiene = new Obtener($p, o);
 			insert(afectadoObtiene);
 		} 
+		$p.getInventario().addAll($medusaViva.getSujeto().getInventario());
 		$medusaViva.getSujeto().setInventario(new LinkedList<Objeto>());
 		
 		insert(medusaMuerta);
@@ -184,9 +184,10 @@ end
 rule "matar a ceto"
 	when
 		$p : Personaje (nombre == "Perseo");
+		$cm: Objeto(nombre == "Cabeza Medusa") from $p.inventario;
 		$cetoVivo : Vivo(sujeto.nombre == "Ceto");
 		$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
-		$cm: Objeto(nombre == "Cabeza Medusa") from $p.inventario;
+		
 	then 
 		System.out.println($p.getNombre() + " mata a " + $cetoVivo.getSujeto().getNombre() + " debido a tener " + $cm.getNombre());
 		System.out.println($p.getNombre() + " libera a " + $andromedaPresa.getSujeto().getNombre() + " debido a matar a " + $cetoVivo.getSujeto().getNombre());
