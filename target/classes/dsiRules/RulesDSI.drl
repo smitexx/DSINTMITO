@@ -253,3 +253,91 @@ rule "matar a ceto"
 		retract ($andromedaPresa);
 		retract($cetoVivo);
 end
+
+
+// QUERIES para buscar las respuestas a las preguntas
+
+//1ª QUERY: buscar liberar
+
+query buscarLiberar(Personaje s, Personaje a)
+	$r : Liberar (sujeto == s, afectadoP == a);
+end
+
+//2ª QUERY: buscar dar favor
+
+query buscarDarFavor(Personaje s, Personaje a)
+	$r : DarFavor (sujeto == s, afectadoP == a);
+end
+
+//3ª QUERY: buscar enojar
+
+query buscarEnojar(Personaje s, Personaje a)
+	$r : Enojar (sujeto == s, afectadoP == a);
+end
+
+//4ª QUERY: buscar apresar
+
+query buscarApresar(Personaje s, Personaje a)
+	$r : Apresar (sujeto == s, afectadoP == a);
+end
+
+//5ª QUERY: buscar matar
+
+query buscarMatar(Personaje s, Personaje a)
+	$r : Matar (sujeto == s, afectadoP == a);
+end
+
+//6ª QUERY: buscar ontener
+
+query buscarObtener(Personaje s, Objeto o)
+	$r : Obtener (sujeto == s, afectadoC == o);
+end
+
+//7ª QUERY: buscar robar
+
+query buscarRobar(Personaje s, Personaje a, Objeto o)
+	$r : Robar (sujeto == s, afectadoP == a, objRobado == o);
+end
+
+//8ª QUERY: buscar capacidad invisible
+
+query buscarInvisible(Personaje s)
+	$r : CapacidadInvisible (sujeto == s);
+end
+
+//9ª QUERY: buscar capacidad reflejo
+
+query buscarReflejo(Personaje s)
+	$r : CapacidadReflejo (sujeto == s);
+end
+
+//10ª QUERY: buscar capacidad vuelo
+
+query buscarVuelo(Personaje s)
+	$r : CapacidadVuelo (sujeto == s);
+end
+
+//11ª QUERY: buscar libre
+
+query buscarLibre(Personaje s)
+	$r : Libre (sujeto == s);
+end
+
+//12ª QUERY: buscar muerto
+
+query buscarMuerto(Personaje s)
+	$r : Muerto (sujeto == s);
+end
+
+//13ª QUERY: buscar preso
+
+query buscarPreso(Personaje s)
+	$r : Preso (sujeto == s);
+end
+
+//13ª QUERY: buscar vivo
+
+query buscarVivo(Personaje s)
+	$r : Vivo (sujeto == s);
+end
+

@@ -1,5 +1,8 @@
 package clasesMito;
 
+import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.rule.QueryResults;
+
 public abstract class Accion {
 	private Personaje sujeto;
 	private Personaje afectadoP;
@@ -34,6 +37,6 @@ public abstract class Accion {
 		this.afectadoC = afectadoC;
 	}
 	
-	
+	public abstract QueryResults buscarRespuesta(KieSession kSession);
 	
 }

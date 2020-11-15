@@ -90,7 +90,7 @@ public class KieMain {
 		
 		Personaje esteno = new Gorgona(null, null, "Esteno", null, null );
 		Personaje euriale = new Gorgona(null, null, "Euriale", null, null );
-		Personaje medusa = new Gorgona(null, inventarioMedusa, "Medusa", null, null );
+		Personaje medusa = new Gorgona(null, inventarioMedusa, "Medusa", null, null ); 
 		
 		//HIJOS DE PERSONAJES
 		Collections.addAll(hijosZeus, perseo, hermes, hefesto, atenea);
@@ -108,7 +108,7 @@ public class KieMain {
 
 		// PARSER PARA HECHOS DINAMICOS
 		//File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
-		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
+		File fichero = new File("D:\\UM\\4\\DSINT\\Práctica1\\Ficheros Pregunta-Respuesta\\Fase2.Perseo1.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 		List<String> Descartos = new LinkedList<String>();
 		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
@@ -136,13 +136,21 @@ public class KieMain {
 				}
 		//Lanzamos todas las reglas
 		kSession.fireAllRules();
-		/*System.out.println(P.getPregunta().toString());
-		QueryResults liberarAndromeda =kSession.getQueryResults("liberarAndromeda", P.getPregunta());
-		System.out.println(liberarAndromeda.size());
-		for ( QueryResultsRow r : liberarAndromeda ) {
-			Liberar liberar = ( Liberar ) r.get("$p");
+		//Obtenemos la respuesta a la pregunta
+		QueryResults respuesta = null;
+		Object pregunta = P.getPregunta();
+		if (pregunta instanceof Accion) {
+			respuesta= ((Accion)pregunta).buscarRespuesta(kSession);
+		} else if (pregunta instanceof Estado) {
+			respuesta= ((Estado)pregunta).buscarRespuesta(kSession);
+		}
+		System.out.println(respuesta.size());
+		for ( QueryResultsRow r : respuesta ) {
+			Liberar liberar = ( Liberar ) r.get("$r");
 			System.out.println( liberar.toString() );
-		}*/
+		}
+		
+		
 		logger.close();
 	}
 

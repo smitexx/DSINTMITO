@@ -1,5 +1,8 @@
 package clasesMito;
 
+import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.rule.QueryResults;
+
 public abstract class Estado {
 	private Personaje sujeto;
 
@@ -21,4 +24,5 @@ public abstract class Estado {
 		return "[" + sujeto + "]";
 	}
 	
+	public abstract QueryResults buscarRespuesta(KieSession kSession);
 }
