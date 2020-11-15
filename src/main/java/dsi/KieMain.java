@@ -136,7 +136,8 @@ public class KieMain {
 					kSession.insert(o);
 				}
 		//Lanzamos todas las reglas
-		kSession.setGlobal("respuestaReglas", new LinkedList<String>());
+		List<String> respuestaReglas = new LinkedList<String>();		
+		kSession.setGlobal("respuestaReglas", respuestaReglas);
 		kSession.fireAllRules();
 		//Obtenemos la respuesta a la pregunta
 		QueryResults respuesta = null;
@@ -146,6 +147,9 @@ public class KieMain {
 			respuesta= preguntaA.buscarRespuesta(kSession);
 			if (respuesta.size() != 0) {
 				System.out.println("Si, " + preguntaA.getSujeto() + " puede " + preguntaA.getClass().getSimpleName() + " a " + preguntaA.getAfectadoP() + " debido a que:");
+				for (String r : respuestaReglas) {
+					System.out.println(r);
+				}
 			} else {
 				System.out.println("No, no se encutra forma de que " + preguntaA.getSujeto() + " pueda " + preguntaA.getClass().getSimpleName() 
 						+ ((preguntaA.getAfectadoC() != null) ? " " + preguntaA.getAfectadoC() : "")
@@ -156,6 +160,9 @@ public class KieMain {
 			respuesta= preguntaE.buscarRespuesta(kSession);
 			if (respuesta.size() != 0) {
 				System.out.println("Si, " + preguntaE.getSujeto() + " tiene " + preguntaE.getClass().getSimpleName() + " debido a que:");
+				for (String r : respuestaReglas) {
+					System.out.println(r);
+				}
 			} else {
 				System.out.println("No, no se encutra forma de que " + preguntaE.getSujeto() + " tenga " + preguntaE.getClass().getSimpleName());
 			}

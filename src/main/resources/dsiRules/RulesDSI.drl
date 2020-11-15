@@ -54,7 +54,7 @@ rule "casiopea enoja a poseidon"
       	$p: Personaje(nombre == "Ceto");
     then
         //actions
-        System.out.println($p.getNombre() + " queda libre debido a enojo de " + $a.getAfectadoP().getNombre() + " hacia " + $a.getSujeto().getNombre());
+        respuestaReglas.add($p.getNombre() + " queda libre debido a enojo de " + $a.getAfectadoP().getNombre() + " hacia " + $a.getSujeto().getNombre());
 		Accion poseidonLiberaCeto = new Liberar($a.getAfectadoP(), $p);
 		Estado libreCeto = new Libre ($p) ;
 		insert (poseidonLiberaCeto);
@@ -68,7 +68,7 @@ rule "andromeda es apresada por ceto"
 		$e : Libre(sujeto.nombre == "Ceto")
 		$p : Personaje(nombre == "Andrómeda")
 	then 
-		System.out.println(  $p +" queda presa debido a estar " + $e.getSujeto() + " libre.");
+		respuestaReglas.add(  $p +" queda presa debido a estar " + $e.getSujeto() + " libre.");
 		
 		Accion cetoApresaAndromeda = new Apresar($e.getSujeto(), $p);
 		Estado andromedaApresada = new Preso($p);
@@ -82,7 +82,7 @@ rule "favores de dioses a Perseo"
 	when 
 		$f : DarFavor($s : sujeto, $a : afectadoP);
 	then 
-		System.out.println($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
+		respuestaReglas.add($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
 		
 		$a.getInventario().addAll($s.getInventario());
 		for (Objeto o : $s.getInventario()){
@@ -117,7 +117,7 @@ rule "perseo roba el ojo de las grayas"
 		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
 		$ch : Objeto(nombre == "Casco") from $p.inventario;
 	then
-		System.out.println($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
+		respuestaReglas.add($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
 		
 		$p.getInventario().add($ojo);
 		Accion perseoObtieneOjo = new Obtener($p, $ojo);
@@ -137,7 +137,7 @@ rule "perseo intercambio ojo por mapa ninfas"
 		$p : Personaje(nombre == "Perseo");
 		$ojo: Objeto(nombre == "Ojo Graya") from $p.inventario;
 	then 
-		System.out.println($p.getNombre() + " localiza a las ninfas debido a intercambio de " +  $ojo.getNombre() +  " por el " + $mn.getNombre() );
+		respuestaReglas.add($p.getNombre() + " localiza a las ninfas debido a intercambio de " +  $ojo.getNombre() +  " por el " + $mn.getNombre() );
 		
 		$p.getInventario().add($mn);
 		$g.getInventario().add($ojo);
@@ -160,7 +160,7 @@ rule "perseo obtiene inventario ninfas"
 		$mn: Objeto(nombre == "Mapa Ninfas") from $p.inventario;
 		$n : Personaje (nombre == "Ninfas", inventario.empty == false );
 	then 
-		System.out.println($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
+		respuestaReglas.add($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		
 		for (Objeto o : $n.getInventario()){
 			String nombreObjeto = o.getNombre();
@@ -197,8 +197,8 @@ rule "matar a medusa"
 		Objeto(nombre == "Escudo") from $p.inventario or CapacidadReflejo(sujeto.nombre == "Perseo");
 		Objeto(nombre == "Sandalias") from $p.inventario or CapacidadVuelo(sujeto.nombre == "Perseo");
 	then
-		System.out.println($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $p.getInventario().toString() );
-		System.out.println($p.getNombre() + " obtiene " + $medusaViva.getSujeto().getInventario().toString() + " debido a matar a " + $medusaViva.getSujeto().getNombre());
+		respuestaReglas.add($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $p.getInventario().toString() );
+		respuestaReglas.add($p.getNombre() + " obtiene " + $medusaViva.getSujeto().getInventario().toString() + " debido a matar a " + $medusaViva.getSujeto().getNombre());
 		
 		Accion perseoMataMedusa = new Matar($p, $medusaViva.getSujeto());
 		Estado medusaMuerta = new Muerto($medusaViva.getSujeto());
@@ -240,8 +240,8 @@ rule "matar a ceto"
 		$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
 		
 	then 
-		System.out.println($p.getNombre() + " mata a " + $cetoVivo.getSujeto().getNombre() + " debido a tener " + $cm.getNombre());
-		System.out.println($p.getNombre() + " libera a " + $andromedaPresa.getSujeto().getNombre() + " debido a matar a " + $cetoVivo.getSujeto().getNombre());
+		respuestaReglas.add($p.getNombre() + " mata a " + $cetoVivo.getSujeto().getNombre() + " debido a tener " + $cm.getNombre());
+		respuestaReglas.add($p.getNombre() + " libera a " + $andromedaPresa.getSujeto().getNombre() + " debido a matar a " + $cetoVivo.getSujeto().getNombre());
 		
 		Accion perseoMataCeto = new Matar($p, $cetoVivo.getSujeto());
 		Estado cetoMuerto = new Muerto($cetoVivo.getSujeto());
