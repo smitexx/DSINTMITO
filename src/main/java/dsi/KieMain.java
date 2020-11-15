@@ -163,7 +163,6 @@ public class KieMain {
 		
 		logger.close();
 	
-		
 	}
 
 }
