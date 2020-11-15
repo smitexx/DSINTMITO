@@ -10,6 +10,7 @@ import clasesMito.Personaje;
 import clasesMito.acciones.DarFavor; 
 import clasesMito.acciones.Enojar;
 import clasesMito.acciones.Liberar;
+import clasesMito.acciones.Obtener;
 import clasesMito.estados.CapacidadInvisible;
 import clasesMito.estados.CapacidadReflejo;
 import clasesMito.estados.CapacidadVuelo;
@@ -18,11 +19,14 @@ public class Parser {
 
 	private LinkedList<String> Entrada;
 	private LinkedList<Personaje> Personajes;
+	private LinkedList<Objeto> Objetos;
+
 	private Object pregunta;
 
-	public Parser(LinkedList<String> entrada, LinkedList<Personaje> personajes) {
+	public Parser(LinkedList<String> entrada, LinkedList<Personaje> personajes, LinkedList<Objeto> objeto) {
 		this.Entrada = entrada;
 		this.Personajes = personajes;
+		this.Objetos = objeto;
 	}
 
 	public LinkedList<Object> parsear() {
@@ -108,15 +112,39 @@ public class Parser {
 					}
 
 				default:
-					// solo entraríamos en fase1 con ¿Puede perseo...
-					String NombreP1 = palabras.get(4).replace("?", "");
-					p1 = getPersonaje(palabras.get(1));
-					p2 = getPersonaje(NombreP1);
-					O = new Liberar(p1, p2);
-					pregunta = O;
+					switch (palabras.get(2)) {
+					case "liberar":
+						// solo entraríamos en fase1 con ¿Puede perseo...
+						String NombreP2 = palabras.get(4).replace("?", "");
+						p1 = getPersonaje(palabras.get(1));
+						p2 = getPersonaje(NombreP2);
+						O = new Liberar(p1, p2);
+						pregunta = O;
+						break;
+					
+						default:
+							if (palabras.get(3).equals("Capacidad")) {
+								String NombreObjeto = palabras.get(4);
+								CapacidadVuelo CV = new CapacidadVuelo(getPersonaje(palabras.get(1)));
+
+								pregunta = CV;
+							}
+							
+							else {
+								String NombreObjeto = palabras.get(3);
+								p1 = getPersonaje(palabras.get(1));
+								Objeto O1 = getObjeto(NombreObjeto);
+								O = new Obtener(p1, O1);
+
+								pregunta = O;
+							}
+							
+						break;
+					
 				}
 			}
 
+		}
 		}
 
 		return HechosDinamicos;
@@ -130,6 +158,14 @@ public class Parser {
 		for (Personaje P : Personajes) {
 			if (P.getNombre().equals(nombre))
 				return P;
+		}
+
+		return null;
+	}
+	private Objeto getObjeto(String nombre) {
+		for (Objeto O : Objetos) {
+			if (O.getNombre().equals(nombre))
+				return O;
 		}
 
 		return null;

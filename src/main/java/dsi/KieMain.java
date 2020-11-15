@@ -30,18 +30,12 @@ public class KieMain {
 		
 		//Creamos la sesion con el mismo nombre que le hemos puesto en el kmodule.xml
 		KieSession kSession = kContainer.newKieSession("ksession-rules-dsi");
-		
-		 
-		
-		
-		
-		
-		
+
 		KieRuntimeLogger logger = ks.getLoggers().newThreadedFileLogger(kSession, "./LOGMITO", 1000);
 		
 		//HECHOS ESTÁTICOS DE PARTIDA 
 		//Objetos
-		Objeto cabezaMedusa = new Objeto ("Cabeza Medusa");
+		Objeto cabezaMedusa = new Objeto ("Cabeza");
 		Objeto cascoHades = new Objeto ("Casco");
 		Objeto hozAcero = new Objeto ("Hoz Acero");
 		Objeto mapaGrayas = new Objeto ("Mapa Grayas");
@@ -114,20 +108,19 @@ public class KieMain {
 				medusa);
 
 		// PARSER PARA HECHOS DINAMICOS
-		File fichero = new File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/entrada2.txt");
+		File fichero = new File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/entrada4.txt");
 		//File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\entrada1.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
-		List<String> Descartos = new LinkedList<String>();
-		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
+		
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
 			while (scanner.hasNext()) {
 				String linealeida = scanner.nextLine();
-				if (!linealeida.equals("Condiciones:"))
+				if (!linealeida.equals("Condiciones:"))//eliminamos la linea condiciones
 					LineasFich.add(linealeida);
 			}
 			scanner.close();
 		}
-		Parser P = new Parser(LineasFich, personajesMito);
+		Parser P = new Parser(LineasFich, personajesMito,objetosMito);
 		LinkedList<Object> hechosDinamicos = P.parsear();
 		System.out.println(hechosDinamicos);
 		personajesMito=P.getPersonajes();
