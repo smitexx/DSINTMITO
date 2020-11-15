@@ -81,6 +81,19 @@ rule "favores de dioses a Perseo"
 		System.out.println($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
 		$a.getInventario().addAll($s.getInventario());
 		for (Objeto o : $s.getInventario()){
+			String nombreObjeto = o.getNombre();
+			if (nombreObjeto.equals("Casco Hades")){
+				Estado ci = new CapacidadInvisible ($a);
+				insert(ci);
+			}
+			else if (nombreObjeto.equals("Escudo Espejo")){
+				Estado cr = new CapacidadReflejo ($a);
+				insert(cr);
+			}
+			else if (nombreObjeto.equals("Sandalias Aladas")){
+				Estado cv = new CapacidadVuelo($a);
+				insert(cv);
+			}
 			Accion afectadoObtiene = new Obtener($a, o);
 			insert(afectadoObtiene);
 		}
@@ -92,12 +105,12 @@ end
 //5º REGLA: perseo roba el ojo de las grayas
 rule "perseo roba el ojo de las grayas"
 	when 
-		$mg : Objeto(nombre == "Mapa Grayas");
-		$ojo : Objeto(nombre == "Ojo Graya");
-		$ch : Objeto(nombre == "Casco Hades");
-		$mn : Objeto (nombre == "Mapa Ninfas");
-		$g : Personaje(nombre == "Grayas", inventario contains $ojo, inventario contains $mn);
-		$p : Personaje(nombre == "Perseo", inventario contains $mg, inventario contains $ch );
+		$g : Personaje(nombre == "Grayas");
+		$ojo: Objeto(nombre == "Ojo Graya") from $g.inventario;
+		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
+		$p : Personaje(nombre == "Perseo" );
+		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
+		$ch : Objeto(nombre == "Casco Hades") from $p.inventario;
 	then
 		$p.getInventario().add($ojo);
 		Accion perseoObtieneOjo = new Obtener($p, $ojo);
@@ -113,10 +126,10 @@ end
 
 rule "perseo intercambio ojo por mapa ninfas"
 	when
-		$mn : Objeto(nombre == "Mapa Ninfas");
-		$ojo : Objeto(nombre == "Ojo Graya");
-		$g : Personaje(nombre == "Grayas", inventario contains $mn);
-		$p : Personaje(nombre == "Perseo", inventario contains $ojo);
+		$g : Personaje(nombre == "Grayas");
+		$mn: Objeto(nombre == "Mapa Ninfas") from $g.inventario;
+		$p : Personaje(nombre == "Perseo");
+		$ojo: Objeto(nombre == "Ojo Graya") from $p.inventario;
 	then 
 		$p.getInventario().add($mn);
 		$g.getInventario().add($ojo);
@@ -134,14 +147,27 @@ end
 
 rule "perseo obtiene inventario ninfas"
 	when
-		$mn : Objeto (nombre == "Mapa Ninfas");
-		$p : Personaje(nombre == "Perseo", inventario contains $mn);
+		$p : Personaje(nombre == "Perseo");
+		$mn: Objeto(nombre == "Mapa Ninfas") from $p.inventario;
 		$n : Personaje (nombre == "NinfasNorte", inventario.empty == false );
 	then 
 		System.out.println($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		$p.getInventario().addAll($n.getInventario());
 		$n.setInventario(new LinkedList<Objeto>());
 		for (Objeto o : $n.getInventario()){
+			String nombreObjeto = o.getNombre();
+			if (nombreObjeto.equals("Casco Hades")){
+				Estado ci = new CapacidadInvisible ($p);
+				insert(ci);
+			}
+			else if (nombreObjeto.equals("Escudo Espejo")){
+				Estado cr = new CapacidadReflejo ($p);
+				insert(cr);
+			}
+			else if (nombreObjeto.equals("Sandalias Aladas")){
+				Estado cv = new CapacidadVuelo($p);
+				insert(cv);
+			}
 			Accion afectadoObtiene = new Obtener($p, o);
 			insert(afectadoObtiene);
 		}
@@ -152,21 +178,33 @@ end
 //8º REGLA: Matar a medusa
 rule "matar a medusa"
 	when
-		$ha:Objeto(nombre == "Hoz Acero");
-		$ch:Objeto(nombre == "Casco Hades");
-		$esc:Objeto(nombre == "Escudo Espejo");
-		$sa:Objeto(nombre == "Sandalias Aladas");
 		$medusaViva: Vivo(sujeto.nombre == "Medusa");
-		$p:Personaje (nombre == "Perseo" , inventario contains $ha, inventario contains $ch, inventario contains $esc, inventario contains $sa);
+		$p:Personaje (nombre == "Perseo");
+		$ha: Objeto(nombre == "Hoz Acero") from $p.inventario;
+		Objeto(nombre == "Casco Hades") from $p.inventario or  CapacidadInvisible(sujeto.nombre == "Perseo");
+		Objeto(nombre == "Escudo Espejo") from $p.inventario or CapacidadReflejo(sujeto.nombre == "Perseo");
+		Objeto(nombre == "Sandalias Aladas") from $p.inventario or CapacidadVuelo(sujeto.nombre == "Perseo");
 	then
-		System.out.println($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $ha.getNombre() + " " +  
-		$ch.getNombre() + " " + $esc.getNombre() + " "+ $sa.getNombre() );
+		System.out.println($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $p.getInventario().toString() );
 		
 		System.out.println($p.getNombre() + " obtiene " + $medusaViva.getSujeto().getInventario().toString() + " debido a matar a " + $medusaViva.getSujeto().getNombre());
 		
 		Accion perseoMataMedusa = new Matar($p, $medusaViva.getSujeto());
 		Estado medusaMuerta = new Muerto($medusaViva.getSujeto());
 		for (Objeto o : $medusaViva.getSujeto().getInventario()){
+			String nombreObjeto = o.getNombre();
+			if (nombreObjeto.equals("Casco Hades")){
+				Estado ci = new CapacidadInvisible ($p);
+				insert(ci);
+			}
+			else if (nombreObjeto.equals("Escudo Espejo")){
+				Estado cr = new CapacidadReflejo ($p);
+				insert(cr);
+			}
+			else if (nombreObjeto.equals("Sandalias Aladas")){
+				Estado cv = new CapacidadVuelo($p);
+				insert(cv);
+			}
 			Accion afectadoObtiene = new Obtener($p, o);
 			insert(afectadoObtiene);
 		} 

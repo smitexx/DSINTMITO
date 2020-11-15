@@ -1020,7 +1020,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>68</factId>
-      <objectToString>clasesMito.acciones.Apresar@622fdb81</objectToString>
+      <objectToString>clasesMito.acciones.Apresar@18460128</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
@@ -1044,7 +1044,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>70</factId>
-      <objectToString>clasesMito.acciones.Obtener@15b82644</objectToString>
+      <objectToString>clasesMito.acciones.Obtener@53830483</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1073,7 +1073,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>71</factId>
-      <objectToString>clasesMito.acciones.Obtener@20576557</objectToString>
+      <objectToString>clasesMito.acciones.Obtener@29f85fe1</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1102,7 +1102,12 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>72</factId>
-      <objectToString>clasesMito.acciones.Obtener@574cd322</objectToString>
+      <objectToString>[Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>73</factId>
+      <objectToString>clasesMito.acciones.Obtener@396ef8b2</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1130,8 +1135,13 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>73</factId>
-      <objectToString>clasesMito.acciones.Obtener@45c2e0a6</objectToString>
+      <factId>74</factId>
+      <objectToString>[Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>75</factId>
+      <objectToString>clasesMito.acciones.Obtener@19ee1ae6</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1152,22 +1162,22 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo roba el ojo de las grayas [4, 6, 2, 5, 16, 20]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
       <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,4,6,2,5,16</factHandleIds>
+      <factHandleIds>20,16,76,79,80,86</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo roba el ojo de las grayas [4, 6, 2, 5, 16, 20]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
       <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,4,6,2,5,16</factHandleIds>
+      <factHandleIds>20,16,76,79,80,86</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>74</factId>
-      <objectToString>clasesMito.acciones.Obtener@690bc15e</objectToString>
+      <factId>88</factId>
+      <objectToString>clasesMito.acciones.Obtener@71b6d77f</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1181,34 +1191,34 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo roba el ojo de las grayas [4, 6, 2, 5, 16, 20]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
       <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,4,6,2,5,16</factHandleIds>
+      <factHandleIds>20,16,76,79,80,86</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [5, 6, 16, 20]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>16,5,6,20</factHandleIds>
+      <factHandleIds>20,16,89,94</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [5, 6, 16, 20]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>16,5,6,20</factHandleIds>
+      <factHandleIds>20,16,89,94</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>75</factId>
-      <objectToString>clasesMito.acciones.Obtener@a0f53fc</objectToString>
+      <factId>95</factId>
+      <objectToString>clasesMito.acciones.Obtener@11f406f8</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>76</factId>
-      <objectToString>clasesMito.acciones.Obtener@3db972d2</objectToString>
+      <factId>96</factId>
+      <objectToString>clasesMito.acciones.Obtener@987455b</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1222,24 +1232,24 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [5, 6, 16, 20]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>16,5,6,20</factHandleIds>
+      <factHandleIds>20,16,89,94</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo obtiene inventario ninfas [5, 20, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
       <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,5,19</factHandleIds>
+      <factHandleIds>20,101,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo obtiene inventario ninfas [5, 20, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
       <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,5,19</factHandleIds>
+      <factHandleIds>20,101,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1253,39 +1263,39 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo obtiene inventario ninfas [5, 20, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
       <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,5,19</factHandleIds>
+      <factHandleIds>20,101,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
+      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
       <rule>matar a medusa</rule>
-      <declarations>$esc=Escudo Espejo; $medusaViva=[Medusa]; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,65</factHandleIds>
+      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>72,65,20,103,112,122</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
+      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
       <rule>matar a medusa</rule>
-      <declarations>$esc=Escudo Espejo; $medusaViva=[Medusa]; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,65</factHandleIds>
+      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>72,65,20,103,112,122</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>77</factId>
-      <objectToString>clasesMito.acciones.Obtener@3727f0ee</objectToString>
+      <factId>123</factId>
+      <objectToString>clasesMito.acciones.Obtener@574cd322</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>78</factId>
+      <factId>124</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>79</factId>
-      <objectToString>clasesMito.acciones.Matar@fb713e7</objectToString>
+      <factId>125</factId>
+      <objectToString>clasesMito.acciones.Matar@119c745c</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1304,43 +1314,43 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a medusa [3, 2, 9, 7, 65, 20]</activationId>
+      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
       <rule>matar a medusa</rule>
-      <declarations>$esc=Escudo Espejo; $ch=Casco Hades; $sa=Sandalias Aladas; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>20,3,2,9,7,65</factHandleIds>
+      <declarations>$p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>72,65,20,103,112,122</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
+      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,59,87</factHandleIds>
+      <factHandleIds>69,20,133,59</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
+      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,59,87</factHandleIds>
+      <factHandleIds>69,20,133,59</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>88</factId>
-      <objectToString>clasesMito.acciones.Matar@278667fd</objectToString>
+      <factId>134</factId>
+      <objectToString>clasesMito.acciones.Matar@5c448433</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>89</factId>
+      <factId>135</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>90</factId>
+      <factId>136</factId>
       <objectToString>Liberar [Perseo, Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>91</factId>
+      <factId>137</factId>
       <objectToString>[Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
@@ -1355,10 +1365,10 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a ceto [20, 59, 69, 87]</activationId>
+      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
       <rule>matar a ceto</rule>
       <declarations>$p=Perseo; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,59,87</factHandleIds>
+      <factHandleIds>69,20,133,59</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>
