@@ -11,10 +11,14 @@ public class CapacidadReflejo extends Estado {
 	public CapacidadReflejo(Personaje sujeto) {
 		super(sujeto);
 	}
-
+	
+	@Override
+	public String toString() {
+		return "CapacidadReflej0[" + getSujeto() + "]";
+	}
+	
 	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarReflejo", this.getSujeto());
 	}
-	
 }

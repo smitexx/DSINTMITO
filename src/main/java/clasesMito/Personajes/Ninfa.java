@@ -13,3 +13,4 @@ public class Ninfa extends Inmortal {
 	}
 	
 }
+ 

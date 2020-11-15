@@ -85,15 +85,15 @@ rule "favores de dioses a Perseo"
 		$a.getInventario().addAll($s.getInventario());
 		for (Objeto o : $s.getInventario()){
 			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco Hades")){
+			if (nombreObjeto.equals("Casco")){
 				Estado ci = new CapacidadInvisible ($a);
 				insert(ci);
 			}
-			else if (nombreObjeto.equals("Escudo Espejo")){
+			else if (nombreObjeto.equals("Escudo")){
 				Estado cr = new CapacidadReflejo ($a);
 				insert(cr);
 			}
-			else if (nombreObjeto.equals("Sandalias Aladas")){
+			else if (nombreObjeto.equals("Sandalias")){
 				Estado cv = new CapacidadVuelo($a);
 				insert(cv);
 			}
@@ -113,7 +113,7 @@ rule "perseo roba el ojo de las grayas"
 		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
 		$p : Personaje(nombre == "Perseo" );
 		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
-		$ch : Objeto(nombre == "Casco Hades") from $p.inventario;
+		$ch : Objeto(nombre == "Casco") from $p.inventario;
 	then
 		System.out.println($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
 		
@@ -156,7 +156,7 @@ rule "perseo obtiene inventario ninfas"
 	when
 		$p : Personaje(nombre == "Perseo");
 		$mn: Objeto(nombre == "Mapa Ninfas") from $p.inventario;
-		$n : Personaje (nombre == "NinfasNorte", inventario.empty == false );
+		$n : Personaje (nombre == "Ninfas", inventario.empty == false );
 	then 
 		System.out.println($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		
@@ -165,15 +165,15 @@ rule "perseo obtiene inventario ninfas"
 		
 		for (Objeto o : $n.getInventario()){
 			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco Hades")){
+			if (nombreObjeto.equals("Casco")){
 				Estado ci = new CapacidadInvisible ($p);
 				insert(ci);
 			}
-			else if (nombreObjeto.equals("Escudo Espejo")){
+			else if (nombreObjeto.equals("Escudo")){
 				Estado cr = new CapacidadReflejo ($p);
 				insert(cr);
 			}
-			else if (nombreObjeto.equals("Sandalias Aladas")){
+			else if (nombreObjeto.equals("Sandalias")){
 				Estado cv = new CapacidadVuelo($p);
 				insert(cv);
 			}
@@ -190,9 +190,9 @@ rule "matar a medusa"
 		$medusaViva: Vivo(sujeto.nombre == "Medusa");
 		$p:Personaje (nombre == "Perseo");
 		$ha: Objeto(nombre == "Hoz Acero") from $p.inventario;
-		Objeto(nombre == "Casco Hades") from $p.inventario or  CapacidadInvisible(sujeto.nombre == "Perseo");
-		Objeto(nombre == "Escudo Espejo") from $p.inventario or CapacidadReflejo(sujeto.nombre == "Perseo");
-		Objeto(nombre == "Sandalias Aladas") from $p.inventario or CapacidadVuelo(sujeto.nombre == "Perseo");
+		Objeto(nombre == "Casco") from $p.inventario or  CapacidadInvisible(sujeto.nombre == "Perseo");
+		Objeto(nombre == "Escudo") from $p.inventario or CapacidadReflejo(sujeto.nombre == "Perseo");
+		Objeto(nombre == "Sandalias") from $p.inventario or CapacidadVuelo(sujeto.nombre == "Perseo");
 	then
 		System.out.println($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $p.getInventario().toString() );
 		System.out.println($p.getNombre() + " obtiene " + $medusaViva.getSujeto().getInventario().toString() + " debido a matar a " + $medusaViva.getSujeto().getNombre());
@@ -202,15 +202,15 @@ rule "matar a medusa"
 		
 		for (Objeto o : $medusaViva.getSujeto().getInventario()){
 			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco Hades")){
+			if (nombreObjeto.equals("Casco")){
 				Estado ci = new CapacidadInvisible ($p);
 				insert(ci);
 			}
-			else if (nombreObjeto.equals("Escudo Espejo")){
+			else if (nombreObjeto.equals("Escudo")){
 				Estado cr = new CapacidadReflejo ($p);
 				insert(cr);
 			}
-			else if (nombreObjeto.equals("Sandalias Aladas")){
+			else if (nombreObjeto.equals("Sandalias")){
 				Estado cv = new CapacidadVuelo($p);
 				insert(cv);
 			}

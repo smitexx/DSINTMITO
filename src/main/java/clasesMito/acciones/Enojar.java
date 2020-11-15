@@ -22,3 +22,4 @@ public class Enojar extends Accion{
 	}
 	
 }
+ 

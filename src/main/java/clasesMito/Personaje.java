@@ -23,7 +23,7 @@ public abstract class Personaje {
 	}
 	public void setHijoDe(Personaje hijoDe) {
 		this.hijoDe = hijoDe;
-	}
+	} 
 	public List<Objeto> getInventario() {
 		return inventario;
 	}

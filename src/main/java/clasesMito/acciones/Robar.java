@@ -23,4 +23,4 @@ public class Robar extends Accion {
 		return kSession.getQueryResults("buscarRobar", this.getSujeto(), this.getAfectadoP(), this.getObjRobado());
 	}
 	
-}
+} 

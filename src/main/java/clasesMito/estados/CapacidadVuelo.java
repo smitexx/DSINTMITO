@@ -11,10 +11,14 @@ public class CapacidadVuelo extends Estado {
 	public CapacidadVuelo(Personaje sujeto) {
 		super(sujeto);
 	}
-
+	
+	@Override
+	public String toString() {
+		return "CapacidadVuelo [" + getSujeto() + "]";
+	}
+	
 	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarVuelo", this.getSujeto());
 	}
-	
 }

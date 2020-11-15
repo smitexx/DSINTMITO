@@ -15,8 +15,14 @@ public class Obtener extends Accion {
 	}
 
 	@Override
+	public String toString() {
+		return "Obtener [getSujeto()=" + getSujeto() + ", getAfectadoC()=" + getAfectadoC() + "]";
+	}
+	
+	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarObtener", this.getSujeto(), this.getAfectadoC());
 	}
 
 }
+ 

@@ -18,3 +18,4 @@ public class Muerto extends Estado {
 	}
 
 }
+ 

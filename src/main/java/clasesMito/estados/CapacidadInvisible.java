@@ -13,6 +13,11 @@ public class CapacidadInvisible extends Estado {
 	}
 
 	@Override
+	public String toString() {
+		return "CapacidadInvisible [" + getSujeto() + "]";
+	}	
+	
+	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarInvisible", this.getSujeto());
 	}

@@ -28,20 +28,20 @@ public class KieMain {
 		
 		//Creamos la sesion con el mismo nombre que le hemos puesto en el kmodule.xml
 		KieSession kSession = kContainer.newKieSession("ksession-rules-dsi");
-		
+
 		KieRuntimeLogger logger = ks.getLoggers().newThreadedFileLogger(kSession, "./LOGMITO", 1000);
 		
 		//HECHOS ESTÁTICOS DE PARTIDA 
 		//Objetos
-		Objeto cabezaMedusa = new Objeto ("Cabeza Medusa");
-		Objeto cascoHades = new Objeto ("Casco Hades");
+		Objeto cabezaMedusa = new Objeto ("Cabeza");
+		Objeto cascoHades = new Objeto ("Casco");
 		Objeto hozAcero = new Objeto ("Hoz Acero");
 		Objeto mapaGrayas = new Objeto ("Mapa Grayas");
 		Objeto mapaNinfas = new Objeto ("Mapa Ninfas");
 		Objeto ojoGraya = new Objeto ("Ojo Graya");
-		Objeto sandaliasAladas = new Objeto ("Sandalias Aladas");
+		Objeto sandaliasAladas = new Objeto ("Sandalias");
 		Objeto zurronMagico = new Objeto ("Zurron Magico");
-		Objeto escudoBronce = new Objeto ("Escudo Espejo");
+		Objeto escudoBronce = new Objeto ("Escudo");
 		//Inventarios con sus objetos
 		List<Objeto> inventarioMedusa = new LinkedList<Objeto>();
 		inventarioMedusa.add(cabezaMedusa);
@@ -53,16 +53,15 @@ public class KieMain {
 		inventarioHermes.add(hozAcero);
 		
 		List<Objeto> inventarioAtenea = new LinkedList<Objeto>();
-		inventarioAtenea.add(mapaGrayas);
-		
+		Collections.addAll(inventarioAtenea, mapaGrayas, escudoBronce);
+
 		List<Objeto> inventarioHades = new LinkedList<Objeto>();
 		inventarioHades.add(cascoHades);
 		
 		List<Objeto> inventarioNinfaNorte = new LinkedList<Objeto>();
 		Collections.addAll(inventarioNinfaNorte, zurronMagico, sandaliasAladas);
 		
-		List<Objeto> inventarioHefesto = new LinkedList<Objeto>();
-		inventarioHefesto.add(escudoBronce);
+
 
 		//Personajes
 		List<Personaje> hijosZeus = new LinkedList<Personaje>();
@@ -73,15 +72,15 @@ public class KieMain {
 		Personaje hades = new Dios(null, inventarioHades, "Hades", null, "Inframundo");
 		Personaje hermes = new Dios(null, inventarioHermes, "Hermes", null, "Comercio");
 		Personaje atenea = new Dios(null, inventarioAtenea, "Atenea", null, "Guerra");
-		Personaje hefesto = new Dios(null, inventarioHefesto, "Hefesto", null, "Fuego");
+		Personaje hefesto = new Dios(null, null, "Hefesto", null, "Fuego");
 		
 		Personaje grayas = new Graya(null, inventarioGrayas, "Grayas", null);
 		
 		Personaje doris = new Ninfa(null, null, "Doris", null);
 		Personaje nereidas = new Ninfa(null, null, "Nereidas", null);
-		Personaje ninfasNorte = new Ninfa(null, inventarioNinfaNorte, "NinfasNorte", null);
+		Personaje ninfasNorte = new Ninfa(null, inventarioNinfaNorte, "Ninfas", null);
 		
-		Personaje perseo = new Semidios(zeus, null, "Perseo", null,  null);
+		Personaje perseo = new Semidios(zeus, new LinkedList<Objeto>(), "Perseo", null,  null);
 		
 		Personaje casiopea = new Humano(null, null, "Casiopea", hijosCasiopea, null);
 		Personaje andromeda = new Humano(casiopea, null, "Andrómeda", null, null);
@@ -108,20 +107,22 @@ public class KieMain {
 
 		// PARSER PARA HECHOS DINAMICOS
 		//File fichero = new File("/home/pablo/eclipse-workspace/perseo/DSINTMITO-main/entrada1.txt");
-		File fichero = new File("D:\\UM\\4\\DSINT\\Práctica1\\Ficheros Pregunta-Respuesta\\Fase2.Perseo1.txt");
+		File fichero = new File("D:\\UM\\4\\DSINT\\Práctica1\\DSINTMITO\\entrada1.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
-		List<String> Descartos = new LinkedList<String>();
-		Collections.addAll(Descartos, ",", "Condiciones:", "¿Puede", "tiene", "a", "el", "de");
+		
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
 			while (scanner.hasNext()) {
 				String linealeida = scanner.nextLine();
-				if (!linealeida.equals("Condiciones:"))
+				if (!linealeida.equals("Condiciones:"))//eliminamos la linea condiciones
 					LineasFich.add(linealeida);
 			}
 			scanner.close();
 		}
-		Parser P = new Parser(LineasFich, personajesMito);
+		Parser P = new Parser(LineasFich, personajesMito,objetosMito);
 		LinkedList<Object> hechosDinamicos = P.parsear();
+		System.out.println(hechosDinamicos);
+		personajesMito=P.getPersonajes();
+
 		//Lanzamos todas las reglas
 		
 		//Añadimos TODOS LOS HECHOS A LA SESIÓN (faltan los dinamicos)
@@ -146,12 +147,10 @@ public class KieMain {
 		}
 		System.out.println(respuesta.size());
 		for ( QueryResultsRow r : respuesta ) {
-			Liberar liberar = ( Liberar ) r.get("$r");
-			System.out.println( liberar.toString() );
+			Liberar liberar = ( Liberar ) r.get("$r");	
 		}
-		
-		
 		logger.close();
+		
 	}
 
 }
