@@ -10,6 +10,9 @@ import clasesMito.Personaje;
 import clasesMito.acciones.DarFavor; 
 import clasesMito.acciones.Enojar;
 import clasesMito.acciones.Liberar;
+import clasesMito.estados.CapacidadInvisible;
+import clasesMito.estados.CapacidadReflejo;
+import clasesMito.estados.CapacidadVuelo;
 
 public class Parser {
 
@@ -54,13 +57,20 @@ public class Parser {
 
 								Objeto ObjetoParseado = new Objeto(palabras.get(2));
 								P.getInventario().add(ObjetoParseado);
-								// if (ObjetoParseado=="Anillo") then new
-								// invisible(P);HechosDinamicos.add(invisible(p));
-								// if (ObjetoParseado=="Espejo") then new
-								// reflectante(P);HechosDinamicos.add(reflectante(p));
-								// if (ObjetoParseado=="Conjuro") then new
-								// volador(P);HechosDinamicos.add(volador(p));
-							}
+								if (ObjetoParseado.getNombre().equals("Anillo")) {
+									CapacidadInvisible CI = new CapacidadInvisible(P);
+									HechosDinamicos.add(CI);
+								}
+								if (ObjetoParseado.getNombre().equals("Espejo")) {
+									CapacidadReflejo CR = new CapacidadReflejo(P);
+									HechosDinamicos.add(CR);
+								}
+								if (ObjetoParseado.getNombre().equals("Conjuro")) {
+									CapacidadVuelo CV = new CapacidadVuelo(P);
+									HechosDinamicos.add(CV);
+								}
+
+							} 
 						}
 						break;
 					}

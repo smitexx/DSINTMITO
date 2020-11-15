@@ -31,7 +31,7 @@ public class KieMain {
 		//Creamos la sesion con el mismo nombre que le hemos puesto en el kmodule.xml
 		KieSession kSession = kContainer.newKieSession("ksession-rules-dsi");
 		
-		
+		 
 		
 		
 		
@@ -128,8 +128,10 @@ public class KieMain {
 			scanner.close();
 		}
 		Parser P = new Parser(LineasFich, personajesMito);
-		personajesMito=P.getPersonajes();
 		LinkedList<Object> hechosDinamicos = P.parsear();
+		System.out.println(hechosDinamicos);
+		personajesMito=P.getPersonajes();
+
 		//Lanzamos todas las reglas
 		
 		//Añadimos TODOS LOS HECHOS A LA SESIÓN (faltan los dinamicos)

@@ -8,5 +8,9 @@ public class CapacidadReflejo extends Estado {
 	public CapacidadReflejo(Personaje sujeto) {
 		super(sujeto);
 	}
+	@Override
+	public String toString() {
+		return "CapacidadReflej0[" + getSujeto() + "]";
+	}
 	
 }

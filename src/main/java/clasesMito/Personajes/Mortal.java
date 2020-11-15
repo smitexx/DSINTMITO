@@ -20,4 +20,4 @@ public class Mortal extends Personaje {
 		this.favores = favores;
 	}
 	
-}
+}  
