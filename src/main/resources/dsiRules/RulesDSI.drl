@@ -12,6 +12,8 @@ import java.util.LinkedList;
 
 //declare any global variables here
 
+global java.util.List respuestaReglas;
+
 //REGLAS DESDE EL PRINCIPIO
 
 //1º REGLA: TODOS LOS PERSONAJES LIBRES : 
@@ -160,9 +162,6 @@ rule "perseo obtiene inventario ninfas"
 	then 
 		System.out.println($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		
-		$p.getInventario().addAll($n.getInventario());
-		$n.setInventario(new LinkedList<Objeto>());
-		
 		for (Objeto o : $n.getInventario()){
 			String nombreObjeto = o.getNombre();
 			if (nombreObjeto.equals("Casco")){
@@ -180,6 +179,10 @@ rule "perseo obtiene inventario ninfas"
 			Accion afectadoObtiene = new Obtener($p, o);
 			insert(afectadoObtiene);
 		}
+				
+		$p.getInventario().addAll($n.getInventario());
+		$n.setInventario(new LinkedList<Objeto>());
+		
 		update($p);
 		update($n);
 end
@@ -232,7 +235,7 @@ end
 rule "matar a ceto"
 	when
 		$p : Personaje (nombre == "Perseo");
-		$cm: Objeto(nombre == "Cabeza Medusa") from $p.inventario;
+		$cm: Objeto(nombre == "Cabeza") from $p.inventario;
 		$cetoVivo : Vivo(sujeto.nombre == "Ceto");
 		$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
 		

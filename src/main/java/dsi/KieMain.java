@@ -136,19 +136,31 @@ public class KieMain {
 					kSession.insert(o);
 				}
 		//Lanzamos todas las reglas
+		kSession.setGlobal("respuestaReglas", new LinkedList<String>());
 		kSession.fireAllRules();
 		//Obtenemos la respuesta a la pregunta
 		QueryResults respuesta = null;
 		Object pregunta = P.getPregunta();
 		if (pregunta instanceof Accion) {
-			respuesta= ((Accion)pregunta).buscarRespuesta(kSession);
+			Accion preguntaA = ((Accion)pregunta);
+			respuesta= preguntaA.buscarRespuesta(kSession);
+			if (respuesta.size() != 0) {
+				System.out.println("Si, " + preguntaA.getSujeto() + " puede " + preguntaA.getClass().getSimpleName() + " a " + preguntaA.getAfectadoP() + " debido a que:");
+			} else {
+				System.out.println("No, no se encutra forma de que " + preguntaA.getSujeto() + " pueda " + preguntaA.getClass().getSimpleName() 
+						+ ((preguntaA.getAfectadoC() != null) ? " " + preguntaA.getAfectadoC() : "")
+						+ ((preguntaA.getAfectadoP() != null) ?" a " + preguntaA.getAfectadoP() : ""));
+			}
 		} else if (pregunta instanceof Estado) {
-			respuesta= ((Estado)pregunta).buscarRespuesta(kSession);
+			Estado preguntaE = ((Estado)pregunta);
+			respuesta= preguntaE.buscarRespuesta(kSession);
+			if (respuesta.size() != 0) {
+				System.out.println("Si, " + preguntaE.getSujeto() + " tiene " + preguntaE.getClass().getSimpleName() + " debido a que:");
+			} else {
+				System.out.println("No, no se encutra forma de que " + preguntaE.getSujeto() + " tenga " + preguntaE.getClass().getSimpleName());
+			}
 		}
-		System.out.println(respuesta.size());
-		for ( QueryResultsRow r : respuesta ) {
-			Liberar liberar = ( Liberar ) r.get("$r");	
-		}
+		
 		logger.close();
 		
 	}

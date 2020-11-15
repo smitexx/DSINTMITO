@@ -110,6 +110,7 @@ public class Parser {
 						}
 
 					}
+					break;
 
 				default:
 					switch (palabras.get(2)) {
