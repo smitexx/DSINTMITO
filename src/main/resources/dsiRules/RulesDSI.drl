@@ -21,23 +21,36 @@ rule "personajes libres y vivos"
 
     when
         //conditions y definimos variable $p
-      	$p : Personaje();
-      	not Muerto();
+      	$p : Personaje(nombre != "Ceto");
+      	not Muerto(sujeto == $p);
+      	not Preso(sujeto == $p);
+      	
     then
         //actions
-        if ($p.getNombre() != "Ceto"){
-        	Estado libre = new Libre($p);
-        	insert(libre);
-        }else {
-        	Estado presoCeto  = new Preso($p);
-        	insert(presoCeto);
-        }
+        Estado libre = new Libre($p);
+        insert(libre);
 		Estado vivo = new Vivo($p);
 		insert(vivo);
 		
 end
+//1.1 Regla: excepcion, ceto preso
 
-//1.1 Regla: llenar inventario vacios
+rule "CetoPreso"
+
+    when
+        //conditions y definimos variable $p
+      	$p : Personaje(nombre == "Ceto");
+      	not Muerto(sujeto == $p );
+    then
+        //actions
+        Estado vivo = new Vivo($p);
+        Estado presoCeto  = new Preso($p);
+        insert(presoCeto);
+		insert(vivo);
+		
+end
+
+//1.2 Regla: llenar inventario vacios
 rule "llenar inventarios vacios"
 	when
 		$p: Personaje(inventario == null); 
@@ -45,6 +58,11 @@ rule "llenar inventarios vacios"
 		$p.setInventario(new LinkedList<Objeto>());
 		update($p);
 end
+
+
+
+
+
 
 //2º REGLA: casiopea enoja a poseidon 
 rule "casiopea enoja a poseidon"
@@ -66,15 +84,20 @@ end
 rule "andromeda es apresada por ceto"
 	when 
 		$e : Libre(sujeto.nombre == "Ceto")
+	    Vivo(sujeto.nombre == "Ceto")
+		
 		$p : Personaje(nombre == "Andrómeda")
+		$lib : Libre(sujeto == $p)
 	then 
 		respuestaReglas.add(  $p +" queda presa debido a estar " + $e.getSujeto() + " libre.");
 		
 		Accion cetoApresaAndromeda = new Apresar($e.getSujeto(), $p);
 		Estado andromedaApresada = new Preso($p);
 		
+		retract ($lib);
 		insert(cetoApresaAndromeda);
 		insert(andromedaApresada);
+		
 end
 
 //4º REGLA: favores de dioses a Perseo  
@@ -85,23 +108,7 @@ rule "favores de dioses a Perseo"
 		respuestaReglas.add($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
 		
 		$a.getInventario().addAll($s.getInventario());
-		for (Objeto o : $s.getInventario()){
-			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco")){
-				Estado ci = new CapacidadInvisible ($a);
-				insert(ci);
-			}
-			else if (nombreObjeto.equals("Escudo")){
-				Estado cr = new CapacidadReflejo ($a);
-				insert(cr);
-			}
-			else if (nombreObjeto.equals("Sandalias")){
-				Estado cv = new CapacidadVuelo($a);
-				insert(cv);
-			}
-			Accion afectadoObtiene = new Obtener($a, o);
-			insert(afectadoObtiene);
-		}
+
 		$s.setInventario(new LinkedList<Objeto>());
 		update($a);
 		update($s);
@@ -113,7 +120,7 @@ rule "perseo roba el ojo de las grayas"
 		$g : Personaje(nombre == "Grayas");
 		$ojo: Objeto(nombre == "Ojo Graya") from $g.inventario;
 		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
-		$p : Personaje(nombre == "Perseo" );
+		$p : Heroe();
 		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
 		$ch : Objeto(nombre == "Casco") from $p.inventario;
 	then
@@ -134,7 +141,7 @@ rule "perseo intercambio ojo por mapa ninfas"
 	when
 		$g : Personaje(nombre == "Grayas");
 		$mn: Objeto(nombre == "Mapa Ninfas") from $g.inventario;
-		$p : Personaje(nombre == "Perseo");
+		$p : Heroe();
 		$ojo: Objeto(nombre == "Ojo Graya") from $p.inventario;
 	then 
 		respuestaReglas.add($p.getNombre() + " localiza a las ninfas debido a intercambio de " +  $ojo.getNombre() +  " por el " + $mn.getNombre() );
@@ -156,29 +163,13 @@ end
 
 rule "perseo obtiene inventario ninfas"
 	when
-		$p : Personaje(nombre == "Perseo");
+		$p : Heroe();
 		$mn: Objeto(nombre == "Mapa Ninfas") from $p.inventario;
 		$n : Personaje (nombre == "Ninfas", inventario.empty == false );
 	then 
 		respuestaReglas.add($p.getNombre() + " obtiene " + $n.getInventario().toString() + " debido a tener a las ninfas localizadas.");
 		
-		for (Objeto o : $n.getInventario()){
-			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco")){
-				Estado ci = new CapacidadInvisible ($p);
-				insert(ci);
-			}
-			else if (nombreObjeto.equals("Escudo")){
-				Estado cr = new CapacidadReflejo ($p);
-				insert(cr);
-			}
-			else if (nombreObjeto.equals("Sandalias")){
-				Estado cv = new CapacidadVuelo($p);
-				insert(cv);
-			}
-			Accion afectadoObtiene = new Obtener($p, o);
-			insert(afectadoObtiene);
-		}
+
 				
 		$p.getInventario().addAll($n.getInventario());
 		$n.setInventario(new LinkedList<Objeto>());
@@ -187,40 +178,61 @@ rule "perseo obtiene inventario ninfas"
 		update($n);
 end
 
+rule "Capacidad Invisible"
+    when
+    	
+		$p:Personaje ();
+		$ha: Objeto(nombre == "Casco") from $p.inventario;
+		not CapacidadInvisible (sujeto==$p);
+      	
+    then
+        respuestaReglas.add($p.getNombre() + " obtiene capacidad de invisibilidad" );
+   		CapacidadInvisible c = new CapacidadInvisible($p);
+		insert(c);		
+end
+
+rule "Capacidad Reflejo"
+    when
+    	
+		$p:Personaje ();
+		$ha: Objeto(nombre == "Escudo") from $p.inventario;
+		not CapacidadReflejo (sujeto==$p);
+      	
+    then
+        respuestaReglas.add($p.getNombre() + " obtiene capacidad reflejo" );
+   		CapacidadReflejo c = new CapacidadReflejo($p);
+		insert(c);		
+end
+
+rule "Capacidad Vuelo"
+    when
+    	
+		$p:Personaje ();
+		$ha: Objeto(nombre == "Sandalias") from $p.inventario;
+		not CapacidadVuelo (sujeto==$p);
+      	
+    then
+    	respuestaReglas.add($p.getNombre() + " obtiene capacidad vuelo" );
+   		CapacidadVuelo c = new CapacidadVuelo($p);
+		insert(c);		
+end
+
 //8º REGLA: Matar a medusa
 rule "matar a medusa"
 	when
 		$medusaViva: Vivo(sujeto.nombre == "Medusa");
-		$p:Personaje (nombre == "Perseo");
+		$p : Heroe();
 		$ha: Objeto(nombre == "Hoz Acero") from $p.inventario;
-		Objeto(nombre == "Casco") from $p.inventario or  CapacidadInvisible(sujeto.nombre == "Perseo");
-		Objeto(nombre == "Escudo") from $p.inventario or CapacidadReflejo(sujeto.nombre == "Perseo");
-		Objeto(nombre == "Sandalias") from $p.inventario or CapacidadVuelo(sujeto.nombre == "Perseo");
+		CapacidadInvisible(sujeto == $p );
+		CapacidadReflejo(sujeto == $p );
+		CapacidadVuelo(sujeto == $p );
 	then
 		respuestaReglas.add($p.getNombre() + " mata a  " + $medusaViva.getSujeto().getNombre()  + " debido a tener " + $p.getInventario().toString() );
 		respuestaReglas.add($p.getNombre() + " obtiene " + $medusaViva.getSujeto().getInventario().toString() + " debido a matar a " + $medusaViva.getSujeto().getNombre());
-		
 		Accion perseoMataMedusa = new Matar($p, $medusaViva.getSujeto());
 		Estado medusaMuerta = new Muerto($medusaViva.getSujeto());
 		
-		for (Objeto o : $medusaViva.getSujeto().getInventario()){
-			String nombreObjeto = o.getNombre();
-			if (nombreObjeto.equals("Casco")){
-				Estado ci = new CapacidadInvisible ($p);
-				insert(ci);
-			}
-			else if (nombreObjeto.equals("Escudo")){
-				Estado cr = new CapacidadReflejo ($p);
-				insert(cr);
-			}
-			else if (nombreObjeto.equals("Sandalias")){
-				Estado cv = new CapacidadVuelo($p);
-				insert(cv);
-			}
-			Accion afectadoObtiene = new Obtener($p, o);
-			insert(afectadoObtiene);
-		} 
-		
+
 		$p.getInventario().addAll($medusaViva.getSujeto().getInventario());
 		$medusaViva.getSujeto().setInventario(new LinkedList<Objeto>());
 		
@@ -234,7 +246,7 @@ end
 //9º REGLA: Matar a ceto
 rule "matar a ceto"
 	when
-		$p : Personaje (nombre == "Perseo");
+		$p : Heroe();
 		$cm: Objeto(nombre == "Cabeza") from $p.inventario;
 		$cetoVivo : Vivo(sujeto.nombre == "Ceto");
 		$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
@@ -255,7 +267,37 @@ rule "matar a ceto"
 		
 		retract ($andromedaPresa);
 		retract($cetoVivo);
+
 end
+
+// Regla genérica 1: si x apresa a y, cuando x muere y queda libre.
+
+ rule "liberar apresados de muertos"
+    when
+    	
+      	$A : Apresar($s : sujeto, $a : afectadoP);
+      	Muerto(sujeto.nombre==$s.nombre);
+      	Matar($h : sujeto, afectadoP==$s );
+      	$p : Preso(sujeto.nombre==$a.nombre);
+      	not Libre(sujeto==$a);
+      	not Liberar( sujeto==$h,afectadoP==$a);
+      	
+    then
+   		
+   		System.out.println($h.getInventario().toString());//
+   		Liberar liberacion = new Liberar($h,$a);
+      	Estado presoLibre = new Libre($a);
+      	retract($A);
+		retract($p);
+		insert(liberacion); 
+		insert(presoLibre);
+		
+end
+
+
+//Regla genérica 1: si x tiene objeto Y etonces obtiene capacidad Z.
+
+
 
 
 // QUERIES para buscar las respuestas a las preguntas

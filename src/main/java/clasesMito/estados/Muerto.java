@@ -16,6 +16,9 @@ public class Muerto extends Estado {
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarMuerto", this.getSujeto());
 	}
-
+	@Override
+	public String toString() {
+		return "Muerto [" + getSujeto() + "]";
+	}
 }
  

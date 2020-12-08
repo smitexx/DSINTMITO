@@ -16,6 +16,9 @@ public class Libre extends Estado {
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarLibre", this.getSujeto());
 	}
-	
+	@Override
+	public String toString() {
+		return "Libre [" + getSujeto() + "]";
+	}
 }
  

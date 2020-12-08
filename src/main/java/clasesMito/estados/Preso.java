@@ -17,6 +17,10 @@ public class Preso extends Estado{
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarPreso", this.getSujeto());
 	}
+	@Override
+	public String toString() {
+		return "Preso [" + getSujeto() + "]";
+	}
 
 }
  

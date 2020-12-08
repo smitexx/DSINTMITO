@@ -11,6 +11,12 @@ public class Apresar extends Accion {
 	public Apresar(Personaje sujeto, Personaje afectadoP) {
 		super(sujeto, afectadoP);
 	}
+	
+	@Override
+	public String toString() {
+		return "Apresar ["+ getSujeto() + ", " + getAfectadoP() + "]";
+	}
+
 
 	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {

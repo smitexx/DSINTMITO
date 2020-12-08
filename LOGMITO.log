@@ -5,12 +5,12 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>1</factId>
-      <objectToString>Cabeza Medusa</objectToString>
+      <objectToString>Cabeza</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>2</factId>
-      <objectToString>Casco Hades</objectToString>
+      <objectToString>Casco</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
@@ -35,7 +35,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>7</factId>
-      <objectToString>Sandalias Aladas</objectToString>
+      <objectToString>Sandalias</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
@@ -45,7 +45,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>9</factId>
-      <objectToString>Escudo Espejo</objectToString>
+      <objectToString>Escudo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
@@ -95,7 +95,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>19</factId>
-      <objectToString>NinfasNorte</objectToString>
+      <objectToString>Ninfas</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
@@ -173,6 +173,13 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
+      <activationId>llenar inventarios vacios [15]</activationId>
+      <rule>llenar inventarios vacios</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
       <activationId>llenar inventarios vacios [17]</activationId>
       <rule>llenar inventarios vacios</rule>
       <declarations>$p=Doris</declarations>
@@ -184,13 +191,6 @@
       <rule>llenar inventarios vacios</rule>
       <declarations>$p=Nereidas</declarations>
       <factHandleIds>18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>llenar inventarios vacios [20]</activationId>
-      <rule>llenar inventarios vacios</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -257,108 +257,10 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>personajes libres y vivos [10]</activationId>
+      <activationId>personajes libres y vivos [26]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=Zeus</declarations>
-      <factHandleIds>10</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [11]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Poseidón</declarations>
-      <factHandleIds>11</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [12]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hades</declarations>
-      <factHandleIds>12</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [13]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hermes</declarations>
-      <factHandleIds>13</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [14]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Atenea</declarations>
-      <factHandleIds>14</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [15]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hefesto</declarations>
-      <factHandleIds>15</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [16]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Grayas</declarations>
-      <factHandleIds>16</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [17]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Doris</declarations>
-      <factHandleIds>17</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [18]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Nereidas</declarations>
-      <factHandleIds>18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [19]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=NinfasNorte</declarations>
-      <factHandleIds>19</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [20]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [21]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Casiopea</declarations>
-      <factHandleIds>21</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [22]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Andrómeda</declarations>
-      <factHandleIds>22</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [23]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Ceto</declarations>
-      <factHandleIds>23</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>personajes libres y vivos [24]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Esteno</declarations>
-      <factHandleIds>24</factHandleIds>
+      <declarations>$p=Medusa</declarations>
+      <factHandleIds>26</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -369,26 +271,477 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>personajes libres y vivos [26]</activationId>
+      <activationId>personajes libres y vivos [24]</activationId>
       <rule>personajes libres y vivos</rule>
-      <declarations>$p=Medusa</declarations>
-      <factHandleIds>26</factHandleIds>
+      <declarations>$p=Esteno</declarations>
+      <factHandleIds>24</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
+      <type>4</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [21]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Casiopea</declarations>
+      <factHandleIds>21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [20]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>20</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [19]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Ninfas</declarations>
+      <factHandleIds>19</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [18]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Nereidas</declarations>
+      <factHandleIds>18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [17]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Doris</declarations>
+      <factHandleIds>17</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [16]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Grayas</declarations>
+      <factHandleIds>16</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [15]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [14]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Atenea</declarations>
+      <factHandleIds>14</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [13]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hermes</declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [12]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hades</declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [11]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Poseidón</declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
       <activationId>personajes libres y vivos [10]</activationId>
       <rule>personajes libres y vivos</rule>
       <declarations>$p=Zeus</declarations>
       <factHandleIds>10</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [26]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Medusa</declarations>
+      <factHandleIds>26</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>32</factId>
-      <objectToString>[Zeus]</objectToString>
+      <objectToString>Libre [Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>33</factId>
+      <objectToString>[Medusa]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [26]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Medusa</declarations>
+      <factHandleIds>26</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [25]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Euriale</declarations>
+      <factHandleIds>25</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>34</factId>
+      <objectToString>Libre [Euriale]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>35</factId>
+      <objectToString>[Euriale]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [25]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Euriale</declarations>
+      <factHandleIds>25</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [24]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Esteno</declarations>
+      <factHandleIds>24</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>36</factId>
+      <objectToString>Libre [Esteno]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>37</factId>
+      <objectToString>[Esteno]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [24]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Esteno</declarations>
+      <factHandleIds>24</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>38</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>39</factId>
+      <objectToString>[Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [21]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Casiopea</declarations>
+      <factHandleIds>21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>40</factId>
+      <objectToString>Libre [Casiopea]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>41</factId>
+      <objectToString>[Casiopea]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [21]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Casiopea</declarations>
+      <factHandleIds>21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [20]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>20</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>42</factId>
+      <objectToString>Libre [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>43</factId>
+      <objectToString>[Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [20]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>20</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [19]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Ninfas</declarations>
+      <factHandleIds>19</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>44</factId>
+      <objectToString>Libre [Ninfas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>45</factId>
+      <objectToString>[Ninfas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [19]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Ninfas</declarations>
+      <factHandleIds>19</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [18]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Nereidas</declarations>
+      <factHandleIds>18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>46</factId>
+      <objectToString>Libre [Nereidas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>47</factId>
+      <objectToString>[Nereidas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [18]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Nereidas</declarations>
+      <factHandleIds>18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [17]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Doris</declarations>
+      <factHandleIds>17</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>48</factId>
+      <objectToString>Libre [Doris]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>49</factId>
+      <objectToString>[Doris]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [17]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Doris</declarations>
+      <factHandleIds>17</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [16]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Grayas</declarations>
+      <factHandleIds>16</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>50</factId>
+      <objectToString>Libre [Grayas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>51</factId>
+      <objectToString>[Grayas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [16]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Grayas</declarations>
+      <factHandleIds>16</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [15]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>52</factId>
+      <objectToString>Libre [Hefesto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>53</factId>
+      <objectToString>[Hefesto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [15]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [14]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Atenea</declarations>
+      <factHandleIds>14</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>54</factId>
+      <objectToString>Libre [Atenea]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>55</factId>
+      <objectToString>[Atenea]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [14]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Atenea</declarations>
+      <factHandleIds>14</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [13]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hermes</declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>56</factId>
+      <objectToString>Libre [Hermes]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>57</factId>
+      <objectToString>[Hermes]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [13]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hermes</declarations>
+      <factHandleIds>13</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [12]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hades</declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>58</factId>
+      <objectToString>Libre [Hades]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>59</factId>
+      <objectToString>[Hades]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [12]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Hades</declarations>
+      <factHandleIds>12</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [11]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Poseidón</declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>60</factId>
+      <objectToString>Libre [Poseidón]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>61</factId>
+      <objectToString>[Poseidón]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [11]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Poseidón</declarations>
+      <factHandleIds>11</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [10]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Zeus</declarations>
+      <factHandleIds>10</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>62</factId>
+      <objectToString>Libre [Zeus]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>63</factId>
       <objectToString>[Zeus]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -399,388 +752,35 @@
       <factHandleIds>10</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [11]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Poseidón</declarations>
-      <factHandleIds>11</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>34</factId>
-      <objectToString>[Poseidón]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>35</factId>
-      <objectToString>[Poseidón]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [11]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Poseidón</declarations>
-      <factHandleIds>11</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [12]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hades</declarations>
-      <factHandleIds>12</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>36</factId>
-      <objectToString>[Hades]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>37</factId>
-      <objectToString>[Hades]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [12]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hades</declarations>
-      <factHandleIds>12</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [13]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hermes</declarations>
-      <factHandleIds>13</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>38</factId>
-      <objectToString>[Hermes]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>39</factId>
-      <objectToString>[Hermes]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [13]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hermes</declarations>
-      <factHandleIds>13</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [14]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Atenea</declarations>
-      <factHandleIds>14</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>40</factId>
-      <objectToString>[Atenea]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>41</factId>
-      <objectToString>[Atenea]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [14]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Atenea</declarations>
-      <factHandleIds>14</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [15]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hefesto</declarations>
-      <factHandleIds>15</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>42</factId>
-      <objectToString>[Hefesto]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>43</factId>
-      <objectToString>[Hefesto]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [15]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Hefesto</declarations>
-      <factHandleIds>15</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [16]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Grayas</declarations>
-      <factHandleIds>16</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>44</factId>
-      <objectToString>[Grayas]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>45</factId>
-      <objectToString>[Grayas]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [16]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Grayas</declarations>
-      <factHandleIds>16</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [17]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Doris</declarations>
-      <factHandleIds>17</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>46</factId>
-      <objectToString>[Doris]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>47</factId>
-      <objectToString>[Doris]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [17]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Doris</declarations>
-      <factHandleIds>17</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [18]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Nereidas</declarations>
-      <factHandleIds>18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>48</factId>
-      <objectToString>[Nereidas]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>49</factId>
-      <objectToString>[Nereidas]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [18]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Nereidas</declarations>
-      <factHandleIds>18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [19]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=NinfasNorte</declarations>
-      <factHandleIds>19</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>50</factId>
-      <objectToString>[NinfasNorte]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>51</factId>
-      <objectToString>[NinfasNorte]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [19]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=NinfasNorte</declarations>
-      <factHandleIds>19</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [20]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>52</factId>
-      <objectToString>[Perseo]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>53</factId>
-      <objectToString>[Perseo]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [20]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [21]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Casiopea</declarations>
-      <factHandleIds>21</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>54</factId>
-      <objectToString>[Casiopea]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>55</factId>
-      <objectToString>[Casiopea]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [21]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Casiopea</declarations>
-      <factHandleIds>21</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [22]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Andrómeda</declarations>
-      <factHandleIds>22</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>56</factId>
-      <objectToString>[Andrómeda]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>57</factId>
-      <objectToString>[Andrómeda]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [22]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Andrómeda</declarations>
-      <factHandleIds>22</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [23]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Ceto</declarations>
-      <factHandleIds>23</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>58</factId>
-      <objectToString>[Ceto]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>59</factId>
-      <objectToString>[Ceto]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [23]</activationId>
-      <rule>personajes libres y vivos</rule>
+      <type>4</type>
+      <activationId>CetoPreso [23]</activationId>
+      <rule>CetoPreso</rule>
       <declarations>$p=Ceto</declarations>
       <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>personajes libres y vivos [24]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Esteno</declarations>
-      <factHandleIds>24</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>60</factId>
-      <objectToString>[Esteno]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>61</factId>
-      <objectToString>[Esteno]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [24]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Esteno</declarations>
-      <factHandleIds>24</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [25]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Euriale</declarations>
-      <factHandleIds>25</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>62</factId>
-      <objectToString>[Euriale]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>63</factId>
-      <objectToString>[Euriale]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>personajes libres y vivos [25]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Euriale</declarations>
-      <factHandleIds>25</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>personajes libres y vivos [26]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Medusa</declarations>
-      <factHandleIds>26</factHandleIds>
+      <activationId>CetoPreso [23]</activationId>
+      <rule>CetoPreso</rule>
+      <declarations>$p=Ceto</declarations>
+      <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>64</factId>
-      <objectToString>[Medusa]</objectToString>
+      <objectToString>Preso [Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>65</factId>
-      <objectToString>[Medusa]</objectToString>
+      <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>personajes libres y vivos [26]</activationId>
-      <rule>personajes libres y vivos</rule>
-      <declarations>$p=Medusa</declarations>
-      <factHandleIds>26</factHandleIds>
+      <activationId>CetoPreso [23]</activationId>
+      <rule>CetoPreso</rule>
+      <declarations>$p=Ceto</declarations>
+      <factHandleIds>23</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
@@ -822,6 +822,25 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
+      <activationId>llenar inventarios vacios [15]</activationId>
+      <rule>llenar inventarios vacios</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>15</factId>
+      <objectToString>Hefesto</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>llenar inventarios vacios [15]</activationId>
+      <rule>llenar inventarios vacios</rule>
+      <declarations>$p=Hefesto</declarations>
+      <factHandleIds>15</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
       <activationId>llenar inventarios vacios [17]</activationId>
       <rule>llenar inventarios vacios</rule>
       <declarations>$p=Doris</declarations>
@@ -857,25 +876,6 @@
       <rule>llenar inventarios vacios</rule>
       <declarations>$p=Nereidas</declarations>
       <factHandleIds>18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>6</type>
-      <activationId>llenar inventarios vacios [20]</activationId>
-      <rule>llenar inventarios vacios</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>2</type>
-      <factId>20</factId>
-      <objectToString>Perseo</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>7</type>
-      <activationId>llenar inventarios vacios [20]</activationId>
-      <rule>llenar inventarios vacios</rule>
-      <declarations>$p=Perseo</declarations>
-      <factHandleIds>20</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
@@ -994,7 +994,7 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>67</factId>
-      <objectToString>[Ceto]</objectToString>
+      <objectToString>Libre [Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
@@ -1005,34 +1005,39 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 65, 22, 38]</activationId>
       <rule>andromeda es apresada por ceto</rule>
-      <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>67,22</factHandleIds>
+      <declarations>$p=Andrómeda; $lib=Libre [Andrómeda]; $e=Libre [Ceto]</declarations>
+      <factHandleIds>67,65,22,38</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 65, 22, 38]</activationId>
       <rule>andromeda es apresada por ceto</rule>
-      <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>67,22</factHandleIds>
+      <declarations>$p=Andrómeda; $lib=Libre [Andrómeda]; $e=Libre [Ceto]</declarations>
+      <factHandleIds>67,65,22,38</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>38</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>68</factId>
-      <objectToString>clasesMito.acciones.Apresar@18460128</objectToString>
+      <objectToString>Apresar [Ceto, Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>69</factId>
-      <objectToString>[Andrómeda]</objectToString>
+      <objectToString>Preso [Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>andromeda es apresada por ceto [67, 22]</activationId>
+      <activationId>andromeda es apresada por ceto [67, 65, 22, 38]</activationId>
       <rule>andromeda es apresada por ceto</rule>
-      <declarations>$p=Andrómeda; $e=[Ceto]</declarations>
-      <factHandleIds>67,22</factHandleIds>
+      <declarations>$p=Andrómeda; $e=Libre [Ceto]</declarations>
+      <factHandleIds>67,65,22,38</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
@@ -1041,11 +1046,6 @@
       <declarations>$f=DarFavor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
       <factHandleIds>27</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>70</factId>
-      <objectToString>clasesMito.acciones.Obtener@53830483</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1071,11 +1071,6 @@
       <factHandleIds>28</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>71</factId>
-      <objectToString>clasesMito.acciones.Obtener@29f85fe1</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
       <objectToString>Perseo</objectToString>
@@ -1099,16 +1094,6 @@
       <declarations>$f=DarFavor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
       <factHandleIds>29</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>72</factId>
-      <objectToString>[Perseo]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>73</factId>
-      <objectToString>clasesMito.acciones.Obtener@396ef8b2</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
@@ -1134,16 +1119,6 @@
       <factHandleIds>30</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>74</factId>
-      <objectToString>[Perseo]</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>75</factId>
-      <objectToString>clasesMito.acciones.Obtener@19ee1ae6</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>20</factId>
       <objectToString>Perseo</objectToString>
@@ -1162,22 +1137,22 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 70, 73, 20, 74, 81]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
-      <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,16,76,79,80,86</factHandleIds>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>20,16,70,73,74,81</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 70, 73, 20, 74, 81]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
-      <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,16,76,79,80,86</factHandleIds>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>20,16,70,73,74,81</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>88</factId>
-      <objectToString>clasesMito.acciones.Obtener@71b6d77f</objectToString>
+      <factId>82</factId>
+      <objectToString>Obtener [getSujeto()=Perseo, getAfectadoC()=Ojo Graya]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1191,34 +1166,34 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo roba el ojo de las grayas [16, 76, 79, 20, 80, 86]</activationId>
+      <activationId>perseo roba el ojo de las grayas [16, 70, 73, 20, 74, 81]</activationId>
       <rule>perseo roba el ojo de las grayas</rule>
-      <declarations>$ch=Casco Hades; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
-      <factHandleIds>20,16,76,79,80,86</factHandleIds>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>20,16,70,73,74,81</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 83, 20, 88]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>20,16,89,94</factHandleIds>
+      <factHandleIds>20,16,83,88</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 83, 20, 88]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>20,16,89,94</factHandleIds>
+      <factHandleIds>20,16,83,88</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>95</factId>
-      <objectToString>clasesMito.acciones.Obtener@11f406f8</objectToString>
+      <factId>89</factId>
+      <objectToString>Obtener [getSujeto()=Perseo, getAfectadoC()=Mapa Ninfas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>96</factId>
-      <objectToString>clasesMito.acciones.Obtener@987455b</objectToString>
+      <factId>90</factId>
+      <objectToString>Obtener [getSujeto()=Grayas, getAfectadoC()=Ojo Graya]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1232,24 +1207,24 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo intercambio ojo por mapa ninfas [16, 89, 20, 94]</activationId>
+      <activationId>perseo intercambio ojo por mapa ninfas [16, 83, 20, 88]</activationId>
       <rule>perseo intercambio ojo por mapa ninfas</rule>
       <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
-      <factHandleIds>20,16,89,94</factHandleIds>
+      <factHandleIds>20,16,83,88</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 95, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
-      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,101,19</factHandleIds>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>20,95,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 95, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
-      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,101,19</factHandleIds>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>20,95,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1259,43 +1234,116 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
       <factId>19</factId>
-      <objectToString>NinfasNorte</objectToString>
+      <objectToString>Ninfas</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>perseo obtiene inventario ninfas [20, 101, 19]</activationId>
+      <activationId>perseo obtiene inventario ninfas [20, 95, 19]</activationId>
       <rule>perseo obtiene inventario ninfas</rule>
-      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=NinfasNorte</declarations>
-      <factHandleIds>20,101,19</factHandleIds>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>20,95,19</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
-      <rule>matar a medusa</rule>
-      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>72,65,20,103,112,122</factHandleIds>
+      <activationId>Capacidad Invisible [20, 100]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>20,100</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
-      <rule>matar a medusa</rule>
-      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>72,65,20,103,112,122</factHandleIds>
+      <activationId>Capacidad Invisible [20, 100]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>20,100</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>123</factId>
-      <objectToString>clasesMito.acciones.Obtener@574cd322</objectToString>
+      <factId>105</factId>
+      <objectToString>CapacidadInvisible [Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Invisible [20, 100]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>20,100</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Reflejo [20, 108]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>20,108</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Reflejo [20, 108]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>20,108</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>124</factId>
-      <objectToString>[Medusa]</objectToString>
+      <factId>115</factId>
+      <objectToString>CapacidadReflej0[Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Reflejo [20, 108]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>20,108</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Vuelo [20, 123]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo; $ha=Sandalias</declarations>
+      <factHandleIds>20,123</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Vuelo [20, 123]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo; $ha=Sandalias</declarations>
+      <factHandleIds>20,123</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>125</factId>
-      <objectToString>clasesMito.acciones.Matar@119c745c</objectToString>
+      <objectToString>CapacidadVuelo [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Vuelo [20, 123]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo; $ha=Sandalias</declarations>
+      <factHandleIds>20,123</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>matar a medusa [33, 20, 128, 105, 115, 125]</activationId>
+      <rule>matar a medusa</rule>
+      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>125,33,20,128,105,115</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>matar a medusa [33, 20, 128, 105, 115, 125]</activationId>
+      <rule>matar a medusa</rule>
+      <declarations>$medusaViva=[Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>125,33,20,128,105,115</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>133</factId>
+      <objectToString>Muerto [Medusa]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>134</factId>
+      <objectToString>clasesMito.acciones.Matar@644c78d4</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
@@ -1309,66 +1357,97 @@
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>65</factId>
+      <factId>33</factId>
       <objectToString>[Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a medusa [65, 20, 103, 72, 112, 122]</activationId>
+      <activationId>matar a medusa [33, 20, 128, 105, 115, 125]</activationId>
       <rule>matar a medusa</rule>
       <declarations>$p=Perseo; $ha=Hoz Acero</declarations>
-      <factHandleIds>72,65,20,103,112,122</factHandleIds>
+      <factHandleIds>125,33,20,128,105,115</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
+      <activationId>matar a ceto [20, 142, 65, 69]</activationId>
       <rule>matar a ceto</rule>
-      <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,133,59</factHandleIds>
+      <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=Preso [Andrómeda]; $cm=Cabeza</declarations>
+      <factHandleIds>69,20,142,65</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
+      <activationId>matar a ceto [20, 142, 65, 69]</activationId>
       <rule>matar a ceto</rule>
-      <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=[Andrómeda]; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,133,59</factHandleIds>
+      <declarations>$p=Perseo; $cetoVivo=[Ceto]; $andromedaPresa=Preso [Andrómeda]; $cm=Cabeza</declarations>
+      <factHandleIds>69,20,142,65</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>134</factId>
-      <objectToString>clasesMito.acciones.Matar@5c448433</objectToString>
+      <factId>143</factId>
+      <objectToString>clasesMito.acciones.Matar@532a02d9</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>135</factId>
-      <objectToString>[Ceto]</objectToString>
+      <factId>144</factId>
+      <objectToString>Muerto [Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>136</factId>
+      <factId>145</factId>
       <objectToString>Liberar [Perseo, Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>137</factId>
-      <objectToString>[Andrómeda]</objectToString>
+      <factId>146</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
       <factId>69</factId>
-      <objectToString>[Andrómeda]</objectToString>
+      <objectToString>Preso [Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>59</factId>
+      <factId>65</factId>
       <objectToString>[Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>matar a ceto [20, 133, 59, 69]</activationId>
+      <activationId>matar a ceto [20, 142, 65, 69]</activationId>
       <rule>matar a ceto</rule>
-      <declarations>$p=Perseo; $cm=Cabeza Medusa</declarations>
-      <factHandleIds>69,20,133,59</factHandleIds>
+      <declarations>$p=Perseo; $cm=Cabeza</declarations>
+      <factHandleIds>69,20,142,65</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>69,22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>69,22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>147</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>148</factId>
+      <objectToString>[Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>personajes libres y vivos [22]</activationId>
+      <rule>personajes libres y vivos</rule>
+      <declarations>$p=Andrómeda</declarations>
+      <factHandleIds>69,22</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>

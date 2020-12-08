@@ -4,16 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-
+ 
 import clasesMito.Objeto;
 import clasesMito.Personaje;
 import clasesMito.acciones.DarFavor; 
 import clasesMito.acciones.Enojar;
 import clasesMito.acciones.Liberar;
+import clasesMito.acciones.Apresar;
+
 import clasesMito.acciones.Obtener;
 import clasesMito.estados.CapacidadInvisible;
 import clasesMito.estados.CapacidadReflejo;
 import clasesMito.estados.CapacidadVuelo;
+import clasesMito.estados.Preso;
 
 public class Parser {
 
@@ -39,6 +42,16 @@ public class Parser {
 				Personaje p2;
 				Object O;
 				switch (palabras.get(1)) {
+				case "apresa":
+					p1 = getPersonaje(palabras.get(0));
+					p2 = getPersonaje(palabras.get(2));
+
+					O = new Apresar(p1, p2);
+					HechosDinamicos.add(O);
+					O = new Preso(p2);
+					HechosDinamicos.add(O);
+
+					break;
 				case "tiene":
 					switch (palabras.get(3)) {
 
@@ -55,6 +68,7 @@ public class Parser {
 						O = new Enojar(p1, p2);
 						HechosDinamicos.add(O);
 						break;
+				
 					default:
 						for (Personaje P : Personajes) {
 							if (P.getNombre().equals(palabras.get(0))) {
@@ -92,7 +106,7 @@ public class Parser {
 							}
 						}
 						
-						}
+					}
 					
 
 					break;
@@ -125,7 +139,7 @@ public class Parser {
 					
 						default:
 							if (palabras.get(3).equals("Capacidad")) {
-								String NombreObjeto = palabras.get(4);
+								//String NombreObjeto = palabras.get(4);
 								CapacidadVuelo CV = new CapacidadVuelo(getPersonaje(palabras.get(1)));
 
 								pregunta = CV;
