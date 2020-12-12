@@ -47,9 +47,25 @@ public class KieMain {
 		Objeto alasDedalo = new Objeto ("Alas");
 		Objeto alasIcaro = new Objeto ("Alas");
 		Objeto cuernoMinotauro = new Objeto ("Cuerno");
-		Objeto localizacionLaberinto = new Objeto ("Localizacion Laberinto");
+		Objeto localizacionLaberinto = new Objeto ("Localizacion Minotauro");
 		Objeto tributoMinotaro = new Objeto ("Tributo");
+		
+		Objeto vellocinoDeOro = new Objeto ("Vellocino");
+		Objeto unguentoInvisibilidad = new Objeto ("Unguento Invencibilidad");
+		Objeto localizacionVellocino = new Objeto ("Localizacion Vellocino");
+		Objeto barco = new Objeto ("Barco");
+		Objeto ejercito = new Objeto ("Ejercito");
 
+		List<Objeto> inventarioDragon = new LinkedList<Objeto>();
+		inventarioDragon.add(vellocinoDeOro);
+		
+		List<Objeto> inventarioMeda = new LinkedList<Objeto>();
+		inventarioMeda.add(unguentoInvisibilidad);
+		
+		List<Objeto> inventarioReyPelias = new LinkedList<Objeto>();
+		Collections.addAll(inventarioReyPelias, barco);
+		
+		
 		//Inventarios con sus objetos
 		List<Objeto> inventarioMedusa = new LinkedList<Objeto>();
 		inventarioMedusa.add(cabezaMedusa);
@@ -108,14 +124,26 @@ public class KieMain {
 		Personaje medusa = new Gorgona(null, inventarioMedusa, "Medusa", null, null ); 
 		
 		
-		//mito nuevo
+		//mito Minotauro
 		
-		Personaje Minos = new Heroe(null, null, "Minos", null, null );
-		Personaje Teseo = new Mortal(null, inventarioTeseo, "Teseo", null, null );
+		Personaje Minos = new Mortal(null, null, "Minos", null, null );
+		Personaje Teseo = new Heroe(null, inventarioTeseo, "Teseo", null, null );
 		Personaje Ariadna = new Mortal(null, inventarioAriadna, "Ariadna", null, null ); 
 		Personaje Minotauro = new Criatura(null,inventarioMinotauro, "Minotauro", null, null);
-		Personaje Icaro = new Mortal(null, null, "Icaro", null, null );
-		Personaje Dedalo = new Mortal(null, null, "Dedalo", null, null ); 
+		Personaje Icaro = new Mortal(null, null, "Ícaro", null, null );
+		Personaje Dedalo = new Mortal(null, null, "Dédalo", null, null ); 
+		
+		
+		//mito Atalanta y búsqueda del Vellocino
+		
+		Personaje Hipómenes = new Mortal(null, null, "Hipómenes", null, null );
+		Personaje Atalanta = new Heroe(null, new LinkedList<Objeto>(), "Atalanta", null, null );
+		
+		Personaje Jason = new Heroe(null, new LinkedList<Objeto>(), "Jason", null, null );
+		Personaje Meda = new Mortal(null, inventarioMeda, "Meda", null, null );
+		Personaje ReyPelias = new Mortal(null, inventarioReyPelias, "Rey", null, null );
+
+		Personaje Dragon = new Criatura(null, inventarioDragon, "Dragón", null, null );
 		
 		//HIJOS DE PERSONAJES
 		Collections.addAll(hijosZeus, perseo, hermes, hefesto, atenea);
@@ -124,17 +152,20 @@ public class KieMain {
 		//COLECCIÓN DE OBJETOS
 		LinkedList<Objeto> objetosMito = new LinkedList<Objeto>();
 		Collections.addAll(objetosMito, cabezaMedusa, cascoHades, hozAcero, mapaGrayas,mapaNinfas, ojoGraya,
-				sandaliasAladas, zurronMagico, escudoBronce, hiloAriadna,alasDedalo,alasIcaro,cuernoMinotauro,espadaTeseo,tributoMinotaro,localizacionLaberinto);
+				sandaliasAladas, zurronMagico, escudoBronce, hiloAriadna,alasDedalo,alasIcaro,cuernoMinotauro,
+				espadaTeseo,tributoMinotaro,localizacionLaberinto,vellocinoDeOro,ejercito,localizacionVellocino);
 		
 		LinkedList<Personaje> personajesMito = new LinkedList<Personaje>();
 		Collections.addAll(personajesMito, zeus, poseidon, hades, hermes, atenea, hefesto,
 				grayas, doris, nereidas, ninfasNorte, perseo, casiopea, andromeda, ceto, esteno, euriale,
-				medusa,Minos,Teseo,Ariadna,Minotauro,Icaro, Dedalo);
+				medusa,Minos,Teseo,Ariadna,Minotauro,Icaro, Dedalo, Atalanta, Hipómenes,Jason,Meda,ReyPelias, Dragon);
 
 		// PARSER PARA HECHOS DINAMICOS
-		File fichero = new File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/entrada1.txt");
+		File fichero = new File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/Escenario.F3-2.txt");
 		//File fichero = new File("D:\\UM\\4\\DSINT\\Práctica1\\DSINTMITO\\entrada5.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
+		
+
 		
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
 			while (scanner.hasNext()) {
@@ -169,12 +200,17 @@ public class KieMain {
 		//Obtenemos la respuesta a la pregunta
 		QueryResults respuesta = null;
 		Object pregunta = P.getPregunta();
-
+		
+		for (String r : respuestaReglas) {
+			System.out.println(r);
+		}
 		if (pregunta instanceof Accion) {
 			Accion preguntaA = ((Accion)pregunta);
 			respuesta= preguntaA.buscarRespuesta(kSession);
 			if (respuesta.size() != 0) {
-				System.out.println("Si, " + preguntaA.getSujeto() + " puede " + preguntaA.getClass().getSimpleName() + " a " + preguntaA.getAfectadoP() + " debido a que:");
+
+				System.out.println("Si, " + preguntaA.getSujeto() + " puede " + preguntaA.getClass().getSimpleName()+ ((preguntaA.getAfectadoC() != null) ? " " + preguntaA.getAfectadoC() : "")
+						+ ((preguntaA.getAfectadoP() != null) ?" a " + preguntaA.getAfectadoP() : ""));
 				for (String r : respuestaReglas) {
 					System.out.println(r);
 				}

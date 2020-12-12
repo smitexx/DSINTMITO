@@ -14,7 +14,7 @@ public class DarFavor extends Accion {
   
 	@Override
 	public String toString() {
-		return "DarFavor ["+ getSujeto() + ", " + getAfectadoP() + "]";
+		return "Favor ["+ getSujeto() + ", " + getAfectadoP() + "]";
 	}
 
 	@Override

@@ -14,6 +14,11 @@ public class Vivo extends Estado {
 	}
 
 	@Override
+	public String toString() {
+		return "Vivo [getSujeto()=" + getSujeto() + "]";
+	}
+
+	@Override
 	public QueryResults buscarRespuesta(KieSession kSession) {
 		return kSession.getQueryResults("buscarVivo", this.getSujeto());
 	}

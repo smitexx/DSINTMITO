@@ -17,11 +17,11 @@ global java.util.List respuestaReglas;
 //REGLAS DESDE EL PRINCIPIO
 
 //1º REGLA: TODOS LOS PERSONAJES LIBRES : 
-rule "personajes libres y vivos"
+rule "inicial" 
 
     when
         //conditions y definimos variable $p
-      	$p : Personaje(nombre != "Ceto");
+      	$p : Personaje((nombre != "Ceto") &&(nombre!= "Minotauro"));
       	not Muerto(sujeto == $p);
       	not Preso(sujeto == $p);
       	
@@ -34,12 +34,11 @@ rule "personajes libres y vivos"
 		
 end
 //1.1 Regla: excepcion, ceto preso
-
-rule "CetoPreso"
+rule "CetoPreso" 
 
     when
         //conditions y definimos variable $p
-      	$p : Personaje(nombre == "Ceto");
+      	$p : Personaje(nombre == "Ceto"||nombre == "Minotauro");
       	not Muerto(sujeto == $p );
     then
         //actions
@@ -51,7 +50,7 @@ rule "CetoPreso"
 end
 
 //1.2 Regla: llenar inventario vacios
-rule "llenar inventarios vacios"
+rule "llenar inventarios vacios" 
 	when
 		$p: Personaje(inventario == null); 
 	then
@@ -61,11 +60,8 @@ end
 
 
 
-
-
-
 //2º REGLA: casiopea enoja a poseidon 
-rule "casiopea enoja a poseidon"
+rule "casiopea enoja a poseidon" 
 
     when
       	$a: Enojar(sujeto.nombre == "Casiopea", afectadoP != null, afectadoP.nombre == "Poseidón");
@@ -79,12 +75,56 @@ rule "casiopea enoja a poseidon"
 		insert (libreCeto);
 			
 end
+
+
+
+//2.1 Regla de enojo para fase 3.6
+rule "Si atalanta tiene vellocino ceto libre y apresa a Hipomedes"
+    when
+      	$a: Enojar(sujeto.nombre == "Atalanta", afectadoP != null, afectadoP.nombre == "Poseidón");
+      	$p: Personaje(nombre == "Ceto");
+    then
+        //actions
+        respuestaReglas.add($p.getNombre() + " queda libre debido a enojo de " + $a.getAfectadoP().getNombre() + " hacia " + $a.getSujeto().getNombre());
+		Accion poseidonLiberaCeto = new Liberar($a.getAfectadoP(), $p);
+		Estado libreCeto = new Libre ($p) ;
+		insert (poseidonLiberaCeto);
+		insert (libreCeto);
+			
+end
+
+
+
+
+//3º REGLA: hipomenes es apresado por ceto  para fase 3.6
+
+rule "Hipomenes es apresado por ceto"
+	when 
+		$e : Libre(sujeto.nombre == "Ceto")
+	    Vivo(sujeto.nombre == "Ceto")
+		$a: Enojar(sujeto.nombre == "Atalanta", afectadoP != null, afectadoP.nombre == "Poseidón");
+		
+		$p : Personaje(nombre == "Hipómenes")
+		$lib : Libre(sujeto == $p)
+	then 
+		respuestaReglas.add(  $p +" queda presa debido a estar " + $e.getSujeto() + " libre.");
+		
+		Accion cetoApresaAndromeda = new Apresar($e.getSujeto(), $p);
+		Estado andromedaApresada = new Preso($p);
+		
+		retract ($lib);
+		insert(cetoApresaAndromeda);
+		insert(andromedaApresada);
+		
+end
+
 //3º REGLA: andromeda es apresada por ceto
 
 rule "andromeda es apresada por ceto"
 	when 
 		$e : Libre(sujeto.nombre == "Ceto")
 	    Vivo(sujeto.nombre == "Ceto")
+		$a: Enojar(sujeto.nombre == "Casiopea", afectadoP != null, afectadoP.nombre == "Poseidón");
 		
 		$p : Personaje(nombre == "Andrómeda")
 		$lib : Libre(sujeto == $p)
@@ -100,8 +140,8 @@ rule "andromeda es apresada por ceto"
 		
 end
 
-//4º REGLA: favores de dioses a Perseo  
-rule "favores de dioses a Perseo" 
+//4º REGLA: favores   
+rule "favores a personajes" 
 	when 
 		$f : DarFavor($s : sujeto, $a : afectadoP);
 	then 
@@ -114,26 +154,138 @@ rule "favores de dioses a Perseo"
 		update($s);
 end
 
+
+
+// Heroe entra al laberinto fase 3.2
+
+rule "Heroe entra al laberitno"
+
+	when 
+		$h : Heroe();
+		$t: Objeto(nombre == "Tributo") from $h.inventario;
+		$hilo: Objeto(nombre == "Hilo") from $h.inventario;
+		$m : Personaje(nombre=="Minotauro");
+		$l : Objeto(nombre=="Localizacion Minotauro");
+		
+		Vivo(sujeto==$m);
+		
+	then
+		$h.getInventario().add($l);
+		Accion heroeObtieneLoc = new Obtener($h, $l);
+		
+		insert(heroeObtieneLoc);
+		respuestaReglas.add($h.getNombre() + " accede al laberinto y encuentra al minotauro al tener"+ $l.toString());
+		update($h);
+end
+
 //5º REGLA: perseo roba el ojo de las grayas
 rule "perseo roba el ojo de las grayas"
 	when 
+		$p : Heroe();
 		$g : Personaje(nombre == "Grayas");
 		$ojo: Objeto(nombre == "Ojo Graya") from $g.inventario;
 		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
-		$p : Heroe();
 		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
 		$ch : Objeto(nombre == "Casco") from $p.inventario;
 	then
 		respuestaReglas.add($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
 		
 		$p.getInventario().add($ojo);
-		Accion perseoObtieneOjo = new Obtener($p, $ojo);
 		$g.getInventario().remove($ojo);
+				Accion perseoObtieneOjo = new Obtener($p, $ojo);
 		
 		insert(perseoObtieneOjo);
 		update($p);
 		update($g);
 end
+
+// Fase 3.2
+rule "heroe mata minotauro"
+
+	when 
+		$h : Heroe();
+		$t: Objeto(nombre == "Localizacion Minotauro") from $h.inventario;
+		$e: Objeto(nombre == "Espada") from $h.inventario;
+		$m : Personaje(nombre=="Minotauro");
+		$v : Vivo(sujeto==$m);
+		
+	then
+		$h.getInventario().addAll($m.getInventario());
+		$m.setInventario(new LinkedList<Objeto>());
+	    respuestaReglas.add($h.getNombre() + " mata a " +  $m.getNombre() );
+		
+		update($h);
+		update($m);
+		Muerto m = new Muerto($m);
+		insert(m);
+		retract($v);
+		
+end
+//Fase 3.2
+
+rule "salida del laberinto"
+	when
+		$h : Heroe();
+		$hilo: Objeto(nombre == "Hilo") from $h.inventario;
+		Objeto(nombre == "Cuerno") from $h.inventario;
+		$m : Personaje(nombre=="Minos");
+
+
+		$i : Libre (sujeto.nombre == "Ícaro");
+		$d : Libre (sujeto.nombre == "Dédalo");
+		
+		not Objeto(nombre == "Alas") from $i.sujeto.inventario;
+		not Objeto(nombre == "Alas") from $d.sujeto.inventario;
+		
+	then
+		respuestaReglas.add($h.getNombre() + " consigue salir del laberinto al tener " +  $hilo.getNombre() );
+		Enojar E = new Enojar($h,$m);
+		insert(E);
+		Accion minosApresaIcaro = new Apresar($m, $i.getSujeto());
+		Accion minosApresaDedalo = new Apresar($m, $d.getSujeto());
+		
+		Estado icaroApresada = new Preso($i.getSujeto());
+		Estado dedaloApresada = new Preso($d.getSujeto());
+		respuestaReglas.add($m.getNombre() + " apresa a Ícaro y Dédalo porque "+$h.getNombre()+" consigue salir vivo del laberinto." );
+		
+		retract ($i);
+		insert(minosApresaIcaro);
+		insert(minosApresaDedalo);
+		retract ($d);
+		insert(icaroApresada);
+		insert(dedaloApresada);
+		
+	end
+
+//Fase 3.2
+
+rule "fabricacion de alas "
+when
+	
+	$i : Preso (sujeto.nombre == "Ícaro");
+	$d : Preso (sujeto.nombre == "Dédalo");
+	$AI : Objeto(nombre == "Alas");
+	$AD : Objeto(nombre == "Alas");
+				
+then
+	$i.getSujeto().getInventario().add($AI);
+	$d.getSujeto().getInventario().add($AD);
+
+	
+	Libre LI = new Libre ($i.getSujeto());
+	Libre LD = new Libre ($d.getSujeto());
+	
+	respuestaReglas.add($d.getSujeto().getNombre() + " fabrica dos pares de alas con cera y plumas del laberinto" );
+	respuestaReglas.add($d.getSujeto().getNombre() + " y " +$i.getSujeto().getNombre() +" escapan volando.");
+	
+	retract($i);
+	retract($d);
+	insert(LI);
+	insert(LD);
+
+	
+end
+
 
 //6º REGLA: perseo intercambia ojo por mapa ninfa
 
@@ -178,7 +330,7 @@ rule "perseo obtiene inventario ninfas"
 		update($n);
 end
 
-rule "Capacidad Invisible"
+rule "Capacidad Invisible" 
     when
     	
 		$p:Personaje ();
@@ -186,12 +338,13 @@ rule "Capacidad Invisible"
 		not CapacidadInvisible (sujeto==$p);
       	
     then
-        respuestaReglas.add($p.getNombre() + " obtiene capacidad de invisibilidad" );
+    
+        //respuestaReglas.add($p.getNombre() + " obtiene capacidad de invisibilidad" );
    		CapacidadInvisible c = new CapacidadInvisible($p);
 		insert(c);		
 end
 
-rule "Capacidad Reflejo"
+rule "Capacidad Reflejo" 
     when
     	
 		$p:Personaje ();
@@ -199,12 +352,12 @@ rule "Capacidad Reflejo"
 		not CapacidadReflejo (sujeto==$p);
       	
     then
-        respuestaReglas.add($p.getNombre() + " obtiene capacidad reflejo" );
+        //respuestaReglas.add($p.getNombre() + " obtiene capacidad reflejo" );
    		CapacidadReflejo c = new CapacidadReflejo($p);
 		insert(c);		
 end
 
-rule "Capacidad Vuelo"
+rule "Capacidad Vuelo" 
     when
     	
 		$p:Personaje ();
@@ -212,12 +365,16 @@ rule "Capacidad Vuelo"
 		not CapacidadVuelo (sujeto==$p);
       	
     then
-    	respuestaReglas.add($p.getNombre() + " obtiene capacidad vuelo" );
+    
+    	//respuestaReglas.add($p.getNombre() + " obtiene capacidad vuelo" );
    		CapacidadVuelo c = new CapacidadVuelo($p);
 		insert(c);		
 end
 
-//8º REGLA: Matar a medusa
+
+
+
+//8º REGLA: Matar a medusa, 
 rule "matar a medusa"
 	when
 		$medusaViva: Vivo(sujeto.nombre == "Medusa");
@@ -243,22 +400,24 @@ rule "matar a medusa"
 		retract($medusaViva);	
 end
 
-//9º REGLA: Matar a ceto
-rule "matar a ceto"
+//9º REGLA: Matar a ceto,usada en 3.1 , 3.3 y 3.6. Generalizada para cualquier heroe y cualquier preso de Ceto
+rule "matar a ceto para liberar a "
 	when
 		$p : Heroe();
 		$cm: Objeto(nombre == "Cabeza") from $p.inventario;
 		$cetoVivo : Vivo(sujeto.nombre == "Ceto");
-		$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
+		$A : Apresar(sujeto.nombre=="Ceto", $andromedaPresa: afectadoP);
+		
+		//$andromedaPresa : Preso(sujeto.nombre == "Andrómeda");
 		
 	then 
 		respuestaReglas.add($p.getNombre() + " mata a " + $cetoVivo.getSujeto().getNombre() + " debido a tener " + $cm.getNombre());
-		respuestaReglas.add($p.getNombre() + " libera a " + $andromedaPresa.getSujeto().getNombre() + " debido a matar a " + $cetoVivo.getSujeto().getNombre());
+		respuestaReglas.add($p.getNombre() + " libera a " + $andromedaPresa.getNombre() + " debido a matar a " + $cetoVivo.getSujeto().getNombre());
 		
 		Accion perseoMataCeto = new Matar($p, $cetoVivo.getSujeto());
 		Estado cetoMuerto = new Muerto($cetoVivo.getSujeto());
-		Accion liberarAndromeda = new Liberar($p, $andromedaPresa.getSujeto());
-		Estado andromedaLibre = new Libre($andromedaPresa.getSujeto());
+		Accion liberarAndromeda = new Liberar($p, $andromedaPresa);
+		Estado andromedaLibre = new Libre($andromedaPresa);
 		
 		insert (perseoMataCeto);
 		insert(cetoMuerto);
@@ -269,6 +428,109 @@ rule "matar a ceto"
 		retract($cetoVivo);
 
 end
+
+
+// REGLA PARA 3.8
+
+rule "heroe obtiene ejercito" 
+	when 
+		$h : Heroe();
+		$f1 : DarFavor(sujeto.nombre=="Meda", afectadoP==$h);
+		$f2 : DarFavor(sujeto.nombre=="Rey", afectadoP==$h);
+		$ejercito : Objeto (nombre == "Ejercito");
+		
+	then 
+	
+	    respuestaReglas.add($h.getNombre() + " motiva a un grupo de héroes para formar un ejercito al tener " + $f1.toString() + " y  "+  $f2.toString() );
+		$h.getInventario().add($ejercito);
+		Accion heroeObtieneEjercito = new Obtener($h, $ejercito);
+		
+		insert(heroeObtieneEjercito);
+		//System.out.println($h.getInventario().toString());		
+
+end
+// REGLA PARA 3.8
+
+rule "heroe encuentra el vellocino" 
+	when 
+		$h : Heroe();
+		Objeto(nombre == "Ejercito") from $h.inventario;
+		Objeto(nombre == "Barco") from $h.inventario;
+		$localizacionVellocino : Objeto (nombre == "Localizacion Vellocino");
+		
+	then 
+	
+	    respuestaReglas.add("Tras zarpar, el ejercito comandado por "+$h.getNombre() + " encuentra el Dragon que proteje el Vellocino de oro" );
+	    $h.getInventario().add($localizacionVellocino);
+	    
+	    Accion heroeObtieneLoc = new Obtener($h, $localizacionVellocino);
+		
+		insert(heroeObtieneLoc);
+		//System.out.println($h.getInventario().toString());		
+
+end
+// REGLA PARA 3.8
+
+rule "heroe vence al dragón" 
+	when 
+		$h : Heroe();
+		$d : Personaje (nombre == "Dragón");
+		$U : Objeto(nombre == "Unguento Invencibilidad") from $h.inventario;
+		$localizacionVellocino : Objeto(nombre == "Localizacion Vellocino") from $h.inventario;
+		$Vellocino : Objeto(nombre == "Vellocino") from $d.inventario;
+		$dragonVivo : Vivo(sujeto.nombre == "Dragón");
+		
+		
+	then 
+	
+	    respuestaReglas.add("El ejercito de "+$h.getNombre() + " vence al Dragón al estar protegidos por el "+ $U.getNombre() );
+	    
+	    $h.getInventario().addAll($d.getInventario());
+		$d.setInventario(new LinkedList<Objeto>());
+		Accion heroeObtieneVellocino = new Obtener($h, $Vellocino);
+		
+		
+		Accion heroeMataDragon = new Matar($h, $d);
+		Estado dragonMuerto = new Muerto($d);
+
+		insert(heroeObtieneVellocino);
+		insert (heroeMataDragon);
+		insert(dragonMuerto);
+
+		retract ($dragonVivo);
+		
+
+
+end
+// REGLA PARA 3.8
+
+rule "Capacidad Curativa" 
+    when
+    	
+		$p:Personaje ();
+		$ha: Objeto(nombre == "Vellocino") from $p.inventario;
+		not CapacidadCurativa (sujeto==$p);
+      	
+    then
+    
+    	//respuestaReglas.add($p.getNombre() + " tiene capacidad curativa al obtener el Vellocino de Oro " );
+   		CapacidadCurativa c = new CapacidadCurativa($p);
+		insert(c);		
+end
+// REGLA PARA 3.8
+
+rule "Los heroes retornan victoriosos con el vellocino" 
+    when
+    	
+		$h : Heroe();
+		$ha: Objeto(nombre == "Vellocino") from $h.inventario;
+
+      	
+    then
+    
+    	respuestaReglas.add($h.getNombre() + " y su ejercito retornan victoriosos con el vellocino" );	
+end
+
 
 // Regla genérica 1: si x apresa a y, cuando x muere y queda libre.
 

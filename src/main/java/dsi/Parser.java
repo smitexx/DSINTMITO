@@ -13,9 +13,12 @@ import clasesMito.acciones.Liberar;
 import clasesMito.acciones.Apresar;
 
 import clasesMito.acciones.Obtener;
+import clasesMito.estados.CapacidadCurativa;
 import clasesMito.estados.CapacidadInvisible;
 import clasesMito.estados.CapacidadReflejo;
 import clasesMito.estados.CapacidadVuelo;
+import clasesMito.estados.Libre;
+import clasesMito.estados.Muerto;
 import clasesMito.estados.Preso;
 
 public class Parser {
@@ -37,6 +40,8 @@ public class Parser {
 
 		for (String frase : Entrada) {
 			List<String> palabras = getPalabras(frase);
+			//System.out.println(palabras.toString());
+
 			if (!palabras.get(0).equals("Condiciones")) {
 				Personaje p1;
 				Personaje p2;
@@ -72,7 +77,6 @@ public class Parser {
 					default:
 						for (Personaje P : Personajes) {
 							if (P.getNombre().equals(palabras.get(0))) {
-
 								Objeto ObjetoParseado = new Objeto(palabras.get(2));
 								P.getInventario().add(ObjetoParseado);
 								if (ObjetoParseado.getNombre().equals("Anillo")) {
@@ -87,6 +91,15 @@ public class Parser {
 									CapacidadVuelo CV = new CapacidadVuelo(P);
 									HechosDinamicos.add(CV);
 								}
+								if (ObjetoParseado.getNombre().equals("Conjuro")||ObjetoParseado.getNombre().equals("Alas")) {
+									CapacidadVuelo CV = new CapacidadVuelo(P);
+									HechosDinamicos.add(CV);
+								}
+								if (ObjetoParseado.getNombre().equals("Vellocino")) {
+									CapacidadCurativa CC = new CapacidadCurativa(P);
+									HechosDinamicos.add(CC);
+								}
+								
 
 							} 
 						}
@@ -126,7 +139,7 @@ public class Parser {
 					}
 					break;
 
-				default:
+				default://lo mas probable es que estemos en la pregunta y sea un nombre de pesonaje
 					switch (palabras.get(2)) {
 					case "liberar":
 						// solo entraríamos en fase1 con ¿Puede perseo...
@@ -138,20 +151,36 @@ public class Parser {
 						break;
 					
 						default:
-							if (palabras.get(3).equals("Capacidad")) {
-								//String NombreObjeto = palabras.get(4);
+							switch  (palabras.get(3)) {
+							case "libre?":
+								p2 = getPersonaje(palabras.get(1));
+
+								O = new Libre(p2);
+								pregunta = O;
+								break;
+							
+							case "Capacidad":
 								CapacidadVuelo CV = new CapacidadVuelo(getPersonaje(palabras.get(1)));
 
 								pregunta = CV;
-							}
+								break;
+							case "muerto?":
+								p2 = getPersonaje(palabras.get(1));
+								O = new Muerto(p2);
+								pregunta = O;
+								break;
+
+
 							
-							else {
+							default: // puede jason obtener vellocino de oro
+								//System.out.println(frase);
 								String NombreObjeto = palabras.get(3);
 								p1 = getPersonaje(palabras.get(1));
 								Objeto O1 = getObjeto(NombreObjeto);
 								O = new Obtener(p1, O1);
 
 								pregunta = O;
+								break;
 							}
 							
 						break;
