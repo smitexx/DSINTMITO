@@ -157,11 +157,8 @@ public class KieMain {
 				Minotauro, Icaro, Dedalo, Atalanta, Hipómenes, Jason, Meda, ReyPelias, Dragon);
 
 		// PARSER PARA HECHOS DINAMICOS
-		// File fichero = new
 		// File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/Escenario.F3-2.txt");
 		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-8.txt");
-		// File fichero = new
-		// File("D:\\UM\\4\\DSINT\\Práctica1\\DSINTMITO\\entrada5.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
@@ -175,7 +172,7 @@ public class KieMain {
 		Parser P = new Parser(LineasFich, personajesMito, objetosMito);
 
 		LinkedList<Object> hechosDinamicos = P.parsear();
-		// System.out.println(hechosDinamicos.toString());
+		
 		personajesMito = P.getPersonajes();
 
 		// Lanzamos todas las reglas
@@ -196,9 +193,6 @@ public class KieMain {
 		kSession.setGlobal("respuestaReglas", respuestaReglas);
 		kSession.getAgenda().getAgendaGroup("G1").setFocus();
 		kSession.fireAllRules();
-		/*for (String r : respuestaReglas) {
-			System.out.println(r);
-		}*/
 		// Obtenemos la respuesta a la pregunta
 		List<Object> preguntas = P.getPregunta();
 		for(Object pregunta : preguntas) {

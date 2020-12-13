@@ -416,8 +416,6 @@ rule "Capacidad Invisible"
 		not CapacidadInvisible (sujeto==$p);
       	
     then
-    
-        //respuestaReglas.add($p.getNombre() + " obtiene capacidad de invisibilidad" );
    		CapacidadInvisible c = new CapacidadInvisible($p);
 		insert(c);		
 end
@@ -430,7 +428,6 @@ rule "Capacidad Reflejo"
 		not CapacidadReflejo (sujeto==$p);
       	
     then
-        //respuestaReglas.add($p.getNombre() + " obtiene capacidad reflejo" );
    		CapacidadReflejo c = new CapacidadReflejo($p);
 		insert(c);		
 end
@@ -443,8 +440,6 @@ rule "Capacidad Vuelo"
 		not CapacidadVuelo (sujeto==$p);
       	
     then
-    
-    	//respuestaReglas.add($p.getNombre() + " obtiene capacidad vuelo" );
    		CapacidadVuelo c = new CapacidadVuelo($p);
 		insert(c);		
 end
@@ -585,8 +580,6 @@ rule "Capacidad Curativa"
 		not CapacidadCurativa (sujeto==$p);
       	
     then
-    
-    	//respuestaReglas.add($p.getNombre() + " tiene capacidad curativa al obtener el Vellocino de Oro " );
    		CapacidadCurativa c = new CapacidadCurativa($p);
 		insert(c);		
 end
