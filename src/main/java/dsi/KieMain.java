@@ -51,7 +51,7 @@ public class KieMain {
 		Objeto tributoMinotaro = new Objeto("Tributo");
 
 		Objeto vellocinoDeOro = new Objeto("Vellocino");
-		Objeto unguentoInvisibilidad = new Objeto("Unguento Invencibilidad");
+		Objeto unguentoInvencibilidad = new Objeto("Unguento Invencibilidad");
 		Objeto localizacionVellocino = new Objeto("Localizacion Vellocino");
 		Objeto barco = new Objeto("Barco");
 		Objeto ejercito = new Objeto("Ejercito");
@@ -60,7 +60,7 @@ public class KieMain {
 		inventarioDragon.add(vellocinoDeOro);
 
 		List<Objeto> inventarioMeda = new LinkedList<Objeto>();
-		inventarioMeda.add(unguentoInvisibilidad);
+		inventarioMeda.add(unguentoInvencibilidad);
 
 		List<Objeto> inventarioReyPelias = new LinkedList<Objeto>();
 		Collections.addAll(inventarioReyPelias, barco);
@@ -158,7 +158,7 @@ public class KieMain {
 
 		// PARSER PARA HECHOS DINAMICOS
 		// File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/Escenario.F3-2.txt");
-		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-5.txt");
+		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-8.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
