@@ -332,6 +332,7 @@ when
 	$dl : Libre(sujeto.nombre == "Dédalo")
 	$alas: Objeto(nombre == "Alas") from $dl.sujeto.inventario;
 	$m : Matar(afectadoP.nombre == "Minotauro")
+	Enojar(sujeto.nombre == "Casiopea", afectadoP.nombre == "Poseidón");
 then 
 	$m.getSujeto().getInventario().add($alas);
 	$dl.getSujeto().getInventario().remove($alas);	

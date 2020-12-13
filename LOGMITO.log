@@ -245,12 +245,32 @@
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>49</factId>
-      <objectToString>Favor [Meda, Jason]</objectToString>
+      <objectToString>Favor [Atenea, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
       <factId>50</factId>
-      <objectToString>Favor [Rey, Jason]</objectToString>
+      <objectToString>Favor [Hermes, Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>51</factId>
+      <objectToString>Favor [Hades, Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>52</factId>
+      <objectToString>Favor [Hefesto, Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>53</factId>
+      <objectToString>Favor [Ariadna, Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>54</factId>
+      <objectToString>Enojar [Casiopea, Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -354,15 +374,36 @@
       <type>4</type>
       <activationId>favores a personajes [49]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Meda, Jason]; $a=Jason; $s=Meda</declarations>
+      <declarations>$f=Favor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
       <factHandleIds>49</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
       <activationId>favores a personajes [50]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Rey, Jason]; $a=Jason; $s=Rey</declarations>
+      <declarations>$f=Favor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
       <factHandleIds>50</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>favores a personajes [51]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
+      <factHandleIds>51</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>favores a personajes [52]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
+      <factHandleIds>52</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>favores a personajes [53]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Ariadna, Perseo]; $a=Perseo; $s=Ariadna</declarations>
+      <factHandleIds>53</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
@@ -562,12 +603,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>51</factId>
+      <factId>55</factId>
       <objectToString>Libre [Dragón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>52</factId>
+      <factId>56</factId>
       <objectToString>Vivo [getSujeto()=Dragón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -586,12 +627,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>53</factId>
+      <factId>57</factId>
       <objectToString>Libre [Rey]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>54</factId>
+      <factId>58</factId>
       <objectToString>Vivo [getSujeto()=Rey]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -610,12 +651,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>55</factId>
+      <factId>59</factId>
       <objectToString>Libre [Meda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>56</factId>
+      <factId>60</factId>
       <objectToString>Vivo [getSujeto()=Meda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -634,12 +675,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>57</factId>
+      <factId>61</factId>
       <objectToString>Libre [Jason]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>58</factId>
+      <factId>62</factId>
       <objectToString>Vivo [getSujeto()=Jason]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -658,12 +699,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>59</factId>
+      <factId>63</factId>
       <objectToString>Libre [Hipómenes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>60</factId>
+      <factId>64</factId>
       <objectToString>Vivo [getSujeto()=Hipómenes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -682,12 +723,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>61</factId>
+      <factId>65</factId>
       <objectToString>Libre [Atalanta]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>62</factId>
+      <factId>66</factId>
       <objectToString>Vivo [getSujeto()=Atalanta]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -706,12 +747,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>63</factId>
+      <factId>67</factId>
       <objectToString>Libre [Dédalo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>64</factId>
+      <factId>68</factId>
       <objectToString>Vivo [getSujeto()=Dédalo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -730,12 +771,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>65</factId>
+      <factId>69</factId>
       <objectToString>Libre [Ícaro]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>66</factId>
+      <factId>70</factId>
       <objectToString>Vivo [getSujeto()=Ícaro]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -754,12 +795,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>67</factId>
+      <factId>71</factId>
       <objectToString>Libre [Ariadna]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>68</factId>
+      <factId>72</factId>
       <objectToString>Vivo [getSujeto()=Ariadna]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -778,12 +819,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>69</factId>
+      <factId>73</factId>
       <objectToString>Libre [Teseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>70</factId>
+      <factId>74</factId>
       <objectToString>Vivo [getSujeto()=Teseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -802,12 +843,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>71</factId>
+      <factId>75</factId>
       <objectToString>Libre [Minos]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>72</factId>
+      <factId>76</factId>
       <objectToString>Vivo [getSujeto()=Minos]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -826,12 +867,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>73</factId>
+      <factId>77</factId>
       <objectToString>Libre [Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>74</factId>
+      <factId>78</factId>
       <objectToString>Vivo [getSujeto()=Medusa]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -850,12 +891,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>75</factId>
+      <factId>79</factId>
       <objectToString>Libre [Euriale]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>76</factId>
+      <factId>80</factId>
       <objectToString>Vivo [getSujeto()=Euriale]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -874,12 +915,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>77</factId>
+      <factId>81</factId>
       <objectToString>Libre [Esteno]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>78</factId>
+      <factId>82</factId>
       <objectToString>Vivo [getSujeto()=Esteno]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -898,12 +939,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>79</factId>
+      <factId>83</factId>
       <objectToString>Libre [Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>80</factId>
+      <factId>84</factId>
       <objectToString>Vivo [getSujeto()=Andrómeda]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -922,12 +963,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>81</factId>
+      <factId>85</factId>
       <objectToString>Libre [Casiopea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>82</factId>
+      <factId>86</factId>
       <objectToString>Vivo [getSujeto()=Casiopea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -946,12 +987,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>83</factId>
+      <factId>87</factId>
       <objectToString>Libre [Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>84</factId>
+      <factId>88</factId>
       <objectToString>Vivo [getSujeto()=Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -970,12 +1011,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>85</factId>
+      <factId>89</factId>
       <objectToString>Libre [Ninfas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>86</factId>
+      <factId>90</factId>
       <objectToString>Vivo [getSujeto()=Ninfas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -994,12 +1035,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>87</factId>
+      <factId>91</factId>
       <objectToString>Libre [Nereidas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>88</factId>
+      <factId>92</factId>
       <objectToString>Vivo [getSujeto()=Nereidas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1018,12 +1059,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>89</factId>
+      <factId>93</factId>
       <objectToString>Libre [Doris]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>90</factId>
+      <factId>94</factId>
       <objectToString>Vivo [getSujeto()=Doris]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1042,12 +1083,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>91</factId>
+      <factId>95</factId>
       <objectToString>Libre [Grayas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>92</factId>
+      <factId>96</factId>
       <objectToString>Vivo [getSujeto()=Grayas]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1066,12 +1107,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>93</factId>
+      <factId>97</factId>
       <objectToString>Libre [Hefesto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>94</factId>
+      <factId>98</factId>
       <objectToString>Vivo [getSujeto()=Hefesto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1090,12 +1131,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>95</factId>
+      <factId>99</factId>
       <objectToString>Libre [Atenea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>96</factId>
+      <factId>100</factId>
       <objectToString>Vivo [getSujeto()=Atenea]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1114,12 +1155,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>97</factId>
+      <factId>101</factId>
       <objectToString>Libre [Hermes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>98</factId>
+      <factId>102</factId>
       <objectToString>Vivo [getSujeto()=Hermes]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1138,12 +1179,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>99</factId>
+      <factId>103</factId>
       <objectToString>Libre [Hades]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>100</factId>
+      <factId>104</factId>
       <objectToString>Vivo [getSujeto()=Hades]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1162,12 +1203,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>101</factId>
+      <factId>105</factId>
       <objectToString>Libre [Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>102</factId>
+      <factId>106</factId>
       <objectToString>Vivo [getSujeto()=Poseidón]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1186,12 +1227,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>103</factId>
+      <factId>107</factId>
       <objectToString>Libre [Zeus]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>104</factId>
+      <factId>108</factId>
       <objectToString>Vivo [getSujeto()=Zeus]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1224,12 +1265,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>105</factId>
+      <factId>109</factId>
       <objectToString>Preso [Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>106</factId>
+      <factId>110</factId>
       <objectToString>Vivo [getSujeto()=Ceto]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1248,12 +1289,12 @@
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>107</factId>
+      <factId>111</factId>
       <objectToString>Preso [Minotauro]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>108</factId>
+      <factId>112</factId>
       <objectToString>Vivo [getSujeto()=Minotauro]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
@@ -1530,270 +1571,685 @@
       <factHandleIds>44</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>casiopea enoja a poseidon [54, 33]</activationId>
+      <rule>casiopea enoja a poseidon</rule>
+      <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>54,33</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>casiopea enoja a poseidon [54, 33]</activationId>
+      <rule>casiopea enoja a poseidon</rule>
+      <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>54,33</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>113</factId>
+      <objectToString>Liberar [Poseidón, Ceto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>114</factId>
+      <objectToString>Libre [Ceto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>casiopea enoja a poseidon [54, 33]</activationId>
+      <rule>casiopea enoja a poseidon</rule>
+      <declarations>$p=Ceto; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>54,33</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>andromeda es apresada por ceto [114, 110, 54, 32, 83]</activationId>
+      <rule>andromeda es apresada por ceto</rule>
+      <declarations>$lib=Libre [Andrómeda]; $e=Libre [Ceto]; $p=Andrómeda; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>114,110,54,32,83</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>andromeda es apresada por ceto [114, 110, 54, 32, 83]</activationId>
+      <rule>andromeda es apresada por ceto</rule>
+      <declarations>$lib=Libre [Andrómeda]; $e=Libre [Ceto]; $p=Andrómeda; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>114,110,54,32,83</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>83</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>115</factId>
+      <objectToString>Apresar [Ceto, Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>116</factId>
+      <objectToString>Preso [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>andromeda es apresada por ceto [114, 110, 54, 32, 83]</activationId>
+      <rule>andromeda es apresada por ceto</rule>
+      <declarations>$e=Libre [Ceto]; $p=Andrómeda; $a=Enojar [Casiopea, Poseidón]</declarations>
+      <factHandleIds>114,110,54,32,83</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>favores a personajes [49]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Meda, Jason]; $a=Jason; $s=Meda</declarations>
+      <declarations>$f=Favor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
       <factHandleIds>49</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
-      <factId>45</factId>
-      <objectToString>Jason</objectToString>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
-      <factId>46</factId>
-      <objectToString>Meda</objectToString>
+      <factId>24</factId>
+      <objectToString>Atenea</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>favores a personajes [49]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Meda, Jason]; $a=Jason; $s=Meda</declarations>
+      <declarations>$f=Favor [Atenea, Perseo]; $a=Perseo; $s=Atenea</declarations>
       <factHandleIds>49</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
       <activationId>favores a personajes [50]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Rey, Jason]; $a=Jason; $s=Rey</declarations>
+      <declarations>$f=Favor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
       <factHandleIds>50</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
-      <factId>45</factId>
-      <objectToString>Jason</objectToString>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>2</type>
-      <factId>47</factId>
-      <objectToString>Rey</objectToString>
+      <factId>23</factId>
+      <objectToString>Hermes</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
       <activationId>favores a personajes [50]</activationId>
       <rule>favores a personajes</rule>
-      <declarations>$f=Favor [Rey, Jason]; $a=Jason; $s=Rey</declarations>
+      <declarations>$f=Favor [Hermes, Perseo]; $a=Perseo; $s=Hermes</declarations>
       <factHandleIds>50</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Capacidad Invisible [22, 162]</activationId>
-      <rule>Capacidad Invisible</rule>
-      <declarations>$p=Hades; $ha=Casco</declarations>
-      <factHandleIds>22,162</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>Capacidad Invisible [22, 162]</activationId>
-      <rule>Capacidad Invisible</rule>
-      <declarations>$p=Hades; $ha=Casco</declarations>
-      <factHandleIds>22,162</factHandleIds>
+      <activationId>favores a personajes [51]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
+      <factHandleIds>51</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>163</factId>
-      <objectToString>CapacidadInvisible [Hades]</objectToString>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>22</factId>
+      <objectToString>Hades</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>Capacidad Invisible [22, 162]</activationId>
-      <rule>Capacidad Invisible</rule>
-      <declarations>$p=Hades; $ha=Casco</declarations>
-      <factHandleIds>22,162</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Capacidad Reflejo [24, 176]</activationId>
-      <rule>Capacidad Reflejo</rule>
-      <declarations>$p=Atenea; $ha=Escudo</declarations>
-      <factHandleIds>24,176</factHandleIds>
+      <activationId>favores a personajes [51]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hades, Perseo]; $a=Perseo; $s=Hades</declarations>
+      <factHandleIds>51</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>Capacidad Reflejo [24, 176]</activationId>
-      <rule>Capacidad Reflejo</rule>
-      <declarations>$p=Atenea; $ha=Escudo</declarations>
-      <factHandleIds>24,176</factHandleIds>
+      <activationId>favores a personajes [52]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
+      <factHandleIds>52</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>179</factId>
-      <objectToString>CapacidadReflej0[Atenea]</objectToString>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>25</factId>
+      <objectToString>Hefesto</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>Capacidad Reflejo [24, 176]</activationId>
-      <rule>Capacidad Reflejo</rule>
-      <declarations>$p=Atenea; $ha=Escudo</declarations>
-      <factHandleIds>24,176</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>Capacidad Vuelo [29, 203]</activationId>
-      <rule>Capacidad Vuelo</rule>
-      <declarations>$p=Ninfas</declarations>
-      <factHandleIds>29,203</factHandleIds>
+      <activationId>favores a personajes [52]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Hefesto, Perseo]; $a=Perseo; $s=Hefesto</declarations>
+      <factHandleIds>52</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>Capacidad Vuelo [29, 203]</activationId>
-      <rule>Capacidad Vuelo</rule>
-      <declarations>$p=Ninfas</declarations>
-      <factHandleIds>29,203</factHandleIds>
+      <activationId>favores a personajes [53]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Ariadna, Perseo]; $a=Perseo; $s=Ariadna</declarations>
+      <factHandleIds>53</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>210</factId>
-      <objectToString>CapacidadVuelo [Ninfas]</objectToString>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>39</factId>
+      <objectToString>Ariadna</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>Capacidad Vuelo [29, 203]</activationId>
-      <rule>Capacidad Vuelo</rule>
-      <declarations>$p=Ninfas</declarations>
-      <factHandleIds>29,203</factHandleIds>
+      <activationId>favores a personajes [53]</activationId>
+      <rule>favores a personajes</rule>
+      <declarations>$f=Favor [Ariadna, Perseo]; $a=Perseo; $s=Ariadna</declarations>
+      <factHandleIds>53</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>heroe obtiene ejercito [45, 49, 50, 18]</activationId>
-      <rule>heroe obtiene ejercito</rule>
-      <declarations>$f2=Favor [Rey, Jason]; $h=Jason; $ejercito=Ejercito; $f1=Favor [Meda, Jason]</declarations>
-      <factHandleIds>50,45,49,18</factHandleIds>
+      <activationId>Heroe entra al laberinto [38, 117, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Teseo</declarations>
+      <factHandleIds>112,38,117,40,16</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Heroe entra al laberinto [30, 119, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Perseo</declarations>
+      <factHandleIds>112,30,119,40,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>heroe obtiene ejercito [45, 49, 50, 18]</activationId>
-      <rule>heroe obtiene ejercito</rule>
-      <declarations>$f2=Favor [Rey, Jason]; $h=Jason; $ejercito=Ejercito; $f1=Favor [Meda, Jason]</declarations>
-      <factHandleIds>50,45,49,18</factHandleIds>
+      <activationId>Heroe entra al laberinto [38, 117, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Teseo</declarations>
+      <factHandleIds>112,38,117,40,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>214</factId>
-      <objectToString>Obtener [getSujeto()=Jason, getAfectadoC()=Ejercito]</objectToString>
+      <factId>125</factId>
+      <objectToString>Obtener [getSujeto()=Teseo, getAfectadoC()=Localizacion Minotauro]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>38</factId>
+      <objectToString>Teseo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>heroe obtiene ejercito [45, 49, 50, 18]</activationId>
-      <rule>heroe obtiene ejercito</rule>
-      <declarations>$f2=Favor [Rey, Jason]; $h=Jason; $ejercito=Ejercito; $f1=Favor [Meda, Jason]</declarations>
-      <factHandleIds>50,45,49,18</factHandleIds>
-    </org.drools.core.audit.event.ActivationLogEvent>
-    <org.drools.core.audit.event.ActivationLogEvent>
-      <type>4</type>
-      <activationId>heroe encuentra el vellocino [45, 217, 220, 19]</activationId>
-      <rule>heroe encuentra el vellocino</rule>
-      <declarations>$h=Jason; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>45,217,220,19</factHandleIds>
+      <activationId>Heroe entra al laberinto [38, 117, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Teseo</declarations>
+      <factHandleIds>112,38,117,40,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>heroe encuentra el vellocino [45, 217, 220, 19]</activationId>
-      <rule>heroe encuentra el vellocino</rule>
-      <declarations>$h=Jason; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>45,217,220,19</factHandleIds>
+      <activationId>Heroe entra al laberinto [30, 119, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Perseo</declarations>
+      <factHandleIds>112,30,119,40,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>222</factId>
-      <objectToString>Obtener [getSujeto()=Jason, getAfectadoC()=Localizacion Vellocino]</objectToString>
+      <factId>126</factId>
+      <objectToString>Obtener [getSujeto()=Perseo, getAfectadoC()=Localizacion Minotauro]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>heroe encuentra el vellocino [45, 217, 220, 19]</activationId>
-      <rule>heroe encuentra el vellocino</rule>
-      <declarations>$h=Jason; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>45,217,220,19</factHandleIds>
+      <activationId>Heroe entra al laberinto [30, 119, 40, 16, 112]</activationId>
+      <rule>Heroe entra al laberinto</rule>
+      <declarations>$t=Tributo; $l=Localizacion Minotauro; $m=Minotauro; $h=Perseo</declarations>
+      <factHandleIds>112,30,119,40,16</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>heroe vence al dragón [45, 48, 224, 231, 232, 52]</activationId>
-      <rule>heroe vence al dragón</rule>
-      <declarations>$d=Dragón; $U=Unguento Invencibilidad; $h=Jason; $Vellocino=Vellocino; $dragonVivo=Vivo [getSujeto()=Dragón]; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>52,45,48,224,231,232</factHandleIds>
+      <activationId>heroe preso de minotauro [30, 134, 40, 112, 87]</activationId>
+      <rule>heroe preso de minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $lh=Libre [Perseo]; $m=Minotauro; $v=Vivo [getSujeto()=Minotauro]; $h=Perseo</declarations>
+      <factHandleIds>112,30,134,40,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>heroe vence al dragón [45, 48, 224, 231, 232, 52]</activationId>
-      <rule>heroe vence al dragón</rule>
-      <declarations>$d=Dragón; $U=Unguento Invencibilidad; $h=Jason; $Vellocino=Vellocino; $dragonVivo=Vivo [getSujeto()=Dragón]; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>52,45,48,224,231,232</factHandleIds>
+      <activationId>heroe preso de minotauro [30, 134, 40, 112, 87]</activationId>
+      <rule>heroe preso de minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $lh=Libre [Perseo]; $m=Minotauro; $v=Vivo [getSujeto()=Minotauro]; $h=Perseo</declarations>
+      <factHandleIds>112,30,134,40,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>233</factId>
-      <objectToString>Obtener [getSujeto()=Jason, getAfectadoC()=Vellocino]</objectToString>
+      <factId>143</factId>
+      <objectToString>Apresar [Minotauro, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>234</factId>
-      <objectToString>clasesMito.acciones.Matar@77d680e6</objectToString>
-    </org.drools.core.audit.event.ObjectLogEvent>
-    <org.drools.core.audit.event.ObjectLogEvent>
-      <type>1</type>
-      <factId>235</factId>
-      <objectToString>Muerto [Dragón]</objectToString>
+      <factId>144</factId>
+      <objectToString>Preso [Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>3</type>
-      <factId>52</factId>
-      <objectToString>Vivo [getSujeto()=Dragón]</objectToString>
+      <factId>87</factId>
+      <objectToString>Libre [Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>heroe vence al dragón [45, 48, 224, 231, 232, 52]</activationId>
-      <rule>heroe vence al dragón</rule>
-      <declarations>$d=Dragón; $U=Unguento Invencibilidad; $h=Jason; $Vellocino=Vellocino; $localizacionVellocino=Localizacion Vellocino</declarations>
-      <factHandleIds>52,45,48,224,231,232</factHandleIds>
+      <activationId>heroe preso de minotauro [30, 134, 40, 112, 87]</activationId>
+      <rule>heroe preso de minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $m=Minotauro; $v=Vivo [getSujeto()=Minotauro]; $h=Perseo</declarations>
+      <factHandleIds>112,30,134,40,87</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Capacidad Curativa [45, 240]</activationId>
-      <rule>Capacidad Curativa</rule>
-      <declarations>$p=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,240</factHandleIds>
+      <activationId>heroe mata minotauro [38, 128, 145, 40, 112]</activationId>
+      <rule>heroe mata minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $e=Espada; $m=Minotauro; $v=Vivo [getSujeto()=Minotauro]; $h=Teseo</declarations>
+      <factHandleIds>112,38,128,145,40</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>Capacidad Curativa [45, 240]</activationId>
-      <rule>Capacidad Curativa</rule>
-      <declarations>$p=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,240</factHandleIds>
+      <activationId>heroe mata minotauro [38, 128, 145, 40, 112]</activationId>
+      <rule>heroe mata minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $e=Espada; $m=Minotauro; $v=Vivo [getSujeto()=Minotauro]; $h=Teseo</declarations>
+      <factHandleIds>112,38,128,145,40</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>38</factId>
+      <objectToString>Teseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>40</factId>
+      <objectToString>Minotauro</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>153</factId>
+      <objectToString>clasesMito.acciones.Matar@56f521c6</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>154</factId>
+      <objectToString>Muerto [Minotauro]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>112</factId>
+      <objectToString>Vivo [getSujeto()=Minotauro]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>heroe mata minotauro [38, 128, 145, 40, 112]</activationId>
+      <rule>heroe mata minotauro</rule>
+      <declarations>$t=Localizacion Minotauro; $e=Espada; $m=Minotauro; $h=Teseo</declarations>
+      <factHandleIds>112,38,128,145,40</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>heroe libera a heroe de minotauro [143, 144, 153, 159]</activationId>
+      <rule>heroe libera a heroe de minotauro</rule>
+      <declarations>$hl=clasesMito.acciones.Matar@56f521c6; $hA=Apresar [Minotauro, Perseo]; $pA=Preso [Perseo]</declarations>
+      <factHandleIds>153,143,144,159</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>heroe libera a heroe de minotauro [143, 144, 153, 159]</activationId>
+      <rule>heroe libera a heroe de minotauro</rule>
+      <declarations>$hl=clasesMito.acciones.Matar@56f521c6; $hA=Apresar [Minotauro, Perseo]; $pA=Preso [Perseo]</declarations>
+      <factHandleIds>153,143,144,159</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ObjectLogEvent>
       <type>1</type>
-      <factId>253</factId>
-      <objectToString>CapacidadCurativa [Jason]</objectToString>
+      <factId>161</factId>
+      <objectToString>Liberar [Perseo, Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>162</factId>
+      <objectToString>Libre [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>144</factId>
+      <objectToString>Preso [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>143</factId>
+      <objectToString>Apresar [Minotauro, Perseo]</objectToString>
     </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>Capacidad Curativa [45, 240]</activationId>
-      <rule>Capacidad Curativa</rule>
-      <declarations>$p=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,240</factHandleIds>
+      <activationId>heroe libera a heroe de minotauro [143, 144, 153, 159]</activationId>
+      <rule>heroe libera a heroe de minotauro</rule>
+      <declarations>$hl=clasesMito.acciones.Matar@56f521c6; </declarations>
+      <factHandleIds>153,143,144,159</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>4</type>
-      <activationId>Los heroes retornan victoriosos con el vellocino [45, 258]</activationId>
-      <rule>Los heroes retornan victoriosos con el vellocino</rule>
-      <declarations>$h=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,258</factHandleIds>
+      <activationId>perseo roba el ojo de las grayas [30, 26, 193, 196, 206, 215]</activationId>
+      <rule>perseo roba el ojo de las grayas</rule>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>30,26,193,196,206,215</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>6</type>
-      <activationId>Los heroes retornan victoriosos con el vellocino [45, 258]</activationId>
-      <rule>Los heroes retornan victoriosos con el vellocino</rule>
-      <declarations>$h=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,258</factHandleIds>
+      <activationId>perseo roba el ojo de las grayas [30, 26, 193, 196, 206, 215]</activationId>
+      <rule>perseo roba el ojo de las grayas</rule>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>30,26,193,196,206,215</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>218</factId>
+      <objectToString>Obtener [getSujeto()=Perseo, getAfectadoC()=Ojo Graya]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>26</factId>
+      <objectToString>Grayas</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
     <org.drools.core.audit.event.ActivationLogEvent>
       <type>7</type>
-      <activationId>Los heroes retornan victoriosos con el vellocino [45, 258]</activationId>
-      <rule>Los heroes retornan victoriosos con el vellocino</rule>
-      <declarations>$h=Jason; $ha=Vellocino</declarations>
-      <factHandleIds>45,258</factHandleIds>
+      <activationId>perseo roba el ojo de las grayas [30, 26, 193, 196, 206, 215]</activationId>
+      <rule>perseo roba el ojo de las grayas</rule>
+      <declarations>$ch=Casco; $ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas; $mg=Mapa Grayas</declarations>
+      <factHandleIds>30,26,193,196,206,215</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>perseo intercambio ojo por mapa ninfas [26, 219, 30, 226]</activationId>
+      <rule>perseo intercambio ojo por mapa ninfas</rule>
+      <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
+      <factHandleIds>30,26,219,226</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>perseo intercambio ojo por mapa ninfas [26, 219, 30, 226]</activationId>
+      <rule>perseo intercambio ojo por mapa ninfas</rule>
+      <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
+      <factHandleIds>30,26,219,226</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>230</factId>
+      <objectToString>Obtener [getSujeto()=Perseo, getAfectadoC()=Mapa Ninfas]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>231</factId>
+      <objectToString>Obtener [getSujeto()=Grayas, getAfectadoC()=Ojo Graya]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>26</factId>
+      <objectToString>Grayas</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>perseo intercambio ojo por mapa ninfas [26, 219, 30, 226]</activationId>
+      <rule>perseo intercambio ojo por mapa ninfas</rule>
+      <declarations>$ojo=Ojo Graya; $g=Grayas; $p=Perseo; $mn=Mapa Ninfas</declarations>
+      <factHandleIds>30,26,219,226</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>perseo obtiene inventario ninfas [30, 241, 29]</activationId>
+      <rule>perseo obtiene inventario ninfas</rule>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>30,241,29</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>perseo obtiene inventario ninfas [30, 241, 29]</activationId>
+      <rule>perseo obtiene inventario ninfas</rule>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>30,241,29</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>29</factId>
+      <objectToString>Ninfas</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>perseo obtiene inventario ninfas [30, 241, 29]</activationId>
+      <rule>perseo obtiene inventario ninfas</rule>
+      <declarations>$p=Perseo; $mn=Mapa Ninfas; $n=Ninfas</declarations>
+      <factHandleIds>30,241,29</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Invisible [30, 252]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>30,252</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Invisible [30, 252]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>30,252</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>259</factId>
+      <objectToString>CapacidadInvisible [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Invisible [30, 252]</activationId>
+      <rule>Capacidad Invisible</rule>
+      <declarations>$p=Perseo; $ha=Casco</declarations>
+      <factHandleIds>30,252</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Reflejo [30, 268]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>30,268</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Reflejo [30, 268]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>30,268</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>277</factId>
+      <objectToString>CapacidadReflej0[Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Reflejo [30, 268]</activationId>
+      <rule>Capacidad Reflejo</rule>
+      <declarations>$p=Perseo; $ha=Escudo</declarations>
+      <factHandleIds>30,268</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Vuelo [30, 310]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>30,310</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Vuelo [30, 310]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>30,310</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>312</factId>
+      <objectToString>CapacidadVuelo [Perseo]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Vuelo [30, 310]</activationId>
+      <rule>Capacidad Vuelo</rule>
+      <declarations>$p=Perseo</declarations>
+      <factHandleIds>30,310</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>matar a medusa [78, 30, 315, 259, 277, 312]</activationId>
+      <rule>matar a medusa</rule>
+      <declarations>$medusaViva=Vivo [getSujeto()=Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>312,78,30,315,259,277</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>matar a medusa [78, 30, 315, 259, 277, 312]</activationId>
+      <rule>matar a medusa</rule>
+      <declarations>$medusaViva=Vivo [getSujeto()=Medusa]; $p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>312,78,30,315,259,277</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>325</factId>
+      <objectToString>Muerto [Medusa]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>326</factId>
+      <objectToString>clasesMito.acciones.Matar@58cf8f94</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>30</factId>
+      <objectToString>Perseo</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>36</factId>
+      <objectToString>Medusa</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>78</factId>
+      <objectToString>Vivo [getSujeto()=Medusa]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>matar a medusa [78, 30, 315, 259, 277, 312]</activationId>
+      <rule>matar a medusa</rule>
+      <declarations>$p=Perseo; $ha=Hoz Acero</declarations>
+      <factHandleIds>312,78,30,315,259,277</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>matar a ceto para liberar a  [30, 339, 110, 115]</activationId>
+      <rule>matar a ceto para liberar a </rule>
+      <declarations>$p=Perseo; $cetoVivo=Vivo [getSujeto()=Ceto]; $A=Apresar [Ceto, Andrómeda]; $andromedaPresa=Andrómeda; $cm=Cabeza</declarations>
+      <factHandleIds>115,30,339,110</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>matar a ceto para liberar a  [30, 339, 110, 115]</activationId>
+      <rule>matar a ceto para liberar a </rule>
+      <declarations>$p=Perseo; $cetoVivo=Vivo [getSujeto()=Ceto]; $A=Apresar [Ceto, Andrómeda]; $andromedaPresa=Andrómeda; $cm=Cabeza</declarations>
+      <factHandleIds>115,30,339,110</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>340</factId>
+      <objectToString>clasesMito.acciones.Matar@10641c09</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>341</factId>
+      <objectToString>Muerto [Ceto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>342</factId>
+      <objectToString>Liberar [Perseo, Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>343</factId>
+      <objectToString>Libre [Andrómeda]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>32</factId>
+      <objectToString>Andrómeda</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>3</type>
+      <factId>110</factId>
+      <objectToString>Vivo [getSujeto()=Ceto]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>matar a ceto para liberar a  [30, 339, 110, 115]</activationId>
+      <rule>matar a ceto para liberar a </rule>
+      <declarations>$p=Perseo; $A=Apresar [Ceto, Andrómeda]; $andromedaPresa=Andrómeda; $cm=Cabeza</declarations>
+      <factHandleIds>115,30,339,110</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Capacidad Curativa [48, 370]</activationId>
+      <rule>Capacidad Curativa</rule>
+      <declarations>$p=Dragón; $ha=Vellocino</declarations>
+      <factHandleIds>48,370</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Capacidad Curativa [48, 370]</activationId>
+      <rule>Capacidad Curativa</rule>
+      <declarations>$p=Dragón; $ha=Vellocino</declarations>
+      <factHandleIds>48,370</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>387</factId>
+      <objectToString>CapacidadCurativa [Dragón]</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Capacidad Curativa [48, 370]</activationId>
+      <rule>Capacidad Curativa</rule>
+      <declarations>$p=Dragón; $ha=Vellocino</declarations>
+      <factHandleIds>48,370</factHandleIds>
     </org.drools.core.audit.event.ActivationLogEvent>
   </events>
 </org.drools.core.audit.WorkingMemoryLog>

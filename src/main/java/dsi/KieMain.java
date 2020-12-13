@@ -87,8 +87,8 @@ public class KieMain {
 		List<Objeto> inventarioAriadna = new LinkedList<Objeto>();
 		inventarioAriadna.add(hiloAriadna);
 
-		List<Objeto> inventarioTeseo = new LinkedList<Objeto>();
-		inventarioTeseo.add(espadaTeseo);
+		/*List<Objeto> inventarioTeseo = new LinkedList<Objeto>();
+		inventarioTeseo.add(espadaTeseo);*/
 
 		List<Objeto> inventarioMinotauro = new LinkedList<Objeto>();
 		inventarioMinotauro.add(cuernoMinotauro);
@@ -124,7 +124,7 @@ public class KieMain {
 		// mito Minotauro
 
 		Personaje Minos = new Mortal(null, null, "Minos", null, null);
-		Personaje Teseo = new Heroe(null, inventarioTeseo, "Teseo", null, null);
+		Personaje Teseo = new Heroe(null, new LinkedList<Objeto>(), "Teseo", null, null);
 		Personaje Ariadna = new Mortal(null, inventarioAriadna, "Ariadna", null, null);
 		Personaje Minotauro = new Criatura(null, inventarioMinotauro, "Minotauro", null, null);
 		Personaje Icaro = new Mortal(null, null, "Ícaro", null, null);
@@ -158,7 +158,7 @@ public class KieMain {
 
 		// PARSER PARA HECHOS DINAMICOS
 		// File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/Escenario.F3-2.txt");
-		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-8.txt");
+		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-5.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
