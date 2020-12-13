@@ -18,12 +18,14 @@ global java.util.List respuestaReglas;
 
 //1º REGLA: TODOS LOS PERSONAJES LIBRES : 
 rule "inicial" 
-
+	agenda-group "G1"
     when
         //conditions y definimos variable $p
-      	$p : Personaje((nombre != "Ceto") &&(nombre!= "Minotauro"));
+      	$p : Personaje((nombre != "Ceto") && (nombre != "Minotauro"));
       	not Muerto(sujeto == $p);
       	not Preso(sujeto == $p);
+      	not Libre(sujeto == $p);
+      	not Vivo(sujeto == $p);
       	
     then
         //actions
@@ -34,8 +36,8 @@ rule "inicial"
 		
 end
 //1.1 Regla: excepcion, ceto preso
-rule "CetoPreso" 
-
+rule "Personajes presos" 
+	agenda-group "G1"
     when
         //conditions y definimos variable $p
       	$p : Personaje(nombre == "Ceto"||nombre == "Minotauro");
@@ -43,14 +45,15 @@ rule "CetoPreso"
     then
         //actions
         Estado vivo = new Vivo($p);
-        Estado presoCeto  = new Preso($p);
-        insert(presoCeto);
+        Estado pPreso  = new Preso($p);
+        insert(pPreso);
 		insert(vivo);
 		
 end
 
 //1.2 Regla: llenar inventario vacios
 rule "llenar inventarios vacios" 
+	agenda-group "G1"
 	when
 		$p: Personaje(inventario == null); 
 	then
@@ -148,7 +151,7 @@ rule "favores a personajes"
 		respuestaReglas.add($a.getNombre() + " obtiene " + $s.getInventario().toString() + " debido a tener el favor de " + $s.getNombre());
 		
 		$a.getInventario().addAll($s.getInventario());
-
+		
 		$s.setInventario(new LinkedList<Objeto>());
 		update($a);
 		update($s);
@@ -158,47 +161,66 @@ end
 
 // Heroe entra al laberinto fase 3.2
 
-rule "Heroe entra al laberitno"
+rule "Heroe entra al laberinto"
 
 	when 
 		$h : Heroe();
 		$t: Objeto(nombre == "Tributo") from $h.inventario;
-		$hilo: Objeto(nombre == "Hilo") from $h.inventario;
 		$m : Personaje(nombre=="Minotauro");
 		$l : Objeto(nombre=="Localizacion Minotauro");
-		
 		Vivo(sujeto==$m);
 		
 	then
 		$h.getInventario().add($l);
+		$h.getInventario().remove($t);
 		Accion heroeObtieneLoc = new Obtener($h, $l);
-		
 		insert(heroeObtieneLoc);
 		respuestaReglas.add($h.getNombre() + " accede al laberinto y encuentra al minotauro al tener"+ $l.toString());
 		update($h);
 end
 
-//5º REGLA: perseo roba el ojo de las grayas
-rule "perseo roba el ojo de las grayas"
+//Fase 3.5
+rule "heroe preso de minotauro"
+
 	when 
-		$p : Heroe();
-		$g : Personaje(nombre == "Grayas");
-		$ojo: Objeto(nombre == "Ojo Graya") from $g.inventario;
-		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
-		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
-		$ch : Objeto(nombre == "Casco") from $p.inventario;
+		$h : Heroe();
+		$t: Objeto(nombre == "Localizacion Minotauro") from $h.inventario;
+		not Objeto(nombre == "Espada") from $h.inventario;
+		$m : Personaje(nombre=="Minotauro");
+		$v : Vivo(sujeto==$m);
+		$lh : Libre(sujeto == $h);
+		
 	then
-		respuestaReglas.add($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
+	
+		Apresar mApresaHeroe = new Apresar($m, $h);
+		Preso pHeroe = new Preso($h);
+	    respuestaReglas.add($m.getNombre() + " apresa a " +  $h.getNombre());
+	    
+		insert(mApresaHeroe);
+		insert(pHeroe);
+		retract($lh);
 		
-		$p.getInventario().add($ojo);
-		$g.getInventario().remove($ojo);
-				Accion perseoObtieneOjo = new Obtener($p, $ojo);
-		
-		insert(perseoObtieneOjo);
-		update($p);
-		update($g);
 end
 
+//Fase 3.5
+rule "heroe libera a heroe de minotauro"
+	when
+		$hA : Apresar(sujeto.nombre == "Minotauro");
+		$pA : Preso(sujeto == $hA.afectadoP);
+		$hl : Matar(afectadoP.nombre == "Minotauro");
+		Objeto(nombre == "Hilo") from $hA.afectadoP.inventario or Objeto(nombre == "Hilo") from $hl.sujeto.inventario ;
+	then
+		
+		Liberar hLiberah = new Liberar($pA.getSujeto(), $hA.getAfectadoP());
+		Libre hLibre = new Libre($hA.getAfectadoP());
+		
+		respuestaReglas.add("El héroe macho alfa llamado "+ $hl.getSujeto().getNombre()+ " libera a " + $hA.getAfectadoP().getNombre() + " y escapan del laberinto");
+		insert(hLiberah);
+		insert(hLibre);
+		retract($pA);
+		retract($hA);
+	 
+end
 // Fase 3.2
 rule "heroe mata minotauro"
 
@@ -217,10 +239,14 @@ rule "heroe mata minotauro"
 		update($h);
 		update($m);
 		Muerto m = new Muerto($m);
+		Matar hMataMinotauro = new Matar($h, $m);
+		insert(hMataMinotauro);
 		insert(m);
 		retract($v);
 		
 end
+
+
 //Fase 3.2
 
 rule "salida del laberinto"
@@ -286,6 +312,58 @@ then
 	
 end
 
+//Fase 3.3
+rule "muerte de Icaro"
+when
+	$i : Vivo(sujeto.nombre == "Ícaro");
+	Objeto(nombre == "Alas") from $i.sujeto.inventario;
+				
+then
+	Muerto muerteIcaro = new Muerto ($i.getSujeto());
+	respuestaReglas.add($i.getSujeto().getNombre() + " muere debido a volar muy cerca del sol." );
+	retract($i);
+	insert(muerteIcaro);	
+end
+
+//Fase 3.4 
+rule "Dedalo entrega alas a Perseo"
+
+when 
+	$dl : Libre(sujeto.nombre == "Dédalo")
+	$alas: Objeto(nombre == "Alas") from $dl.sujeto.inventario;
+	$m : Matar(afectadoP.nombre == "Minotauro")
+then 
+	$m.getSujeto().getInventario().add($alas);
+	$dl.getSujeto().getInventario().remove($alas);	
+	respuestaReglas.add("Dédalo entrega las alas a " + $m.getSujeto().getNombre() );
+	update($dl.getSujeto());
+	update($m.getSujeto());
+	
+end
+	
+
+
+//5º REGLA: perseo roba el ojo de las grayas
+rule "perseo roba el ojo de las grayas"
+	when 
+		$p : Heroe();
+		not Objeto(nombre == "Alas") from $p.inventario;
+		$g : Personaje(nombre == "Grayas");
+		$ojo: Objeto(nombre == "Ojo Graya") from $g.inventario;
+		$mn : Objeto (nombre == "Mapa Ninfas") from $g.inventario;
+		$mg : Objeto(nombre == "Mapa Grayas") from $p.inventario;
+		$ch : Objeto(nombre == "Casco") from $p.inventario;
+	then
+		respuestaReglas.add($p.getNombre() + " roba " +  $ojo.getNombre() + " de " + $g.getNombre() + " debido a tener " + $ch.getNombre() );
+		
+		$p.getInventario().add($ojo);
+		$g.getInventario().remove($ojo);
+				Accion perseoObtieneOjo = new Obtener($p, $ojo);
+		
+		insert(perseoObtieneOjo);
+		update($p);
+		update($g);
+end
 
 //6º REGLA: perseo intercambia ojo por mapa ninfa
 
@@ -330,10 +408,10 @@ rule "perseo obtiene inventario ninfas"
 		update($n);
 end
 
-rule "Capacidad Invisible" 
+rule "Capacidad Invisible"
+	
     when
-    	
-		$p:Personaje ();
+		$p:Personaje();
 		$ha: Objeto(nombre == "Casco") from $p.inventario;
 		not CapacidadInvisible (sujeto==$p);
       	
@@ -361,7 +439,7 @@ rule "Capacidad Vuelo"
     when
     	
 		$p:Personaje ();
-		$ha: Objeto(nombre == "Sandalias") from $p.inventario;
+		Objeto(nombre == "Sandalias") from $p.inventario or Objeto(nombre == "Alas") from $p.inventario;
 		not CapacidadVuelo (sujeto==$p);
       	
     then
@@ -370,9 +448,6 @@ rule "Capacidad Vuelo"
    		CapacidadVuelo c = new CapacidadVuelo($p);
 		insert(c);		
 end
-
-
-
 
 //8º REGLA: Matar a medusa, 
 rule "matar a medusa"
@@ -445,8 +520,7 @@ rule "heroe obtiene ejercito"
 		$h.getInventario().add($ejercito);
 		Accion heroeObtieneEjercito = new Obtener($h, $ejercito);
 		
-		insert(heroeObtieneEjercito);
-		//System.out.println($h.getInventario().toString());		
+		insert(heroeObtieneEjercito);	
 
 end
 // REGLA PARA 3.8
@@ -465,8 +539,7 @@ rule "heroe encuentra el vellocino"
 	    
 	    Accion heroeObtieneLoc = new Obtener($h, $localizacionVellocino);
 		
-		insert(heroeObtieneLoc);
-		//System.out.println($h.getInventario().toString());		
+		insert(heroeObtieneLoc);		
 
 end
 // REGLA PARA 3.8
@@ -546,7 +619,6 @@ end
       	
     then
    		
-   		System.out.println($h.getInventario().toString());//
    		Liberar liberacion = new Liberar($h,$a);
       	Estado presoLibre = new Libre($a);
       	retract($A);
