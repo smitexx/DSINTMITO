@@ -67,7 +67,7 @@ end
 rule "casiopea enoja a poseidon" 
 
     when
-      	$a: Enojar(sujeto.nombre == "Casiopea", afectadoP != null, afectadoP.nombre == "Poseidón");
+      	$a: Enojar(sujeto.nombre == "Casiopea" || sujeto.nombre == "Atalanta" , afectadoP != null, afectadoP.nombre == "Poseidón");
       	$p: Personaje(nombre == "Ceto");
     then
         //actions
@@ -78,25 +78,6 @@ rule "casiopea enoja a poseidon"
 		insert (libreCeto);
 			
 end
-
-
-
-//2.1 Regla de enojo para fase 3.6
-rule "Si atalanta tiene vellocino ceto libre y apresa a Hipomedes"
-    when
-      	$a: Enojar(sujeto.nombre == "Atalanta", afectadoP != null, afectadoP.nombre == "Poseidón");
-      	$p: Personaje(nombre == "Ceto");
-    then
-        //actions
-        respuestaReglas.add($p.getNombre() + " queda libre debido a enojo de " + $a.getAfectadoP().getNombre() + " hacia " + $a.getSujeto().getNombre());
-		Accion poseidonLiberaCeto = new Liberar($a.getAfectadoP(), $p);
-		Estado libreCeto = new Libre ($p) ;
-		insert (poseidonLiberaCeto);
-		insert (libreCeto);
-			
-end
-
-
 
 
 //3º REGLA: hipomenes es apresado por ceto  para fase 3.6
