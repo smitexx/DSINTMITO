@@ -158,7 +158,7 @@ public class KieMain {
 
 		// PARSER PARA HECHOS DINAMICOS
 		// File("/home/pablo/eclipse-workspace/DSI/DSINTMITO/Escenario.F3-2.txt");
-		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-6.txt");
+		File fichero = new File("D:\\eclipse\\workspace\\DSINTMITO\\Escenario.F3-5.txt");
 		LinkedList<String> LineasFich = new LinkedList<String>();
 
 		try (Scanner scanner = new Scanner(fichero);) {// new File(filename)
